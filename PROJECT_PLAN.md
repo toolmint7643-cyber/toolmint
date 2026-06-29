@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 11 / 100+
+Tools Completed: 12 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -26,6 +26,7 @@ Status: In Progress
 - [x] Word Counter
 - [x] Character Counter
 - [x] Case Converter
+
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -38,6 +39,7 @@ Status: In Progress
 - [x] Age Calculator
 - [x] Percentage Calculator
 - [x] GST Calculator
+- [x] Discount Calculator
 ---
 
 ## Next Priority Tools
@@ -107,7 +109,7 @@ Status: In Progress
 - [ ] EMI Calculator
 - [ ] BMI Calculator
 - [ ] Loan Calculator
-- [ ] Discount Calculator
+- [x] Discount Calculator
 - [ ] Currency Converter
 - [ ] Date Difference Calculator
 - [ ] SIP Calculator

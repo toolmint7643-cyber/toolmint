@@ -59,4 +59,10 @@ export const tools = [
     href: "/gst-calculator",
     category: "Calculator",
   },
+    {
+    title: "Discount Calculator",
+    description: "Calculate final price, savings and extra discounts.",
+    href: "/discount-calculator",
+    category: "Calculator",
+  },
 ];

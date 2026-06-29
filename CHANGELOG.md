@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.11.0 - Discount Calculator Tool
+
+## Added
+
+- Discount Calculator tool
+- Original price and discount percentage calculation
+- Extra discount percentage option
+- Tax after discount option
+- Final price, saved amount and effective discount display
+- Quick discount buttons
+- Price breakdown section
+- Copy result and reset actions
+- Calculator category homepage entry
+
+---
+
 # v0.10.0 - GST Calculator Tool
 
 ## Added
