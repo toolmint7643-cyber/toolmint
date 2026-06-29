@@ -29,4 +29,10 @@ export const tools = [
     href: "/base64-encoder",
     category: "Developer",
   },
+    {
+    title: "Word Counter",
+    description: "Count words, characters and reading time instantly.",
+    href: "/word-counter",
+    category: "Text",
+  },
 ];
