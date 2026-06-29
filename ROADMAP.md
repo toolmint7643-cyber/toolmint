@@ -19,6 +19,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Age Calculator improvements
 - [x] Word Counter
 - [x] Character Counter tool
+- [x] Case Converter
 ---
 
 # Phase 2 - Homepage and UI Upgrade
@@ -40,7 +41,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 - [x] Word Counter
 - [x] Character Counter
-- [ ] Case Converter
+- [x] Case Converter
 - [ ] Percentage Calculator
 - [ ] BMI Calculator
 - [ ] GST Calculator

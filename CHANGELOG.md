@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.8.0 - Case Converter Tool
+
+## Added
+
+- Case Converter tool
+- Uppercase, lowercase, title case and sentence case options
+- Capitalized, alternating and inverse case options
+- camelCase, PascalCase, snake_case, kebab-case and slug-case options
+- Copy input, copy output, use output and clear text actions
+- Text stats and homepage entry
+
 
 # v0.7.0 - Character Counter Tool
 

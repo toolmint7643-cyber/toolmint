@@ -41,4 +41,10 @@ export const tools = [
     href: "/character-counter",
     category: "Text",
   },
+    {
+    title: "Case Converter",
+    description: "Convert text to uppercase, lowercase, title case and more.",
+    href: "/case-converter",
+    category: "Text",
+  },
 ];

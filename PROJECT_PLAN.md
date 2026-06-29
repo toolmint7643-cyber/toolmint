@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 8 / 100+
+Tools Completed: 9 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -25,6 +25,7 @@ Status: In Progress
 ### Text Tools
 - [x] Word Counter
 - [x] Character Counter
+- [x] Case Converter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -42,8 +43,8 @@ Status: In Progress
 
 ### High SEO Priority
 - [x] Word Counter
-- [ ] Character Counter
-- [ ] Case Converter
+- [x] Character Counter
+- [x] Case Converter
 - [ ] Percentage Calculator
 - [ ] BMI Calculator
 - [ ] GST Calculator
@@ -84,7 +85,7 @@ Status: In Progress
 - [x] Word Counter
 - [x] Character Counter
 - [ ] Line Counter
-- [ ] Case Converter
+- [x] Case Converter
 - [ ] Remove Duplicate Lines
 - [ ] Remove Empty Lines
 - [ ] Text Sorter
