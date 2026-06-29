@@ -1,107 +1,118 @@
-# 🗺️ ToolMint Roadmap
+# ToolMint Roadmap
 
-## 🎯 Goal
+## Goal
 
 Build one of the best free online developer and productivity tool websites with 100+ useful tools.
 
 ---
 
-# ✅ Phase 1 — Foundation (Completed)
+# Phase 1 - Foundation Completed
 
-- Project Setup
-- Reusable Components
-- Dynamic Homepage
-- Live Search
-- Categories
-- Tool Counter
-- Documentation System
-
----
-
-# 🚀 Phase 2 — Homepage UI
-
-- Premium Hero Section
-- Statistics Cards
-- Featured Tools
-- Better Footer
-- Complete Dark Theme
-- Better Hover Animations
+- [x] Project setup
+- [x] Reusable components
+- [x] Dynamic homepage
+- [x] Live search
+- [x] Categories
+- [x] Tool counter
+- [x] Documentation system
+- [x] First 6 tools
+- [x] Age Calculator improvements
 
 ---
 
-# 🧑‍💻 Phase 3 — Core Developer Tools
+# Phase 2 - Homepage and UI Upgrade
 
-- JWT Decoder
-- URL Encoder / Decoder
-- URL Parser
-- Hash Generator
-- SHA256 Generator
-- MD5 Generator
-- HTML Formatter
-- CSS Formatter
-- CSS Minifier
-- JavaScript Formatter
-- JavaScript Minifier
-- SQL Formatter
-- Regex Tester
+- [ ] Premium hero section
+- [ ] Statistics cards
+- [ ] Featured tools
+- [ ] Latest tools
+- [ ] Popular tools
+- [ ] Better footer
+- [ ] Complete dark theme polish
+- [ ] Better hover animations
+- [ ] Empty search state
+- [ ] SEO content section on homepage
 
 ---
 
-# 📝 Phase 4 — Text Tools
+# Phase 3 - High Traffic Text and Calculator Tools
 
-- Word Counter
-- Character Counter
-- Case Converter
-- Remove Duplicate Lines
-- Text Compare
-- Lorem Ipsum Generator
-
----
-
-# 🧮 Phase 5 — Calculator Tools
-
-- Age Calculator
-- GST Calculator
-- BMI Calculator
-- EMI Calculator
-- SIP Calculator
-- Percentage Calculator
-- Loan Calculator
+- [ ] Word Counter
+- [ ] Character Counter
+- [ ] Case Converter
+- [ ] Percentage Calculator
+- [ ] BMI Calculator
+- [ ] GST Calculator
+- [ ] EMI Calculator
+- [ ] Date Difference Calculator
 
 ---
 
-# 🖼️ Phase 6 — Image & PDF Tools
+# Phase 4 - Core Developer Tools
 
-- Image Compressor
-- Image Resizer
-- Image Converter
-- Image Cropper
-- PDF Merge
-- PDF Split
-- PDF Compressor
-
----
-
-# 🌐 Phase 7 — SEO & Launch
-
-- Sitemap
-- Robots.txt
-- Manifest
-- Open Graph
-- Structured Data
-- GitHub Repository
-- Vercel Deployment
-- Custom Domain
-- Google Analytics
-- Google AdSense
+- [ ] JWT Decoder
+- [ ] URL Encoder / Decoder
+- [ ] URL Parser
+- [ ] Hash Generator
+- [ ] SHA256 Generator
+- [ ] MD5 Generator
+- [ ] HTML Formatter
+- [ ] CSS Formatter
+- [ ] JavaScript Formatter
+- [ ] SQL Formatter
+- [ ] Regex Tester
 
 ---
 
-# 🏁 Final Goal
+# Phase 5 - Image and PDF Tools
 
-- 100+ Free Online Tools
-- Mobile Friendly
-- SEO Optimized
-- Fast Performance
-- Production Ready
-- Open Source
+- [ ] Image Compressor
+- [ ] Image Resizer
+- [ ] Image Converter
+- [ ] JPG to PNG
+- [ ] PNG to JPG
+- [ ] PDF Merge
+- [ ] PDF Split
+- [ ] PDF Compressor
+- [ ] Image to PDF
+
+---
+
+# Phase 6 - SEO and Growth
+
+- [ ] Sitemap
+- [ ] Robots.txt
+- [ ] Metadata for every tool
+- [ ] Open Graph images
+- [ ] Structured data
+- [ ] Internal linking between tools
+- [ ] Blog or guide pages
+- [ ] Google Search Console
+- [ ] Google Analytics
+
+---
+
+# Phase 7 - Launch and Monetization
+
+- [ ] Vercel deployment
+- [ ] Custom domain
+- [ ] AdSense approval preparation
+- [ ] Privacy Policy page
+- [ ] Terms page
+- [ ] Contact page
+- [ ] About page
+- [ ] Affiliate sections
+- [ ] Sponsored placement system
+
+---
+
+# Final Target
+
+- 100+ free online tools
+- Fast performance
+- Mobile friendly design
+- SEO optimized pages
+- Professional UI
+- AdSense ready
+- Open source friendly
+- Production ready
