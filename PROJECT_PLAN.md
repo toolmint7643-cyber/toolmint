@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 12 / 100+
+Tools Completed: 13 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -40,6 +40,7 @@ Status: In Progress
 - [x] Percentage Calculator
 - [x] GST Calculator
 - [x] Discount Calculator
+- [x] BMI Calculator
 ---
 
 ## Next Priority Tools
@@ -107,7 +108,7 @@ Status: In Progress
 - [x] Percentage Calculator
 - [x] GST Calculator
 - [ ] EMI Calculator
-- [ ] BMI Calculator
+- [x] BMI Calculator
 - [ ] Loan Calculator
 - [x] Discount Calculator
 - [ ] Currency Converter

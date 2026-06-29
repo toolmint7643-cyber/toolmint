@@ -65,4 +65,10 @@ export const tools = [
     href: "/discount-calculator",
     category: "Calculator",
   },
+    {
+    title: "BMI Calculator",
+    description: "Calculate BMI, category and healthy weight range.",
+    href: "/bmi-calculator",
+    category: "Calculator",
+  },
 ];

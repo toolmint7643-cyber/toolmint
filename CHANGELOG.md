@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.12.0 - BMI Calculator Tool
+
+## Added
+
+- BMI Calculator tool
+- Metric and imperial unit modes
+- BMI score and category display
+- Healthy weight range
+- Ideal weight estimate
+- BMI category reference section
+- Health disclaimer
+- Copy result and reset actions
+- Calculator category homepage entry
+
+---
+
 # v0.11.0 - Discount Calculator Tool
 
 ## Added
