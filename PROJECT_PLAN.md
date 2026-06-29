@@ -15,13 +15,15 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 6 / 100+
+Tools Completed: 7 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
 ---
 
 ## Completed Tools
+### Text Tools
+- [x] Word Counter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -38,7 +40,7 @@ Status: In Progress
 ## Next Priority Tools
 
 ### High SEO Priority
-- [ ] Word Counter
+- [x] Word Counter
 - [ ] Character Counter
 - [ ] Case Converter
 - [ ] Percentage Calculator

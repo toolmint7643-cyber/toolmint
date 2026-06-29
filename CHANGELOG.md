@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.6.0 - Word Counter Tool
+
+## Added
+
+- Word Counter tool
+- Word count, character count, sentence count and paragraph count
+- Reading time and speaking time estimates
+- Copy text and clear text actions
+- Text category homepage entry
+
+---
+
 # v0.5.0 - Age Calculator Improvements
 
 ## Added
@@ -17,7 +29,7 @@ All notable changes to this project will be documented in this file.
 - Copy result option
 - Reset option
 - Professional emoji labels
-
+- Word Counter
 ## Fixed
 
 - Invalid date handling
@@ -83,7 +95,6 @@ All notable changes to this project will be documented in this file.
 ## Upcoming
 
 - Premium Hero Section
-- Word Counter
 - Character Counter
 - Percentage Calculator
 - BMI Calculator
