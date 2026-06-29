@@ -53,4 +53,10 @@ export const tools = [
     href: "/percentage-calculator",
     category: "Calculator",
   },
+    {
+    title: "GST Calculator",
+    description: "Calculate GST inclusive and exclusive amounts instantly.",
+    href: "/gst-calculator",
+    category: "Calculator",
+  },
 ];

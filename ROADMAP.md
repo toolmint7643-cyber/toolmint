@@ -21,6 +21,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Character Counter tool
 - [x] Case Converter
 - [x] Percentage Calculator
+- [x] GST Calculator
 ---
 
 # Phase 2 - Homepage and UI Upgrade
@@ -45,7 +46,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Case Converter
 - [x] Percentage Calculator
 - [ ] BMI Calculator
-- [ ] GST Calculator
+- [x] GST Calculator
 - [ ] EMI Calculator
 - [ ] Date Difference Calculator
 

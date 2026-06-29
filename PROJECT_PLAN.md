@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 10 / 100+
+Tools Completed: 11 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -37,6 +37,7 @@ Status: In Progress
 ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
+- [x] GST Calculator
 ---
 
 ## Next Priority Tools
@@ -45,9 +46,9 @@ Status: In Progress
 - [x] Word Counter
 - [x] Character Counter
 - [x] Case Converter
-- [ ] Percentage Calculator
+- [x] Percentage Calculator
 - [ ] BMI Calculator
-- [ ] GST Calculator
+- [x] GST Calculator
 - [ ] URL Encoder / Decoder
 - [ ] JWT Decoder
 - [ ] Hash Generator
@@ -102,7 +103,7 @@ Status: In Progress
 
 - [x] Age Calculator
 - [x] Percentage Calculator
-- [ ] GST Calculator
+- [x] GST Calculator
 - [ ] EMI Calculator
 - [ ] BMI Calculator
 - [ ] Loan Calculator

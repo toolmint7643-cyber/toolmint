@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.10.0 - GST Calculator Tool
+
+## Added
+
+- GST Calculator tool
+- Exclusive GST calculation
+- Inclusive GST calculation
+- Common GST rate selector
+- Custom GST rate input
+- CGST, SGST and IGST split
+- Copy result and reset actions
+- GST rate reference section
+- Calculator category homepage entry
+
+---
+
 # v0.9.0 - Percentage Calculator Tool
 
 ## Added
