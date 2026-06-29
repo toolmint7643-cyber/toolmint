@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 9 / 100+
+Tools Completed: 10 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -36,7 +36,7 @@ Status: In Progress
 
 ### Calculator Tools
 - [x] Age Calculator
-
+- [x] Percentage Calculator
 ---
 
 ## Next Priority Tools
@@ -101,7 +101,7 @@ Status: In Progress
 ## Planned Calculator Tools
 
 - [x] Age Calculator
-- [ ] Percentage Calculator
+- [x] Percentage Calculator
 - [ ] GST Calculator
 - [ ] EMI Calculator
 - [ ] BMI Calculator

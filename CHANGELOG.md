@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.9.0 - Percentage Calculator Tool
+
+## Added
+
+- Percentage Calculator tool
+- X percent of Y calculation
+- X is what percent of Y calculation
+- Percentage increase and decrease calculation
+- Add percentage and subtract percentage modes
+- Formula display and common use cases
+- Copy result and reset actions
+- Calculator category homepage entry
+
+---
+
 # v0.8.0 - Case Converter Tool
 
 ## Added

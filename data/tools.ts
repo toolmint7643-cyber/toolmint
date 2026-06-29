@@ -47,4 +47,10 @@ export const tools = [
     href: "/case-converter",
     category: "Text",
   },
+    {
+    title: "Percentage Calculator",
+    description: "Calculate percentages, discounts, increases and decreases.",
+    href: "/percentage-calculator",
+    category: "Calculator",
+  },
 ];
