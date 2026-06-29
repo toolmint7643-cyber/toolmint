@@ -35,4 +35,10 @@ export const tools = [
     href: "/word-counter",
     category: "Text",
   },
+    {
+    title: "Character Counter",
+    description: "Count characters, spaces, letters and numbers instantly.",
+    href: "/character-counter",
+    category: "Text",
+  },
 ];

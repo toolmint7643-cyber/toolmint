@@ -18,6 +18,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] First 6 tools
 - [x] Age Calculator improvements
 - [x] Word Counter
+- [x] Character Counter tool
 ---
 
 # Phase 2 - Homepage and UI Upgrade
@@ -37,7 +38,8 @@ Build one of the best free online developer and productivity tool websites with 
 
 # Phase 3 - High Traffic Text and Calculator Tools
 
-- [ ] Character Counter
+- [x] Word Counter
+- [x] Character Counter
 - [ ] Case Converter
 - [ ] Percentage Calculator
 - [ ] BMI Calculator

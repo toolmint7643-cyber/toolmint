@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+
+# v0.7.0 - Character Counter Tool
+
+## Added
+
+- Character Counter tool
+- Total character count
+- Character count without spaces
+- Space, letter, number and special character counts
+- Word and line counts
+- Copy text and clear text actions
+- Text category homepage entry
+
 # v0.6.0 - Word Counter Tool
 
 ## Added

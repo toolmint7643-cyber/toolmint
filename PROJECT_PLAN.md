@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 7 / 100+
+Tools Completed: 8 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -24,6 +24,7 @@ Status: In Progress
 ## Completed Tools
 ### Text Tools
 - [x] Word Counter
+- [x] Character Counter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -80,8 +81,8 @@ Status: In Progress
 
 ## Planned Text Tools
 
-- [ ] Word Counter
-- [ ] Character Counter
+- [x] Word Counter
+- [x] Character Counter
 - [ ] Line Counter
 - [ ] Case Converter
 - [ ] Remove Duplicate Lines
