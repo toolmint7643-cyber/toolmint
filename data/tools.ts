@@ -71,4 +71,10 @@ export const tools = [
     href: "/bmi-calculator",
     category: "Calculator",
   },
+    {
+    title: "EMI Calculator",
+    description: "Calculate monthly EMI, total interest and total payment.",
+    href: "/emi-calculator",
+    category: "Calculator",
+  },
 ];

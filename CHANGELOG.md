@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.13.0 - EMI Calculator Tool
+
+## Added
+
+- EMI Calculator tool
+- Loan amount, interest rate and tenure inputs
+- Tenure mode in years or months
+- Monthly EMI calculation
+- Total interest and total payment display
+- Principal and interest share breakdown
+- Quick loan examples
+- Copy result and reset actions
+- Calculator category homepage entry
+
+---
+
 # v0.12.0 - BMI Calculator Tool
 
 ## Added
