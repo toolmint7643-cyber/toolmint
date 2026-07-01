@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.30.0 - CSS Minifier Tool
+
+## Added
+
+- CSS Minifier tool
+- CSS comment removal option
+- CSS whitespace and line break compression
+- Original size, minified size, saved bytes and reduction percentage
+- Basic CSS brace validation
+- Quick CSS examples
+- Copy input and minified output actions
+- CSS minification guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.29.0 - HTML Minifier Tool
 
 ## Added

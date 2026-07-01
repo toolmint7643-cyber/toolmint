@@ -190,4 +190,11 @@ export const tools = [
   href: "/html-minifier",
   category: "Developer",
 },
+{
+  title: "CSS Minifier",
+  description:
+    "Minify CSS online, compress CSS code, remove comments, reduce stylesheet size and copy compact CSS instantly.",
+  href: "/css-minifier",
+  category: "Developer",
+},
 ];

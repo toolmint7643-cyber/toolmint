@@ -65,6 +65,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] MD5 Generator
 - [x] HTML Formatter
 - [x] CSS Formatter
+- [x] CSS Minifier
 - [x] JavaScript Formatter
 - [x] JavaScript Minifier
 - [x] SQL Formatter
