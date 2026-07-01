@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 21 / 100+
+Tools Completed: 22 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -39,6 +39,7 @@ Status: In Progress
 - [x] Hash Generator
 - [x] JSON Validator
 - [x] URL Parser
+- [x] Regex Tester
 - ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -89,7 +90,7 @@ Status: In Progress
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
 - [x] URL Parser
-- [ ] Regex Tester
+- [x] Regex Tester
 - [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator

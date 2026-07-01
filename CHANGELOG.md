@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.21.0 - Regex Tester Tool
+
+## Added
+
+- Regex Tester tool
+- JavaScript regex pattern testing
+- Regex flags for global, ignore case, multiline, dotAll and unicode
+- Live match count and highlighted matches
+- Match table with index and capture groups
+- Replace matches utility
+- Common regex examples
+- Copy matches and replaced text actions
+- Regex testing guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.20.0 - URL Parser Tool
 
 ## Added
