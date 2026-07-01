@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.31.0 - XML Formatter Tool
+
+## Added
+
+- XML Formatter tool
+- Format and beautify XML
+- Minify XML output
+- XML comment removal option
+- 2-space and 4-space indentation options
+- XML syntax validation using browser parser
+- XML tag, attribute, comment, CDATA and size stats
+- Quick XML examples
+- Copy input and output actions
+- XML formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.30.0 - CSS Minifier Tool
 
 ## Added

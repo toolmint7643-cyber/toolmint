@@ -197,4 +197,11 @@ export const tools = [
   href: "/css-minifier",
   category: "Developer",
 },
+{
+  title: "XML Formatter",
+  description:
+    "Format XML online, beautify XML, minify XML, validate XML syntax and inspect tags, attributes and comments instantly.",
+  href: "/xml-formatter",
+  category: "Developer",
+},
 ];

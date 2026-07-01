@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 31 / 100+
+Tools Completed: 32 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -47,12 +47,15 @@ Status: In Progress
 - [x] JavaScript Formatter
 - [x] JavaScript Minifier
 - [x] SQL Formatter
+- [x] XML Formatter
+
 - ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
 - [x] GST Calculator
 - [x] Discount Calculator
 - [x] BMI Calculator
+
 ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -84,7 +87,7 @@ Status: In Progress
 
 - [x] JSON Validator
 - [x] JSON Minifier
-- [ ] XML Formatter
+- [x] XML Formatter
 - [ ] YAML Formatter
 - [x] HTML Formatter
 - [x] HTML Minifier
