@@ -162,4 +162,11 @@ export const tools = [
   href: "/css-formatter",
   category: "Developer",
 },
+{
+  title: "JavaScript Formatter",
+  description:
+    "Format JavaScript online, beautify JS code, minify JavaScript, check syntax and inspect functions, variables and imports instantly.",
+  href: "/javascript-formatter",
+  category: "Developer",
+},
 ];

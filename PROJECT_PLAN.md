@@ -44,6 +44,7 @@ Status: In Progress
 - [x] Markdown Preview
 - [x] HTML Formatter
 - [x] CSS Formatter
+- [x] JavaScript Formatter
 - ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -87,7 +88,7 @@ Status: In Progress
 - [ ] HTML Minifier
 - [x] CSS Formatter
 - [ ] CSS Minifier
-- [ ] JavaScript Formatter
+- [x] JavaScript Formatter
 - [ ] JavaScript Minifier
 - [ ] SQL Formatter
 - [x] Markdown Preview

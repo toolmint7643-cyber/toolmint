@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.26.0 - JavaScript Formatter Tool
+
+## Added
+
+- JavaScript Formatter tool
+- Format and beautify JavaScript code
+- Minify JavaScript output
+- 2-space and 4-space indentation options
+- Basic JavaScript syntax check
+- Function, variable, import, comment and size stats
+- Quick JavaScript examples
+- Copy input and output actions
+- JavaScript formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.25.0 - CSS Formatter Tool
 
 ## Added
