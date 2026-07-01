@@ -225,4 +225,11 @@ export const tools = [
   href: "/remove-duplicate-lines",
   category: "Text",
 },
+{
+  title: "Remove Empty Lines",
+  description:
+    "Remove empty lines online, delete blank lines, clean whitespace-only lines and format text lists instantly.",
+  href: "/remove-empty-lines",
+  category: "Text",
+},
 ];

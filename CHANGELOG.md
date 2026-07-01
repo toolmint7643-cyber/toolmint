@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.35.0 - Remove Empty Lines Tool
+
+## Added
+
+- Remove Empty Lines tool
+- Blank and whitespace-only line removal
+- Trim spaces from each line option
+- Collapse multiple blank lines option
+- Total, empty, removed, final line and word stats
+- Quick text, code and CSV-like examples
+- Copy input and cleaned output actions
+- Empty line removal guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.34.0 - Remove Duplicate Lines Tool
 
 ## Added

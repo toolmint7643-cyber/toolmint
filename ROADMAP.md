@@ -55,6 +55,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Land Area Converter
 - [x] Line Counter
 - [x] Remove Duplicate Lines
+- [x] Remove Empty Lines
+
 ---
 
 # Phase 4 - Core Developer Tools
