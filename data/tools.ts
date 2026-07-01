@@ -176,4 +176,11 @@ export const tools = [
   href: "/javascript-minifier",
   category: "Developer",
 },
+{
+  title: "SQL Formatter",
+  description:
+    "Format SQL online, beautify SQL queries, minify SQL, uppercase keywords and inspect statements, SELECTs, JOINs and WHERE clauses.",
+  href: "/sql-formatter",
+  category: "Developer",
+},
 ];

@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.28.0 - SQL Formatter Tool
+
+## Added
+
+- SQL Formatter tool
+- Format and beautify SQL queries
+- Minify SQL output
+- SQL keyword uppercase toggle
+- 2-space and 4-space indentation options
+- SQL statement, SELECT, JOIN, WHERE and size stats
+- Basic SQL parentheses validation
+- Quick SQL examples
+- Copy input and output actions
+- SQL formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.27.0 - JavaScript Minifier Tool
 
 ## Added

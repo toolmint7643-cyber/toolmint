@@ -67,7 +67,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] CSS Formatter
 - [x] JavaScript Formatter
 - [x] JavaScript Minifier
-- [ ] SQL Formatter
+- [x] SQL Formatter
 - [x] Regex Tester
 - [x] JSON Validator
 - [x] JSON Minifier
