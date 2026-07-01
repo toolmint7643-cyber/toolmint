@@ -155,4 +155,11 @@ export const tools = [
   href: "/html-formatter",
   category: "Developer",
 },
+{
+  title: "CSS Formatter",
+  description:
+    "Format CSS online, beautify CSS code, minify CSS, fix indentation and inspect selectors, properties and media queries instantly.",
+  href: "/css-formatter",
+  category: "Developer",
+},
 ];

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.25.0 - CSS Formatter Tool
+
+## Added
+
+- CSS Formatter tool
+- Format and beautify CSS code
+- Minify CSS output
+- 2-space and 4-space indentation options
+- CSS selector, property, media query, comment and size stats
+- Basic CSS brace validation
+- Quick CSS examples
+- Copy input and output actions
+- CSS formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.24.0 - HTML Formatter Tool
 
 ## Added
