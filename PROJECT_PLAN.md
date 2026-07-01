@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 15 / 100+
+Tools Completed: 16 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -34,7 +34,7 @@ Status: In Progress
 - [x] Password Generator
 - [x] UUID Generator
 - [x] Base64 Encoder / Decoder
-
+- [x] URL Encoder / Decoder
 ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -60,7 +60,7 @@ Status: In Progress
 - [x] Percentage Calculator
 - [x] BMI Calculator
 - [x] GST Calculator
-- [ ] URL Encoder / Decoder
+- [x] URL Encoder / Decoder
 - [ ] JWT Decoder
 - [ ] Hash Generator
 - [ ] Image Compressor
@@ -81,7 +81,7 @@ Status: In Progress
 - [ ] JavaScript Minifier
 - [ ] SQL Formatter
 - [ ] Markdown Preview
-- [ ] URL Encoder / Decoder
+- [x] URL Encoder / Decoder
 - [ ] JWT Decoder
 - [ ] URL Parser
 - [ ] Regex Tester

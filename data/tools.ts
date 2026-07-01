@@ -83,5 +83,20 @@ export const tools = [
     "Convert land and plot area between square feet, square meter, square yard, acre, hectare, bigha, marla and more.",
     href: "/land-area-converter",
     category: "Calculator",
-}
+},
+{
+  title: "Base64 Encoder / Decoder",
+  description: "Encode and decode Base64 text.",
+  href: "/base64-encoder",
+  category: "Developer",
+  
+},
+{
+  title: "URL Encoder / Decoder",
+  description:
+    "Encode and decode URLs, query strings, URL components, spaces and special characters instantly.",
+  href: "/url-encoder-decoder",
+  category: "Developer",
+  
+},
 ];

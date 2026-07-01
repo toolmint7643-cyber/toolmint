@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.15.0 - URL Encoder / Decoder Tool
+
+## Added
+
+- URL Encoder / Decoder tool
+- Full URL encode and decode mode
+- URL component encode and decode mode
+- Copy result, clear, reset and use output actions
+- Quick URL and query string examples
+- Input and output character counts
+- Common encoded characters reference
+- SEO content for URL encoding, decoding and percent encoding
+- Developer category homepage entry
+
+---
+
 # v0.14.0 - Land Area Converter Tool
 
 ## Added

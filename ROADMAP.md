@@ -58,7 +58,7 @@ Build one of the best free online developer and productivity tool websites with 
 # Phase 4 - Core Developer Tools
 
 - [ ] JWT Decoder
-- [ ] URL Encoder / Decoder
+- [x] URL Encoder / Decoder
 - [ ] URL Parser
 - [ ] Hash Generator
 - [ ] SHA256 Generator
