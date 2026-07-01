@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.16.0 - JWT Decoder Tool
+
+## Added
+
+- JWT Decoder tool
+- Decode JWT header and payload
+- JWT expiry status display
+- Readable issued-at and expiry dates
+- Algorithm, token type and signature length display
+- Subject, issuer and audience claim display
+- Copy header, payload and full decoded result actions
+- Sample token, clear and reset actions
+- JWT security disclaimer
+- Developer category homepage entry
+
+---
+
 # v0.15.0 - URL Encoder / Decoder Tool
 
 ## Added

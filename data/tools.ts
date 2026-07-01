@@ -99,4 +99,12 @@ export const tools = [
   category: "Developer",
   
 },
+{
+  title: "JWT Decoder",
+  description:
+    "Decode JSON Web Tokens, inspect header and payload, check expiry time and read JWT claims instantly.",
+  href: "/jwt-decoder",
+  category: "Developer",
+  
+},
 ];
