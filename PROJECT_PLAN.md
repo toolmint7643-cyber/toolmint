@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 23 / 100+
+Tools Completed: 24 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -41,6 +41,7 @@ Status: In Progress
 - [x] URL Parser
 - [x] Regex Tester
 - [x] JSON Minifier
+- [x] Markdown Preview
 - ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -87,7 +88,7 @@ Status: In Progress
 - [ ] JavaScript Formatter
 - [ ] JavaScript Minifier
 - [ ] SQL Formatter
-- [ ] Markdown Preview
+- [x] Markdown Preview
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
 - [x] URL Parser

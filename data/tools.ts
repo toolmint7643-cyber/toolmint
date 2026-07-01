@@ -141,4 +141,11 @@ export const tools = [
   href: "/json-minifier",
   category: "Developer",
 },
+{
+  title: "Markdown Preview",
+  description:
+    "Write markdown online, preview formatted content, copy markdown and create README files, notes, docs and blog drafts instantly.",
+  href: "/markdown-preview",
+  category: "Developer",
+},
 ];

@@ -70,6 +70,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Regex Tester
 - [x] JSON Validator
 - [x] JSON Minifier
+- [x] Markdown Preview
 ---
 
 # Phase 5 - Image and PDF Tools

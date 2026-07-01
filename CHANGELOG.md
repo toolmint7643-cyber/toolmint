@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.23.0 - Markdown Preview Tool
+
+## Added
+
+- Markdown Preview tool
+- Live markdown editor and formatted preview
+- Heading, bold, italic, links, lists, blockquote and code support
+- Code block and table preview support
+- Character, word and line counts
+- Copy markdown and plain text actions
+- Quick markdown examples
+- Markdown usage guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.22.0 - JSON Minifier Tool
 
 ## Added
