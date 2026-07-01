@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.27.0 - JavaScript Minifier Tool
+
+## Added
+
+- JavaScript Minifier tool
+- JavaScript comment and whitespace removal
+- Original size, minified size, saved bytes and reduction percentage
+- Basic JavaScript syntax check
+- Quick JavaScript examples
+- Copy input and minified output actions
+- JavaScript minification guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.26.0 - JavaScript Formatter Tool
 
 ## Added

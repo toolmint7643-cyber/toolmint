@@ -169,4 +169,11 @@ export const tools = [
   href: "/javascript-formatter",
   category: "Developer",
 },
+{
+  title: "JavaScript Minifier",
+  description:
+    "Minify JavaScript online, compress JS code, remove comments, reduce file size and copy compact JavaScript instantly.",
+  href: "/javascript-minifier",
+  category: "Developer",
+},
 ];
