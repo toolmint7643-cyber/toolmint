@@ -218,4 +218,11 @@ export const tools = [
   href: "/line-counter",
   category: "Text",
 },
+{
+  title: "Remove Duplicate Lines",
+  description:
+    "Remove duplicate lines online, clean repeated text, deduplicate lists, emails, keywords and IDs instantly.",
+  href: "/remove-duplicate-lines",
+  category: "Text",
+},
 ];

@@ -54,6 +54,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Discount Calculator
 - [x] Land Area Converter
 - [x] Line Counter
+- [x] Remove Duplicate Lines
 ---
 
 # Phase 4 - Core Developer Tools

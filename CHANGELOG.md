@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.34.0 - Remove Duplicate Lines Tool
+
+## Added
+
+- Remove Duplicate Lines tool
+- Duplicate line removal while keeping first occurrence
+- Case-sensitive matching option
+- Trim whitespace option
+- Sort output alphabetically option
+- Total, unique, duplicate and empty line stats
+- Removed duplicate lines preview
+- Quick text, email, keyword and ID examples
+- Copy input and cleaned output actions
+- Duplicate line removal guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.33.0 - Line Counter Tool
 
 ## Added
