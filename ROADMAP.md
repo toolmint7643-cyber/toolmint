@@ -50,7 +50,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] BMI Calculator
 - [x] GST Calculator
 - [x] EMI Calculator
-- [ ] Date Difference Calculator
+- [x] Date Difference Calculator
 - [x] Discount Calculator
 - [x] Land Area Converter
 ---
@@ -60,7 +60,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] JWT Decoder
 - [x] URL Encoder / Decoder
 - [ ] URL Parser
-- [ ] Hash Generator
+- [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator
 - [ ] HTML Formatter

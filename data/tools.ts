@@ -105,6 +105,19 @@ export const tools = [
     "Decode JSON Web Tokens, inspect header and payload, check expiry time and read JWT claims instantly.",
   href: "/jwt-decoder",
   category: "Developer",
-  
+ },
+ {
+  title: "Hash Generator",
+  description:
+    "Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes online for text, files, checksums and HMAC signatures.",
+  href: "/hash-generator",
+  category: "Developer",
+},
+{
+  title: "Date Difference Calculator",
+  description:
+    "Calculate days between dates, date duration, weekdays, weekends, total weeks and add or subtract days from any date.",
+  href: "/date-difference-calculator",
+  category: "Calculator",
 },
 ];

@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.18.0 - Date Difference Calculator Tool
+
+## Added
+
+- Date Difference Calculator tool
+- Start date and end date calculation
+- Include end date option
+- Calendar difference in years, months and days
+- Total days, total weeks, weekdays and weekends display
+- Add or subtract days from date utility
+- Quick date examples
+- Copy result and reset actions
+- Date calculation guidance and SEO content
+- Calculator category homepage entry
+
+---
+
+# v0.17.0 - Hash Generator Tool
+
+## Added
+
+- Hash Generator tool
+- Real MD5 hash generation
+- SHA-1, SHA-256, SHA-384 and SHA-512 hash generation
+- File checksum generator
+- HMAC SHA-256, SHA-384 and SHA-512 generator
+- SHA-256 hash comparison tool
+- Uppercase and lowercase hash output toggle
+- Copy individual hash and copy all actions
+- Hash usage guidance and safety notes
+- Developer category homepage entry
+
+---
+
 # v0.16.0 - JWT Decoder Tool
 
 ## Added

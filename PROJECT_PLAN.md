@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 17 / 100+
+Tools Completed: 19 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -36,7 +36,8 @@ Status: In Progress
 - [x] Base64 Encoder / Decoder
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
-### Calculator Tools
+- [x] Hash Generator
+- ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
 - [x] GST Calculator
@@ -50,6 +51,7 @@ Status: In Progress
 - [x] BMI Calculator
 - [x] EMI Calculator
 - [x] Land Area Converter
+- [x] Date Difference Calculator
 ---
 
 ## Next Priority Tools
@@ -63,7 +65,7 @@ Status: In Progress
 - [x] GST Calculator
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
-- [ ] Hash Generator
+- [x] Hash Generator
 - [ ] Image Compressor
 
 ---
@@ -86,7 +88,7 @@ Status: In Progress
 - [x] JWT Decoder
 - [ ] URL Parser
 - [ ] Regex Tester
-- [ ] Hash Generator
+- [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator
 - [ ] Barcode Generator
@@ -122,7 +124,7 @@ Status: In Progress
 - [x] Discount Calculator
 - [x] Land Area Converter
 - [ ] Currency Converter
-- [ ] Date Difference Calculator
+- [x] Date Difference Calculator
 - [ ] SIP Calculator
 - [ ] Compound Interest Calculator
 - [ ] Simple Interest Calculator
