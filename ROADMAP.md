@@ -69,6 +69,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] SQL Formatter
 - [x] Regex Tester
 - [x] JSON Validator
+- [x] JSON Minifier
 ---
 
 # Phase 5 - Image and PDF Tools

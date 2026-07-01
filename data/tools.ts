@@ -134,4 +134,11 @@ export const tools = [
   href: "/url-parser",
   category: "Developer",
 },
+{
+  title: "JSON Minifier",
+  description:
+    "Minify JSON online, compress JSON, remove whitespace and reduce JSON size instantly.",
+  href: "/json-minifier",
+  category: "Developer",
+},
 ];

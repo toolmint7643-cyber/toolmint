@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.22.0 - JSON Minifier Tool
+
+## Added
+
+- JSON Minifier tool
+- JSON validation before minification
+- Whitespace and line break removal
+- Original size, minified size, saved bytes and reduction percentage
+- JSON error message and line/column helper
+- Quick JSON examples
+- Copy input and minified JSON actions
+- JSON minification guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.21.0 - Regex Tester Tool
 
 ## Added
