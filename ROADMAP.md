@@ -72,6 +72,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] JSON Validator
 - [x] JSON Minifier
 - [x] Markdown Preview
+- [x] HTML Minifier
 ---
 
 # Phase 5 - Image and PDF Tools

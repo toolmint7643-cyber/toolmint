@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.29.0 - HTML Minifier Tool
+
+## Added
+
+- HTML Minifier tool
+- HTML comment removal option
+- Whitespace and line break compression
+- Original size, minified size, saved bytes and reduction percentage
+- Quick HTML examples
+- Copy input and minified output actions
+- HTML minification guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.28.0 - SQL Formatter Tool
 
 ## Added

@@ -183,4 +183,11 @@ export const tools = [
   href: "/sql-formatter",
   category: "Developer",
 },
+{
+  title: "HTML Minifier",
+  description:
+    "Minify HTML online, compress HTML code, remove comments, collapse whitespace and reduce HTML size instantly.",
+  href: "/html-minifier",
+  category: "Developer",
+},
 ];

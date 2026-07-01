@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 29 / 100+
+Tools Completed: 30 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -87,7 +87,7 @@ Status: In Progress
 - [ ] XML Formatter
 - [ ] YAML Formatter
 - [x] HTML Formatter
-- [ ] HTML Minifier
+- [x] HTML Minifier
 - [x] CSS Formatter
 - [ ] CSS Minifier
 - [x] JavaScript Formatter
