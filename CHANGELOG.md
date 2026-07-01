@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.24.0 - HTML Formatter Tool
+
+## Added
+
+- HTML Formatter tool
+- Format and beautify HTML code
+- Minify HTML output
+- 2-space and 4-space indentation options
+- HTML tag, link, image, comment and size stats
+- Browser HTML parse status
+- Quick HTML examples
+- Copy input and output actions
+- HTML formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.23.0 - Markdown Preview Tool
 
 ## Added

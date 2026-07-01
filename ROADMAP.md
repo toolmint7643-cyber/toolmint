@@ -63,7 +63,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator
-- [ ] HTML Formatter
+- [x] HTML Formatter
 - [ ] CSS Formatter
 - [ ] JavaScript Formatter
 - [ ] SQL Formatter

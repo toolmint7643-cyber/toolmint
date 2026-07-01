@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 24 / 100+
+Tools Completed: 25 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -42,6 +42,7 @@ Status: In Progress
 - [x] Regex Tester
 - [x] JSON Minifier
 - [x] Markdown Preview
+- [x] HTML Formatter
 - ### Calculator Tools
 - [x] Age Calculator
 - [x] Percentage Calculator
@@ -81,7 +82,7 @@ Status: In Progress
 - [x] JSON Minifier
 - [ ] XML Formatter
 - [ ] YAML Formatter
-- [ ] HTML Formatter
+- [x] HTML Formatter
 - [ ] HTML Minifier
 - [ ] CSS Formatter
 - [ ] CSS Minifier

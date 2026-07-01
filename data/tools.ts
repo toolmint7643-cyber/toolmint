@@ -148,4 +148,11 @@ export const tools = [
   href: "/markdown-preview",
   category: "Developer",
 },
+{
+  title: "HTML Formatter",
+  description:
+    "Format HTML online, beautify HTML code, minify HTML, fix indentation and inspect tags, links and images instantly.",
+  href: "/html-formatter",
+  category: "Developer",
+},
 ];
