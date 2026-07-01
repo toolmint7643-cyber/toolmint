@@ -77,4 +77,11 @@ export const tools = [
     href: "/emi-calculator",
     category: "Calculator",
   },
+  {
+  title: "Land Area Converter",
+  description:
+    "Convert land and plot area between square feet, square meter, square yard, acre, hectare, bigha, marla and more.",
+    href: "/land-area-converter",
+    category: "Calculator",
+}
 ];

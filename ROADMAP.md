@@ -52,6 +52,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] EMI Calculator
 - [ ] Date Difference Calculator
 - [x] Discount Calculator
+- [x] Land Area Converter
 ---
 
 # Phase 4 - Core Developer Tools

@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.14.0 - Land Area Converter Tool
+
+## Added
+
+- Land Area Converter tool
+- Square feet, square meter and square yard conversion
+- Acre, hectare and guntha conversion
+- Marla, kanal, bigha and biswa conversion
+- Region-based bigha and biswa conversion
+- Quick plot size examples
+- Copy result and reset actions
+- Calculator category homepage entry
+
+---
+
 # v0.13.0 - EMI Calculator Tool
 
 ## Added

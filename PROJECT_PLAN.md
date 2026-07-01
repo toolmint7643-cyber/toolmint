@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 14 / 100+
+Tools Completed: 15 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -48,6 +48,7 @@ Status: In Progress
 - [x] Discount Calculator
 - [x] BMI Calculator
 - [x] EMI Calculator
+- [x] Land Area Converter
 ---
 
 ## Next Priority Tools
@@ -57,7 +58,7 @@ Status: In Progress
 - [x] Character Counter
 - [x] Case Converter
 - [x] Percentage Calculator
-- [ ] BMI Calculator
+- [x] BMI Calculator
 - [x] GST Calculator
 - [ ] URL Encoder / Decoder
 - [ ] JWT Decoder
@@ -116,8 +117,9 @@ Status: In Progress
 - [x] GST Calculator
 - [x] EMI Calculator
 - [x] BMI Calculator
-- [ ] Loan Calculator
+- [x] Loan Calculator
 - [x] Discount Calculator
+- [x] Land Area Converter
 - [ ] Currency Converter
 - [ ] Date Difference Calculator
 - [ ] SIP Calculator
