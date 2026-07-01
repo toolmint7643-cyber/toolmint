@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.32.0 - YAML Formatter Tool
+
+## Added
+
+- YAML Formatter tool
+- Real YAML parsing and validation
+- Format YAML output
+- YAML to JSON conversion
+- YAML line, key, list, comment and size stats
+- Quick YAML examples
+- Copy input and output actions
+- YAML formatting guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.31.0 - XML Formatter Tool
 
 ## Added

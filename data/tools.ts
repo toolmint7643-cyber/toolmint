@@ -204,4 +204,11 @@ export const tools = [
   href: "/xml-formatter",
   category: "Developer",
 },
+{
+  title: "YAML Formatter",
+  description:
+    "Format YAML online, validate YAML syntax, convert YAML to JSON and inspect keys, lists, comments and file size instantly.",
+  href: "/yaml-formatter",
+  category: "Developer",
+},
 ];

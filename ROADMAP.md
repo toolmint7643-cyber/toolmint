@@ -75,6 +75,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Markdown Preview
 - [x] HTML Minifier
 - [x] XML Formatter
+- [x] YAML Formatter
 ---
 
 # Phase 5 - Image and PDF Tools
