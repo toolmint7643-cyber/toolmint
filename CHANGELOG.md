@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.20.0 - URL Parser Tool
+
+## Added
+
+- URL Parser tool
+- URL validation status
+- Protocol, origin, hostname, port, pathname and hash extraction
+- Query parameter table
+- Query parameters to JSON output
+- Decode query parameter option
+- Quick URL examples
+- Copy parsed result and query JSON actions
+- URL parsing guidance and SEO content
+- Developer category homepage entry
+
+---
+
+# v0.19.0 - JSON Validator Tool
+
+## Added
+
+- JSON Validator tool
+- JSON syntax validation
+- Valid and invalid JSON status display
+- JSON error message and line/column helper
+- Format JSON and minify JSON modes
+- JSON stats for objects, arrays, keys and size
+- Quick JSON examples
+- Copy input and output actions
+- JSON validation guidance and SEO content
+- Developer category homepage entry
+
+---
+
 # v0.18.0 - Date Difference Calculator Tool
 
 ## Added

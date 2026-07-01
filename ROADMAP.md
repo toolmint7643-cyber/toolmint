@@ -59,7 +59,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 - [x] JWT Decoder
 - [x] URL Encoder / Decoder
-- [ ] URL Parser
+- [x] URL Parser
 - [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator
@@ -68,7 +68,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] JavaScript Formatter
 - [ ] SQL Formatter
 - [ ] Regex Tester
-
+- [x] JSON Validator
 ---
 
 # Phase 5 - Image and PDF Tools

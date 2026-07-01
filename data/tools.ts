@@ -120,4 +120,18 @@ export const tools = [
   href: "/date-difference-calculator",
   category: "Calculator",
 },
+{
+  title: "JSON Validator",
+  description:
+    "Validate JSON online, check JSON syntax errors, format JSON, minify JSON and inspect objects, arrays and keys instantly.",
+  href: "/json-validator",
+  category: "Developer",
+},
+{
+  title: "URL Parser",
+  description:
+    "Parse URLs online, extract protocol, hostname, path, port, hash fragment and query parameters instantly.",
+  href: "/url-parser",
+  category: "Developer",
+},
 ];
