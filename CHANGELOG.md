@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.33.0 - Line Counter Tool
+
+## Added
+
+- Line Counter tool
+- Total line count
+- Non-empty and empty line counts
+- Word, character and paragraph counts
+- Longest line length display
+- Quick text examples
+- Copy text, clear and reset actions
+- Line counting guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.32.0 - YAML Formatter Tool
 
 ## Added

@@ -211,4 +211,11 @@ export const tools = [
   href: "/yaml-formatter",
   category: "Developer",
 },
+{
+  title: "Line Counter",
+  description:
+    "Count lines online, including total lines, non-empty lines, empty lines, words, characters and paragraphs instantly.",
+  href: "/line-counter",
+  category: "Text",
+},
 ];

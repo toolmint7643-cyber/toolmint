@@ -53,6 +53,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Date Difference Calculator
 - [x] Discount Calculator
 - [x] Land Area Converter
+- [x] Line Counter
 ---
 
 # Phase 4 - Core Developer Tools
