@@ -246,4 +246,11 @@ export const tools = [
   href: "/text-reverser",
   category: "Text",
 },
+{
+  title: "Slug Generator",
+  description:
+    "Generate SEO-friendly URL slugs online from titles, headings, product names and blog post ideas instantly.",
+  href: "/slug-generator",
+  category: "Text",
+},
 ];

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.38.0 - Slug Generator Tool
+
+## Added
+
+- Slug Generator tool
+- SEO-friendly URL slug generation
+- Hyphen and underscore separator options
+- Lowercase conversion option
+- Stop word removal option
+- Slug length, word and separator stats
+- Quick slug examples
+- Copy input and slug actions
+- URL slug guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.37.0 - Text Reverser Tool
 
 ## Added
