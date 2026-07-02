@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 39 / 100+
+Tools Completed: 40 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -32,6 +32,7 @@ Status: In Progress
 - [x] Text Sorter
 - [x] Text Reverser
 - [x] Slug Generator
+- [x] Find & Replace
 
 
 ### Developer Tools
@@ -127,7 +128,7 @@ Status: In Progress
 - [x] Text Reverser
 - [ ] Lorem Ipsum Generator
 - [x] Slug Generator
-- [ ] Find & Replace
+- [x] Find & Replace
 - [ ] Text Compare
 - [ ] Password Strength Checker
 

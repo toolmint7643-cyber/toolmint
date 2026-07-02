@@ -59,6 +59,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Text Sorter
 - [x] Text Reverser
 - [x] Slug Generator
+- [x] Find & Replace
 ---
 
 # Phase 4 - Core Developer Tools

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.39.0 - Find & Replace Tool
+
+## Added
+
+- Find & Replace tool
+- Replace first or replace all mode
+- Case-sensitive matching option
+- Regex mode for pattern replacement
+- Match count display
+- Output preview
+- Quick brand, spacing, number and email replacement examples
+- Copy input and replaced output actions
+- Find and replace guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.38.0 - Slug Generator Tool
 
 ## Added

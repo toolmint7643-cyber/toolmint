@@ -253,4 +253,11 @@ export const tools = [
   href: "/slug-generator",
   category: "Text",
 },
+{
+  title: "Find & Replace",
+  description:
+    "Find and replace text online, replace words, remove patterns, use regex mode and copy cleaned text instantly.",
+  href: "/find-replace",
+  category: "Text",
+},
 ];
