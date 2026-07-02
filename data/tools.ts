@@ -232,4 +232,11 @@ export const tools = [
   href: "/remove-empty-lines",
   category: "Text",
 },
+{
+  title: "Text Sorter",
+  description:
+    "Sort text lines online alphabetically, reverse order, by line length, remove empty lines and organize lists instantly.",
+  href: "/text-sorter",
+  category: "Text",
+},
 ];

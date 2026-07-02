@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.36.0 - Text Sorter Tool
+
+## Added
+
+- Text Sorter tool
+- A to Z and Z to A line sorting
+- Sort by shortest or longest line
+- Case-sensitive sorting option
+- Trim spaces, remove empty lines and remove duplicate lines options
+- Total, sorted, empty, duplicate and longest line stats
+- Quick text, keyword, email and mixed length examples
+- Copy input and sorted output actions
+- Text sorting guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.35.0 - Remove Empty Lines Tool
 
 ## Added

@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 36 / 100+
+Tools Completed: 37 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -29,6 +29,7 @@ Status: In Progress
 - [x] Line Counter
 - [x] Remove Duplicate Lines
 - [x] Remove Empty Lines
+- [x] Text Sorter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -119,7 +120,7 @@ Status: In Progress
 - [x] Case Converter
 - [x] Remove Duplicate Lines
 - [x] Remove Empty Lines
-- [ ] Text Sorter
+- [x] Text Sorter
 - [ ] Text Reverser
 - [ ] Lorem Ipsum Generator
 - [ ] Slug Generator

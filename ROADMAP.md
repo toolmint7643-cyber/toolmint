@@ -56,7 +56,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Line Counter
 - [x] Remove Duplicate Lines
 - [x] Remove Empty Lines
-
+- [x] Text Sorter
 ---
 
 # Phase 4 - Core Developer Tools
