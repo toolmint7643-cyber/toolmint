@@ -57,6 +57,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Remove Duplicate Lines
 - [x] Remove Empty Lines
 - [x] Text Sorter
+- [x] Text Reverser
 ---
 
 # Phase 4 - Core Developer Tools

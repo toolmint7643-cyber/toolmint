@@ -239,4 +239,11 @@ export const tools = [
   href: "/text-sorter",
   category: "Text",
 },
+{
+  title: "Text Reverser",
+  description:
+    "Reverse text online, reverse characters, words, lines and word order instantly with a free text reverser tool.",
+  href: "/text-reverser",
+  category: "Text",
+},
 ];

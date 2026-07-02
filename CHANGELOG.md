@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.37.0 - Text Reverser Tool
+
+## Added
+
+- Text Reverser tool
+- Full text reverse mode
+- Reverse each word mode
+- Reverse lines mode
+- Reverse word order mode
+- Character, word and line stats
+- Quick text examples
+- Copy input and reversed output actions
+- Text reversing guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.36.0 - Text Sorter Tool
 
 ## Added
