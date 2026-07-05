@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.58.0 - Image to PDF Tool
+
+## Added
+
+- Image to PDF tool
+- Multiple image upload support
+- Browser-based PDF creation using pdf-lib
+- JPG, PNG, WEBP and browser-readable image support
+- Image order controls
+- A4, Letter and auto page size options
+- Auto, portrait and landscape orientation options
+- Fit page and fill page modes
+- Margin control
+- PDF size summary
+- Download PDF action
+- Copy result and reset actions
+- Large image size guidance note
+- Privacy note for local browser processing
+- Image and PDF category homepage entry
+
+---
+
 # v0.57.0 - PDF Split Tool
 
 ## Added

@@ -104,7 +104,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Merge
 - [x] PDF Split
 - [ ] PDF Compressor
-- [ ] Image to PDF
+- [x] Image to PDF
 - [x] WEBP Converter
 - [x] Image to Base64
 

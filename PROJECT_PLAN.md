@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 58 / 100+
+Tools Completed: 59 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -37,6 +37,7 @@ Status: In Progress
 - [x] Password Strength Checker
 - [x] Text Compare
 - [x] PDF Split
+- [x] Image to PDF
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -180,7 +181,7 @@ Status: In Progress
 - [x] PDF Merge
 - [x] PDF Split
 - [ ] PDF Compressor
-- [ ] Image to PDF
+- [x] Image to PDF
 
 ---
 

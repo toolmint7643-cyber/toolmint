@@ -379,4 +379,11 @@ export const tools = [
   href: "/pdf-split",
   category: "Image & PDF",
 },
+{
+  title: "Image to PDF",
+  description:
+    "Convert JPG, PNG and WEBP images to PDF online in your browser, arrange image order and download one PDF file.",
+  href: "/image-to-pdf",
+  category: "Image & PDF",
+},
 ];
