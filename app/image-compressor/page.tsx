@@ -16,6 +16,15 @@ const outputFormats = [
   { label: "WEBP", value: "image/webp", extension: "webp" },
 ] as const;
 
+const quickSizes = [
+  { label: "Social Post", width: 1080, height: 1080 },
+  { label: "Website", width: 1200, height: 800 },
+  { label: "Blog 16:9", width: 1280, height: 720 },
+  { label: "Full HD", width: 1920, height: 1080 },
+  { label: "Profile", width: 512, height: 512 },
+  { label: "Thumbnail", width: 300, height: 300 },
+];
+
 function formatBytes(bytes: number) {
   if (bytes === 0) return "0 B";
 
@@ -387,6 +396,31 @@ Quality: ${quality}%`;
                         className="w-full rounded-xl border border-slate-700 bg-slate-800 p-4 text-white outline-none focus:border-blue-500"
                       />
                     </label>
+                  </div>
+
+                  <div>
+                    <h3 className="mb-3 font-bold text-white">
+                      ⚡ Quick standard sizes
+                    </h3>
+
+                    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                      {quickSizes.map((size) => (
+                        <button
+                          key={size.label}
+                          type="button"
+                          onClick={() => {
+                            setMaxWidth(String(size.width));
+                            setMaxHeight(String(size.height));
+                          }}
+                          className="rounded-xl border border-slate-700 bg-slate-800 p-3 text-left text-sm font-bold text-slate-200 transition hover:border-blue-500 hover:text-blue-300"
+                        >
+                          <span className="block">{size.label}</span>
+                          <span className="mt-1 block text-xs font-normal text-slate-400">
+                            {size.width} x {size.height}
+                          </span>
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
