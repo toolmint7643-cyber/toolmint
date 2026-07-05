@@ -295,4 +295,11 @@ export const tools = [
   href: "/simple-interest-calculator",
   category: "Calculator",
 },
+{
+  title: "Compound Interest Calculator",
+  description:
+    "Calculate compound interest online, maturity amount, total interest and compare compound interest with simple interest instantly.",
+  href: "/compound-interest-calculator",
+  category: "Calculator",
+},
 ];

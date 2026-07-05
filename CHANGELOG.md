@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.45.0 - Compound Interest Calculator Tool
+
+## Added
+
+- Compound Interest Calculator tool
+- Principal amount, annual interest rate and time period inputs
+- Yearly, half-yearly, quarterly, monthly and daily compounding options
+- Maturity amount and compound interest display
+- Simple interest comparison
+- Extra earned and growth percentage display
+- Formula display
+- Quick compound interest examples
+- Copy result and reset actions
+- Compound interest guidance and SEO content
+- Calculator category homepage entry
+
+---
+
 # v0.44.0 - Simple Interest Calculator Tool
 
 ## Added
