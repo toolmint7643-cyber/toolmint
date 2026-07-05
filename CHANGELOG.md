@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.52.0 - JPG to PNG Converter Tool
+
+## Added
+
+- JPG to PNG Converter tool
+- JPG and JPEG upload support
+- Browser-based PNG conversion
+- Original JPG preview
+- Converted PNG preview
+- Original size and PNG size comparison
+- Image dimensions display
+- Download PNG action
+- Copy result and reset actions
+- JPG transparency note
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.51.0 - Image Converter Tool
 
 ## Added

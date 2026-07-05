@@ -99,7 +99,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Image Compressor
 - [x] Image Resizer
 - [x] Image Converter
-- [ ] JPG to PNG
+- [x] JPG to PNG
 - [ ] PNG to JPG
 - [ ] PDF Merge
 - [ ] PDF Split
