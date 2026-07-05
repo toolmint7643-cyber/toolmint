@@ -260,4 +260,11 @@ export const tools = [
   href: "/find-replace",
   category: "Text",
 },
+{
+  title: "Lorem Ipsum Generator",
+  description:
+    "Generate lorem ipsum dummy text online for designs, websites, mockups, layouts, blogs and content placeholders instantly.",
+  href: "/lorem-ipsum-generator",
+  category: "Text",
+},
 ];

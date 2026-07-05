@@ -60,6 +60,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Text Reverser
 - [x] Slug Generator
 - [x] Find & Replace
+- [x] Lorem Ipsum Generator
+
 ---
 
 # Phase 4 - Core Developer Tools

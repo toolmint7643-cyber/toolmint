@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.40.0 - Lorem Ipsum Generator Tool
+
+## Added
+
+- Lorem Ipsum Generator tool
+- Paragraph, sentence and word generation modes
+- Custom count input
+- Start with Lorem ipsum option
+- Word, character, sentence and paragraph stats
+- Quick generation presets
+- Copy generated text action
+- Lorem ipsum guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.39.0 - Find & Replace Tool
 
 ## Added
