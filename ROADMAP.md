@@ -64,6 +64,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Password Strength Checker
 - [x] Text Compare
 - [x] Loan Calculator
+- [x] Simple Interest Calculator
 
 ---
 

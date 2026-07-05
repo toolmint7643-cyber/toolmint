@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 44 / 100+
+Tools Completed: 45 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -66,6 +66,7 @@ Status: In Progress
 - [x] Discount Calculator
 - [x] BMI Calculator
 - [x] Loan Calculator
+- [x] Simple Interest Calculator
 
 ### Calculator Tools
 - [x] Age Calculator
@@ -151,7 +152,7 @@ Status: In Progress
 - [x] Date Difference Calculator
 - [ ] SIP Calculator
 - [ ] Compound Interest Calculator
-- [ ] Simple Interest Calculator
+- [x] Simple Interest Calculator
 
 ---
 

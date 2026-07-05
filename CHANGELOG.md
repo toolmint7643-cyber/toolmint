@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.44.0 - Simple Interest Calculator Tool
+
+## Added
+
+- Simple Interest Calculator tool
+- Principal amount, annual interest rate and time period inputs
+- Time unit support for years, months and days
+- Simple interest and total amount display
+- Monthly and yearly interest estimates
+- Formula display
+- Quick interest examples
+- Copy result and reset actions
+- Simple interest guidance and SEO content
+- Calculator category homepage entry
+
+---
+
 # v0.43.0 - Loan Calculator Tool
 
 ## Added

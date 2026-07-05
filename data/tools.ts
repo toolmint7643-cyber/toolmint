@@ -288,4 +288,11 @@ export const tools = [
   href: "/loan-calculator",
   category: "Calculator",
 },
+{
+  title: "Simple Interest Calculator",
+  description:
+    "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",
+  href: "/simple-interest-calculator",
+  category: "Calculator",
+},
 ];
