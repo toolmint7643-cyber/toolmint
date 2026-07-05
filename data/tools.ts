@@ -372,4 +372,11 @@ export const tools = [
   href: "/pdf-merge",
   category: "Image & PDF",
 },
+{
+  title: "PDF Split",
+  description:
+    "Split PDF files online in your browser, extract page ranges, custom pages or every page as separate PDF files.",
+  href: "/pdf-split",
+  category: "Image & PDF",
+},
 ];

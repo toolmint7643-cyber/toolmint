@@ -102,7 +102,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] JPG to PNG
 - [x] PNG to JPG
 - [x] PDF Merge
-- [ ] PDF Split
+- [x] PDF Split
 - [ ] PDF Compressor
 - [ ] Image to PDF
 - [x] WEBP Converter

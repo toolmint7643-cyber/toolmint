@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.57.0 - PDF Split Tool
+
+## Added
+
+- PDF Split tool
+- Single PDF upload support
+- Browser-based PDF splitting using pdf-lib
+- Page count detection
+- Extract page range mode
+- Extract custom pages mode
+- Split every page mode
+- Multiple PDF download results
+- Download all split PDFs as ZIP action
+- Large PDF warning
+- Copy result and reset actions
+- Encrypted PDF warning note
+- Privacy note for local browser processing
+- Image and PDF category homepage entry
+
+---
+
 # v0.56.0 - PDF Merge Tool
 
 ## Added

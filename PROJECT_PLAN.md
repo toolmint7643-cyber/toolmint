@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 57 / 100+
+Tools Completed: 58 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -36,6 +36,7 @@ Status: In Progress
 - [x] Lorem Ipsum Generator
 - [x] Password Strength Checker
 - [x] Text Compare
+- [x] PDF Split
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -102,6 +103,7 @@ Status: In Progress
 - [x] WEBP Converter
 - [x] Image to Base64
 - [x] PDF Merge
+
 
 ---
 
@@ -176,7 +178,7 @@ Status: In Progress
 - [x] WEBP Converter
 - [x] Image to Base64
 - [x] PDF Merge
-- [ ] PDF Split
+- [x] PDF Split
 - [ ] PDF Compressor
 - [ ] Image to PDF
 
