@@ -98,7 +98,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 - [x] Image Compressor
 - [x] Image Resizer
-- [ ] Image Converter
+- [x] Image Converter
 - [ ] JPG to PNG
 - [ ] PNG to JPG
 - [ ] PDF Merge

@@ -330,4 +330,11 @@ export const tools = [
   href: "/image-resizer",
   category: "Image & PDF",
 },
+{
+  title: "Image Converter",
+  description:
+    "Convert JPG, PNG, WEBP and AVIF images online in your browser with preview, quality control and instant download.",
+  href: "/image-converter",
+  category: "Image & PDF",
+},
 ];

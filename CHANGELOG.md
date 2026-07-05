@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.51.0 - Image Converter Tool
+
+## Added
+
+- Image Converter tool
+- JPG, PNG, WEBP and AVIF output options
+- Browser-based image conversion
+- Quality slider
+- JPG transparency background option
+- Original and converted image previews
+- Input format and output format display
+- Converted file size and size change display
+- Download converted image action
+- Copy result and reset actions
+- Format guidance cards
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.50.0 - Image Resizer Tool
 
 ## Added

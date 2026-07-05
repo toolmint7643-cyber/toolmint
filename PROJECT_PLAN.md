@@ -96,6 +96,7 @@ Status: In Progress
 - [x] Hash Generator
 - [x] Image Compressor
 - [x] Image Resizer
+- [x] Image Converter
 
 ---
 
@@ -164,7 +165,7 @@ Status: In Progress
 
 - [x] Image Compressor
 - [x] Image Resizer
-- [ ] Image Converter
+- [x] Image Converter
 - [ ] JPG to PNG
 - [ ] PNG to JPG
 - [ ] WEBP Converter
