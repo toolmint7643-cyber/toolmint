@@ -281,4 +281,11 @@ export const tools = [
   href: "/text-compare",
   category: "Text",
 },
+{
+  title: "Loan Calculator",
+  description:
+    "Calculate loan monthly payment, total interest, total payment and payoff estimate with extra monthly payment options.",
+  href: "/loan-calculator",
+  category: "Calculator",
+},
 ];

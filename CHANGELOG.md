@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.43.0 - Loan Calculator Tool
+
+## Added
+
+- Loan Calculator tool
+- Loan amount, interest rate and term inputs
+- Term mode in years or months
+- Monthly payment calculation
+- Total interest and total payment display
+- Principal and interest share breakdown
+- Extra monthly payment payoff estimate
+- Quick loan examples
+- Copy result and reset actions
+- Loan calculation guidance and SEO content
+- Calculator category homepage entry
+
+---
+
 # v0.42.0 - Text Compare Tool
 
 ## Added

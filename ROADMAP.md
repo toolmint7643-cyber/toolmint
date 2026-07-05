@@ -63,6 +63,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Lorem Ipsum Generator
 - [x] Password Strength Checker
 - [x] Text Compare
+- [x] Loan Calculator
 
 ---
 
