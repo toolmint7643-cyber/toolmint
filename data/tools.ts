@@ -302,4 +302,11 @@ export const tools = [
   href: "/compound-interest-calculator",
   category: "Calculator",
 },
+{
+  title: "SIP Calculator",
+  description:
+    "Calculate SIP maturity value, total invested amount and estimated returns for monthly mutual fund investments.",
+  href: "/sip-calculator",
+  category: "Calculator",
+},
 ];

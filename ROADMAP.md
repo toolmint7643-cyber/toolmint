@@ -66,6 +66,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Loan Calculator
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
+- [x] SIP Calculator
 
 ---
 

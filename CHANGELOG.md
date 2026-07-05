@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.46.0 - SIP Calculator Tool
+
+## Added
+
+- SIP Calculator tool
+- Monthly investment, expected return and duration inputs
+- Total invested amount display
+- Estimated returns display
+- Maturity value calculation
+- Return on investment percentage
+- Yearly SIP breakdown table
+- Quick SIP examples
+- Copy result and reset actions
+- SIP guidance and investment disclaimer
+- Calculator category homepage entry
+
+---
+
 # v0.45.0 - Compound Interest Calculator Tool
 
 ## Added
