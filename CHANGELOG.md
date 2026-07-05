@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.56.0 - PDF Merge Tool
+
+## Added
+
+- PDF Merge tool
+- Multiple PDF upload support
+- Browser-based PDF merging using pdf-lib
+- PDF page count detection
+- PDF order controls
+- Remove PDF action
+- Total files, pages and size summary
+- Download merged PDF action
+- Copy result and reset actions
+- Encrypted PDF warning note
+- Privacy note for local browser processing
+- Image and PDF category homepage entry
+
+---
+
 # v0.55.0 - Image to Base64 Tool
 
 ## Added

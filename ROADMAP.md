@@ -101,7 +101,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Image Converter
 - [x] JPG to PNG
 - [x] PNG to JPG
-- [ ] PDF Merge
+- [x] PDF Merge
 - [ ] PDF Split
 - [ ] PDF Compressor
 - [ ] Image to PDF

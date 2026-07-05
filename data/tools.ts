@@ -365,4 +365,11 @@ export const tools = [
   href: "/image-to-base64",
   category: "Image & PDF",
 },
+{
+  title: "PDF Merge",
+  description:
+    "Merge multiple PDF files online in your browser, reorder documents, combine pages and download one merged PDF.",
+  href: "/pdf-merge",
+  category: "Image & PDF",
+},
 ];
