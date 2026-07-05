@@ -323,4 +323,11 @@ export const tools = [
   href: "/image-compressor",
   category: "Image",
 },
+{
+  title: "Image Resizer",
+  description:
+    "Resize JPG, PNG and WEBP images online with custom width, height, aspect ratio lock, crop mode and quick standard sizes.",
+  href: "/image-resizer",
+  category: "Image & PDF",
+},
 ];

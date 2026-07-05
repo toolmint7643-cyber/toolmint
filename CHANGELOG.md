@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.50.0 - Image Resizer Tool
+
+## Added
+
+- Image Resizer tool
+- Browser-based image resizing
+- Width and height controls
+- Lock aspect ratio option
+- Fit, stretch and crop resize modes
+- Quick standard size presets
+- JPEG, PNG and WEBP output formats
+- Quality slider
+- Original and resized image previews
+- Download resized image action
+- Copy result and reset actions
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.49.0 - Image Compressor Tool
 
 ## Added
