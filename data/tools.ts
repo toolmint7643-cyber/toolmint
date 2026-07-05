@@ -309,4 +309,11 @@ export const tools = [
   href: "/sip-calculator",
   category: "Calculator",
 },
+{
+  title: "Currency Converter",
+  description:
+    "Convert USD, INR, EUR, GBP, AED and more currencies with live exchange rates, manual fallback and quick copy result.",
+  href: "/currency-converter",
+  category: "Calculator",
+},
 ];

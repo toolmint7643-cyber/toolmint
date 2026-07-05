@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 47 / 100+
+Tools Completed: 48 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -69,6 +69,7 @@ Status: In Progress
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
+- [x] Currency Converter
 
 ### Calculator Tools
 - [x] Age Calculator
@@ -150,7 +151,7 @@ Status: In Progress
 - [x] Loan Calculator
 - [x] Discount Calculator
 - [x] Land Area Converter
-- [ ] Currency Converter
+- [x] Currency Converter
 - [x] Date Difference Calculator
 - [x] SIP Calculator
 - [x] Compound Interest Calculator

@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.47.0 - Currency Converter Tool
+
+## Added
+
+- Currency Converter tool
+- Live currency exchange rate API route
+- Public API fallback without API key
+- Manual exchange rate fallback
+- Amount, from currency and to currency inputs
+- Live and manual rate modes
+- Swap currencies action
+- Converted amount and exchange rate display
+- Popular currency quick examples
+- Copy result and reset actions
+- Currency conversion guidance and rate disclaimer
+- Calculator category homepage entry
+
+---
+
 # v0.46.0 - SIP Calculator Tool
 
 ## Added
