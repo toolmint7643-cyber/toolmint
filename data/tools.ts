@@ -316,4 +316,11 @@ export const tools = [
   href: "/currency-converter",
   category: "Calculator",
 },
+{
+  title: "Image Compressor",
+  description:
+    "Compress JPG, PNG and WEBP images online, reduce image size, resize dimensions and download optimized images instantly.",
+  href: "/image-compressor",
+  category: "Image",
+},
 ];

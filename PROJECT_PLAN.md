@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 48 / 100+
+Tools Completed: 50 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -94,7 +94,7 @@ Status: In Progress
 - [x] URL Encoder / Decoder
 - [x] JWT Decoder
 - [x] Hash Generator
-- [ ] Image Compressor
+- [x] Image Compressor
 
 ---
 
@@ -161,7 +161,7 @@ Status: In Progress
 
 ## Planned Image and PDF Tools
 
-- [ ] Image Compressor
+- [x] Image Compressor
 - [ ] Image Resizer
 - [ ] Image Converter
 - [ ] JPG to PNG

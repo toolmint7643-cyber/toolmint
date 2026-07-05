@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.49.0 - Image Compressor Tool
+
+## Added
+
+- Image Compressor tool
+- JPG, PNG and WEBP image upload support
+- Browser-based image compression
+- Quality slider
+- Output format selector
+- Max width and max height resize controls
+- Original and compressed image previews
+- Original size, compressed size and saved percentage display
+- Download compressed image action
+- Copy result and reset actions
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.47.0 - Currency Converter Tool
 
 ## Added

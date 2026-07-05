@@ -96,7 +96,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 # Phase 5 - Image and PDF Tools
 
-- [ ] Image Compressor
+- [x] Image Compressor
 - [ ] Image Resizer
 - [ ] Image Converter
 - [ ] JPG to PNG
