@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.41.0 - Password Strength Checker Tool
+
+## Added
+
+- Password Strength Checker tool
+- Password score and strength status
+- Show and hide password option
+- Length, uppercase, lowercase, number and symbol checks
+- Common password and repeated character warnings
+- Estimated crack time display
+- Password improvement suggestions
+- Quick password examples
+- Privacy and password safety guidance
+- Text category homepage entry
+
+---
+
 # v0.40.0 - Lorem Ipsum Generator Tool
 
 ## Added

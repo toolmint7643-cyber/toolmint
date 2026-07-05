@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 41 / 100+
+Tools Completed: 42 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -34,6 +34,7 @@ Status: In Progress
 - [x] Slug Generator
 - [x] Find & Replace
 - [x] Lorem Ipsum Generator
+- [x] Password Strength Checker
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -130,7 +131,7 @@ Status: In Progress
 - [x] Slug Generator
 - [x] Find & Replace
 - [ ] Text Compare
-- [ ] Password Strength Checker
+- [x] Password Strength Checker
 
 ---
 

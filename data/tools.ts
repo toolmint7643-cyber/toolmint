@@ -267,4 +267,11 @@ export const tools = [
   href: "/lorem-ipsum-generator",
   category: "Text",
 },
+{
+  title: "Password Strength Checker",
+  description:
+    "Check password strength online, test password security, view strength score, get improvement tips and privacy-friendly feedback instantly.",
+  href: "/password-strength-checker",
+  category: "Text",
+},
 ];
