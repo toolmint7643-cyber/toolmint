@@ -100,7 +100,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Image Resizer
 - [x] Image Converter
 - [x] JPG to PNG
-- [ ] PNG to JPG
+- [x] PNG to JPG
 - [ ] PDF Merge
 - [ ] PDF Split
 - [ ] PDF Compressor

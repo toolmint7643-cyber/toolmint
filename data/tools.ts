@@ -344,4 +344,11 @@ export const tools = [
   href: "/jpg-to-png",
   category: "Image & PDF",
 },
+{
+  title: "PNG to JPG",
+  description:
+    "Convert PNG images to JPG online in your browser with quality control, background color, preview and instant download.",
+  href: "/png-to-jpg",
+  category: "Image & PDF",
+},
 ];

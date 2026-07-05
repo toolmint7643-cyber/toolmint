@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 53 / 100+
+Tools Completed: 54 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -98,6 +98,7 @@ Status: In Progress
 - [x] Image Resizer
 - [x] Image Converter
 - [x] JPG to PNG
+- [x] PNG to JPG
 
 ---
 
@@ -168,7 +169,7 @@ Status: In Progress
 - [x] Image Resizer
 - [x] Image Converter
 - [x] JPG to PNG
-- [ ] PNG to JPG
+- [x] PNG to JPG
 - [ ] WEBP Converter
 - [ ] Image to Base64
 - [ ] PDF Merge
