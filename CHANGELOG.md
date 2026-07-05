@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.59.0 - Barcode Generator Tool
+
+## Added
+
+- Barcode Generator tool
+- CODE128 barcode support
+- EAN-13 barcode support
+- UPC barcode support
+- ITF-14 barcode support
+- MSI barcode support
+- Pharmacode barcode support
+- Live SVG barcode preview
+- Bar width, height, font size and margin controls
+- Line color and background color controls
+- Display value toggle
+- Download SVG action
+- Download PNG action
+- Copy value, copy result, sample and reset actions
+- Barcode format guidance
+- Developer category homepage entry
+
+---
+
 # v0.58.0 - Image to PDF Tool
 
 ## Added

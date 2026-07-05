@@ -386,4 +386,11 @@ export const tools = [
   href: "/image-to-pdf",
   category: "Image & PDF",
 },
+{
+  title: "Barcode Generator",
+  description:
+    "Generate CODE128, EAN-13, UPC, ITF-14, MSI and Pharmacode barcodes online with SVG and PNG download.",
+  href: "/barcode-generator",
+  category: "Developer",
+},
 ];

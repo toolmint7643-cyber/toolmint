@@ -68,6 +68,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
 - [x] Currency Converter
+- [x] Barcode Generator
 
 ---
 

@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 59 / 100+
+Tools Completed: 60 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -129,7 +129,7 @@ Status: In Progress
 - [x] Hash Generator
 - [ ] SHA256 Generator
 - [ ] MD5 Generator
-- [ ] Barcode Generator
+- [x] Barcode Generator
 
 ---
 
