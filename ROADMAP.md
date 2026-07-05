@@ -106,6 +106,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] PDF Compressor
 - [ ] Image to PDF
 - [x] WEBP Converter
+- [x] Image to Base64
 
 ---
 

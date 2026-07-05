@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.55.0 - Image to Base64 Tool
+
+## Added
+
+- Image to Base64 tool
+- Browser-based image to Base64 conversion
+- Full Data URL generation
+- Base64-only output
+- Image preview
+- MIME type display
+- Original size and Base64 size comparison
+- Copy Base64 and copy Data URL actions
+- Download Base64 result as TXT
+- Copy result and reset actions
+- Base64 usage guidance note
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.54.0 - WEBP Converter Tool
 
 ## Added

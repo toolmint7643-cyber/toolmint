@@ -358,4 +358,11 @@ export const tools = [
   href: "/webp-converter",
   category: "Image & PDF",
 },
+{
+  title: "Image to Base64",
+  description:
+    "Convert images to Base64 online in your browser, generate Data URL, copy Base64 code and download the result as text.",
+  href: "/image-to-base64",
+  category: "Image & PDF",
+},
 ];

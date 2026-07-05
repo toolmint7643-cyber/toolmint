@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 55 / 100+
+Tools Completed: 56 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -100,6 +100,7 @@ Status: In Progress
 - [x] JPG to PNG
 - [x] PNG to JPG
 - [x] WEBP Converter
+- [x] Image to Base64
 
 ---
 
@@ -172,7 +173,7 @@ Status: In Progress
 - [x] JPG to PNG
 - [x] PNG to JPG
 - [x] WEBP Converter
-- [ ] Image to Base64
+- [x] Image to Base64
 - [ ] PDF Merge
 - [ ] PDF Split
 - [ ] PDF Compressor
