@@ -62,6 +62,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Find & Replace
 - [x] Lorem Ipsum Generator
 - [x] Password Strength Checker
+- [x] Text Compare
 
 ---
 

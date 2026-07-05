@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.42.0 - Text Compare Tool
+
+## Added
+
+- Text Compare tool
+- Original and changed text inputs
+- Line-by-line text comparison
+- Added, removed, changed and unchanged line status
+- Ignore case option
+- Ignore whitespace option
+- Difference summary stats
+- Copy comparison summary action
+- Text comparison guidance and SEO content
+- Text category homepage entry
+
+---
+
 # v0.41.0 - Password Strength Checker Tool
 
 ## Added

@@ -274,4 +274,11 @@ export const tools = [
   href: "/password-strength-checker",
   category: "Text",
 },
+{
+  title: "Text Compare",
+  description:
+    "Compare text online, check differences line by line, find added, removed and changed lines instantly.",
+  href: "/text-compare",
+  category: "Text",
+},
 ];
