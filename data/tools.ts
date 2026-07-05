@@ -351,4 +351,11 @@ export const tools = [
   href: "/png-to-jpg",
   category: "Image & PDF",
 },
+{
+  title: "WEBP Converter",
+  description:
+    "Convert images to WEBP, WEBP to JPG and WEBP to PNG online in your browser with preview, quality control and instant download.",
+  href: "/webp-converter",
+  category: "Image & PDF",
+},
 ];

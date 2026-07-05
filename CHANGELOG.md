@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.54.0 - WEBP Converter Tool
+
+## Added
+
+- WEBP Converter tool
+- Image to WEBP conversion
+- WEBP to JPG conversion
+- WEBP to PNG conversion
+- Browser-based image conversion
+- Quality slider
+- JPG background color option
+- Original and converted image previews
+- File size and size change display
+- Download converted image action
+- Copy result and reset actions
+- WEBP support guidance note
+- Privacy note for local browser processing
+- Image category homepage entry
+
+---
+
 # v0.53.0 - PNG to JPG Converter Tool
 
 ## Added
