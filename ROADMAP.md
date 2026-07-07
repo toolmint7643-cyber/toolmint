@@ -25,6 +25,12 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] BMI Calculator
 - [x] EMI Calculator
 ---
+# Phase 8 - Color Tools
+
+- [x] Color Picker
+- [ ] Gradient Generator
+- [ ] Color Palette Generator
+- [ ] Contrast Checker
 
 # Phase 2 - Homepage and UI Upgrade
 

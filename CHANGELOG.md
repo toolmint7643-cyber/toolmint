@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.62.0 - Color Picker Tool
+
+## Added
+
+- Color Picker tool
+- Visual color input
+- HEX color input
+- HEX to RGB conversion
+- HEX to HSL conversion
+- HEX to HSV conversion
+- HEX to CMYK conversion
+- Copy HEX, RGB, HSL, HSV and CMYK actions
+- Copy all color values action
+- Random color action
+- Recent colors list
+- Quick palette shades
+- Contrast text suggestion
+- Color category homepage entry
+
+---
+
 # v0.61.0 - MD5 Generator Tool
 
 ## Added

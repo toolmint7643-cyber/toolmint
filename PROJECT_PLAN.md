@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 62 / 100+
+Tools Completed: 63 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -85,6 +85,8 @@ Status: In Progress
 - [x] Land Area Converter
 - [x] Date Difference Calculator
 ---
+### Color Tools
+- [x] Color Picker
 
 ## Next Priority Tools
 
@@ -186,6 +188,8 @@ Status: In Progress
 - [x] Image to PDF
 
 ---
+### Color Tools
+- [x] Color Picker
 
 ## Homepage Features
 

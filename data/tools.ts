@@ -407,4 +407,11 @@ export const tools = [
   href: "/md5-generator",
   category: "Developer",
 },
+{
+  title: "Color Picker",
+  description:
+    "Pick colors and convert HEX to RGB, HSL, HSV and CMYK online with copy-ready color values.",
+  href: "/color-picker",
+  category: "Color",
+},
 ];
