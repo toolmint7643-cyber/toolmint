@@ -414,4 +414,11 @@ export const tools = [
   href: "/color-picker",
   category: "Color",
 },
+{
+  title: "Contrast Checker",
+  description:
+    "Check color contrast ratio for foreground and background colors using WCAG AA and AAA accessibility standards.",
+  href: "/contrast-checker",
+  category: "Color",
+},
 ];

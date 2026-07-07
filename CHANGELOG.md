@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.63.0 - Contrast Checker Tool
+
+## Added
+
+- Contrast Checker tool
+- Foreground and background color inputs
+- HEX color picker support
+- WCAG contrast ratio calculation
+- AA normal text result
+- AA large text result
+- AAA normal text result
+- AAA large text result
+- Live preview section
+- Swap colors action
+- Accessible color pair action
+- Random colors action
+- Copy contrast report action
+- Color accessibility guidance
+- Color category homepage entry
+
+---
+
 # v0.62.0 - Color Picker Tool
 
 ## Added

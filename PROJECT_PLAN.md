@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 63 / 100+
+Tools Completed: 64 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -87,6 +87,7 @@ Status: In Progress
 ---
 ### Color Tools
 - [x] Color Picker
+- [x] Contrast Checker
 
 ## Next Priority Tools
 
