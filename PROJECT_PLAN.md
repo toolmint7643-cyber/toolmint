@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 60 / 100+
+Tools Completed: 61 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -60,6 +60,7 @@ Status: In Progress
 - [x] SQL Formatter
 - [x] XML Formatter
 - [x] YAML Formatter
+- [x] SHA256 Generator
 
 - ### Calculator Tools
 - [x] Age Calculator
@@ -127,7 +128,7 @@ Status: In Progress
 - [x] URL Parser
 - [x] Regex Tester
 - [x] Hash Generator
-- [ ] SHA256 Generator
+- [x] SHA256 Generator
 - [ ] MD5 Generator
 - [x] Barcode Generator
 

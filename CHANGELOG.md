@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.60.0 - SHA256 Generator Tool
+
+## Added
+
+- SHA256 Generator tool
+- Text to SHA-256 hash generation
+- File to SHA-256 hash generation
+- Real browser Web Crypto API hashing
+- Uppercase and lowercase hash output option
+- Copy hash and copy result actions
+- Download hash as TXT action
+- Sample input and reset actions
+- One-way hash explanation note
+- Privacy note for local browser processing
+- Developer category homepage entry
+
+---
+
 # v0.59.0 - Barcode Generator Tool
 
 ## Added

@@ -393,4 +393,11 @@ export const tools = [
   href: "/barcode-generator",
   category: "Developer",
 },
+{
+  title: "SHA256 Generator",
+  description:
+    "Generate real SHA-256 hashes from text or files online in your browser using the Web Crypto API.",
+  href: "/sha256-generator",
+  category: "Developer",
+},
 ];
