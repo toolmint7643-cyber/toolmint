@@ -29,7 +29,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 - [x] Color Picker
 - [x] Gradient Generator
-- [ ] Color Palette Generator
+- [x] Color Palette Generator
 - [x] Contrast Checker
 
 # Phase 2 - Homepage and UI Upgrade

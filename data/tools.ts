@@ -428,4 +428,11 @@ export const tools = [
   href: "/gradient-generator",
   category: "Color",
 },
+{
+  title: "Color Palette Generator",
+  description:
+    "Generate random, analogous, complementary, triadic and monochrome color palettes with copy-ready HEX and CSS variables.",
+  href: "/color-palette-generator",
+  category: "Color",
+},
 ];

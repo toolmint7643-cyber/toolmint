@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 65 / 100+
+Tools Completed: 66 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -89,6 +89,7 @@ Status: In Progress
 - [x] Color Picker
 - [x] Contrast Checker
 - [x] Gradient Generator
+- [x] Color Palette Generator
 
 ## Next Priority Tools
 

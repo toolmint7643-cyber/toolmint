@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.65.0 - Color Palette Generator Tool
+
+## Added
+
+- Color Palette Generator tool
+- Random palette generation
+- Base color input
+- Analogous harmony mode
+- Complementary harmony mode
+- Triadic harmony mode
+- Monochrome harmony mode
+- Five-color palette preview
+- Individual HEX copy actions
+- Copy full palette action
+- Copy CSS variables action
+- Lock and unlock color controls
+- Randomize unlocked colors action
+- Color palette guidance content
+- Color category homepage entry
+
+---
+
 # v0.64.0 - Gradient Generator Tool
 
 ## Added
