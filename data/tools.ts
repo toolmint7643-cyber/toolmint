@@ -400,4 +400,11 @@ export const tools = [
   href: "/sha256-generator",
   category: "Developer",
 },
+{
+  title: "MD5 Generator",
+  description:
+    "Generate real MD5 hashes from text or files online in your browser with copy and download options.",
+  href: "/md5-generator",
+  category: "Developer",
+},
 ];

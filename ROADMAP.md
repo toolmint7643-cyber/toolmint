@@ -79,7 +79,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] URL Parser
 - [x] Hash Generator
 - [x] SHA256 Generator
-- [ ] MD5 Generator
+- [x] MD5 Generator
 - [x] HTML Formatter
 - [x] CSS Formatter
 - [x] CSS Minifier

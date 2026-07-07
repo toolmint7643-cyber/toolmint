@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.61.0 - MD5 Generator Tool
+
+## Added
+
+- MD5 Generator tool
+- Text to MD5 hash generation
+- File to MD5 hash generation
+- Dependency-free real MD5 hashing
+- Uppercase and lowercase hash output option
+- Copy hash and copy result actions
+- Download hash as TXT action
+- Sample input and reset actions
+- MD5 security warning note
+- Privacy note for local browser processing
+- Developer category homepage entry
+
+---
+
 # v0.60.0 - SHA256 Generator Tool
 
 ## Added
