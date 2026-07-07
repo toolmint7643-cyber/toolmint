@@ -421,4 +421,11 @@ export const tools = [
   href: "/contrast-checker",
   category: "Color",
 },
+{
+  title: "Gradient Generator",
+  description:
+    "Create CSS linear and radial gradients online with live preview, presets, random gradients and copy-ready CSS code.",
+  href: "/gradient-generator",
+  category: "Color",
+},
 ];

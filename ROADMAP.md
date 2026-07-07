@@ -28,7 +28,7 @@ Build one of the best free online developer and productivity tool websites with 
 # Phase 8 - Color Tools
 
 - [x] Color Picker
-- [ ] Gradient Generator
+- [x] Gradient Generator
 - [ ] Color Palette Generator
 - [x] Contrast Checker
 

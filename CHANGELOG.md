@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.64.0 - Gradient Generator Tool
+
+## Added
+
+- Gradient Generator tool
+- Linear gradient mode
+- Radial gradient mode
+- Start color and end color controls
+- Angle slider for linear gradients
+- Live gradient preview
+- Copy CSS action
+- Copy React style action
+- Swap colors action
+- Random gradient action
+- Gradient preset cards
+- Reset action
+- Color category homepage entry
+
+---
+
 # v0.63.0 - Contrast Checker Tool
 
 ## Added
