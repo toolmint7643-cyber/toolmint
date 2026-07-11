@@ -442,4 +442,11 @@ export const tools = [
   href: "/seo-meta-tag-generator",
   category: "SEO",
 },
+{
+  title: "Robots.txt Generator",
+  description:
+    "Create robots.txt files online with allow, disallow, sitemap, crawl delay and custom search engine crawler rules.",
+  href: "/robots-txt-generator",
+  category: "SEO",
+},
 ];

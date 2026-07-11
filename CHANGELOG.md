@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.67.0 - Robots.txt Generator Tool
+
+## Added
+
+- Robots.txt Generator tool
+- Allow all crawlers mode
+- Block all crawlers mode
+- Custom crawler rules mode
+- User-agent input
+- Allow paths input
+- Disallow paths input
+- Sitemap URL input
+- Crawl delay input
+- Host URL input
+- Generated robots.txt output
+- Copy robots.txt action
+- Download robots.txt action
+- Sample and reset actions
+- Block all warning note
+- SEO category homepage entry
+
+---
+
 # v0.66.0 - SEO Meta Tag Generator Tool
 
 ## Added
