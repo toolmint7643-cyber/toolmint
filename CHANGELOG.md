@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.66.0 - SEO Meta Tag Generator Tool
+
+## Added
+
+- SEO Meta Tag Generator tool
+- Page title input
+- Meta description input
+- Keywords input
+- Canonical URL input
+- Robots meta option
+- Author meta option
+- Open Graph tag inputs
+- Twitter card tag inputs
+- Generated HTML meta tags output
+- Copy all tags action
+- Sample and reset actions
+- Search preview card
+- Social preview card
+- SEO length guidance
+- SEO category homepage entry
+
+---
+
 # v0.65.0 - Color Palette Generator Tool
 
 ## Added

@@ -435,4 +435,11 @@ export const tools = [
   href: "/color-palette-generator",
   category: "Color",
 },
+{
+  title: "SEO Meta Tag Generator",
+  description:
+    "Generate SEO meta tags, Open Graph tags and Twitter card tags for websites with live previews and copy-ready HTML.",
+  href: "/seo-meta-tag-generator",
+  category: "SEO",
+},
 ];

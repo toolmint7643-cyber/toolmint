@@ -128,7 +128,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] Blog or guide pages
 - [ ] Google Search Console
 - [ ] Google Analytics
-
+- [x] SEO Meta Tag Generator
 ---
 
 # Phase 7 - Launch and Monetization
