@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.78.0 - Robots Meta Tag Generator Tool
+
+## Added
+
+- Robots Meta Tag Generator tool
+- Index and noindex selector
+- Follow and nofollow selector
+- Noarchive option
+- Nosnippet option
+- Noimageindex option
+- Max snippet setting
+- Max image preview selector
+- Max video preview setting
+- Optional googlebot meta tag
+- Optional bingbot meta tag
+- Generated robots meta tags output
+- Copy tags action
+- Sample and reset actions
+- SEO robots directive guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.77.0 - Noindex Nofollow Checker Tool
 
 ## Added

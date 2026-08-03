@@ -519,4 +519,11 @@ export const tools = [
   href: "/noindex-nofollow-checker",
   category: "SEO",
 },
+{
+  title: "Robots Meta Tag Generator",
+  description:
+    "Generate robots meta tags for index, noindex, follow, nofollow, snippets, image previews and crawler directives.",
+  href: "/robots-meta-tag-generator",
+  category: "SEO",
+},
 ];

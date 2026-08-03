@@ -139,6 +139,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Canonical URL Checker
 - [x] Broken Link Checker
 - [x] Noindex Nofollow Checker
+- [x] Robots Meta Tag Generator
 ---
 
 # Phase 7 - Launch and Monetization
