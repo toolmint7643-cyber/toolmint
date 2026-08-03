@@ -470,4 +470,11 @@ export const tools = [
   href: "/google-serp-preview-generator",
   category: "SEO",
 },
+{
+  title: "Meta Description Generator",
+  description:
+    "Generate SEO-friendly meta description ideas with keyword, audience, tone and character length guidance.",
+  href: "/meta-description-generator",
+  category: "SEO",
+},
 ];

@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.71.0 - Meta Description Generator Tool
+
+## Added
+
+- Meta Description Generator tool
+- Page title input
+- Main keyword input
+- Extra keywords input
+- Target audience input
+- Tone selector
+- Six meta description suggestions
+- Recommended description highlight
+- Character count and length status for every suggestion
+- Copy single description action
+- Copy all descriptions action
+- Sample and reset actions
+- SEO writing guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.70.0 - Google SERP Preview Generator Tool
 
 ## Added

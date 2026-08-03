@@ -132,6 +132,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Robots.txt Generator
 - [x] Open Graph Preview Generator
 - [x] Google SERP Preview Generator
+- [x] Meta Description Generator
 ---
 
 # Phase 7 - Launch and Monetization
