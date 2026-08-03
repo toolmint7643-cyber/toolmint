@@ -498,4 +498,11 @@ export const tools = [
   href: "/alt-text-checker",
   category: "SEO",
 },
+{
+  title: "Canonical URL Checker",
+  description:
+    "Check canonical tags, missing canonical URLs, duplicate canonical tags and SEO canonical issues from a URL or HTML.",
+  href: "/canonical-url-checker",
+  category: "SEO",
+},
 ];

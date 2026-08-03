@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.75.0 - Canonical URL Checker Tool
+
+## Added
+
+- Canonical URL Checker tool
+- Backend API route to fetch page HTML
+- URL mode for single page canonical checks
+- Manual HTML paste mode
+- Canonical tag extraction
+- Missing canonical warning
+- Multiple canonical warning
+- Empty canonical href warning
+- Relative or invalid canonical warning
+- Canonical vs source URL comparison
+- SEO score summary
+- Copy report action
+- Sample and reset actions
+- SEO canonical guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.74.0 - Alt Text Checker Tool
 
 ## Added

@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 75 / 100+
+Tools Completed: 76 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -102,6 +102,7 @@ Status: In Progress
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
+- [x] Canonical URL Checker
 
 ### High SEO Priority
 - [x] Word Counter
@@ -217,6 +218,8 @@ Status: In Progress
 - [x] Meta Description Generator
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
+- [x] Canonical URL Checker
+
 ## Homepage Features
 
 - [x] Dynamic Homepage
