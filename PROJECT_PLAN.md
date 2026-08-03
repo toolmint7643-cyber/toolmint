@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 69 / 100+
+Tools Completed: 70 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -96,6 +96,7 @@ Status: In Progress
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
 - [x] Sitemap Generator
+- [x] Open Graph Preview Generator
 
 ### High SEO Priority
 - [x] Word Counter
@@ -203,7 +204,7 @@ Status: In Progress
 ## Planned SEO Tools
 
 - [x] SEO Meta Tag Generator
-- [ ] Open Graph Preview
+- [x] Open Graph Preview
 - [x] Robots.txt Generator
 - [x] Sitemap Generator
 - [ ] Keyword Density Checker

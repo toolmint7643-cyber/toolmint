@@ -130,6 +130,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] Google Analytics
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
+- [x] Open Graph Preview Generator
 ---
 
 # Phase 7 - Launch and Monetization

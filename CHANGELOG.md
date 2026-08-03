@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.69.0 - Open Graph Preview Generator Tool
+
+## Added
+
+- Open Graph Preview Generator tool
+- Backend API route to fetch Open Graph tags
+- URL based OG title, description, image and site name fetching
+- Manual Open Graph tag editor
+- Twitter Card meta tag support
+- Live social preview card
+- Generated meta tags output
+- Copy tags action
+- Sample and reset actions
+- SEO and image guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.68.0 - Sitemap Generator Tool
 
 ## Added

@@ -456,4 +456,11 @@ export const tools = [
   href: "/sitemap-generator",
   category: "SEO",
 },
+{
+  title: "Open Graph Preview Generator",
+  description:
+    "Fetch, preview and generate Open Graph and Twitter Card meta tags for SEO-friendly social sharing.",
+  href: "/open-graph-preview-generator",
+  category: "SEO",
+},
 ];
