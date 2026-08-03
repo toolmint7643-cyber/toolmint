@@ -140,6 +140,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Broken Link Checker
 - [x] Noindex Nofollow Checker
 - [x] Robots Meta Tag Generator
+- [x] Structured data (Schema Markup Generator)
 ---
 
 # Phase 7 - Launch and Monetization

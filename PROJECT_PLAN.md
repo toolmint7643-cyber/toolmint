@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 79 / 100+
+Tools Completed: 80 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -106,6 +106,7 @@ Status: In Progress
 - [x] Broken Link Checker
 - [x] Noindex Nofollow Checker
 - [x] Robots Meta Tag Generator
+- [x] Schema Markup Generator
 
 ### High SEO Priority
 - [x] Word Counter
@@ -225,6 +226,7 @@ Status: In Progress
 - [x] Broken Link Checker
 - [x] Noindex Nofollow Checker
 - [x] Robots Meta Tag Generator
+- [x] Schema Markup Generator
 
 ## Homepage Features
 

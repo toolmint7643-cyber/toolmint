@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.79.0 - Schema Markup Generator Tool
+
+## Added
+
+- Schema Markup Generator tool
+- Website schema generator
+- Organization schema generator
+- Article schema generator
+- FAQ schema generator
+- Breadcrumb schema generator
+- Product schema generator
+- JSON-LD script output
+- Copy full script action
+- Copy JSON only action
+- Sample and reset actions
+- Structured data SEO guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.78.0 - Robots Meta Tag Generator Tool
 
 ## Added

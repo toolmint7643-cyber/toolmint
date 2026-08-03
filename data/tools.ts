@@ -526,4 +526,11 @@ export const tools = [
   href: "/robots-meta-tag-generator",
   category: "SEO",
 },
+{
+  title: "Schema Markup Generator",
+  description:
+    "Generate JSON-LD structured data for Website, Organization, Article, FAQ, Breadcrumb and Product schema.",
+  href: "/schema-markup-generator",
+  category: "SEO",
+},
 ];
