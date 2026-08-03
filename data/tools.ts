@@ -491,4 +491,11 @@ export const tools = [
   href: "/heading-tag-checker",
   category: "SEO",
 },
+{
+  title: "Alt Text Checker",
+  description:
+    "Check image alt text for SEO and accessibility issues including missing, empty, duplicate and long alt attributes.",
+  href: "/alt-text-checker",
+  category: "SEO",
+},
 ];

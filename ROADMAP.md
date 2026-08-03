@@ -135,6 +135,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker
+- [x] Alt Text Checker
 ---
 
 # Phase 7 - Launch and Monetization

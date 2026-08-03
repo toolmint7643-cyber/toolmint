@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.74.0 - Alt Text Checker Tool
+
+## Added
+
+- Alt Text Checker tool
+- Backend API route to fetch page HTML
+- URL mode for single page image checks
+- Manual HTML paste mode
+- Image tag extraction
+- Missing alt attribute warning
+- Empty alt text warning
+- Long alt text warning
+- Duplicate alt text warning
+- Alt text score summary
+- Image source and alt result list
+- Copy report action
+- Sample and reset actions
+- SEO and accessibility guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.73.0 - Heading Tag Checker Tool
 
 ## Added
