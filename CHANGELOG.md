@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.72.0 - Keyword Density Checker Tool
+
+## Added
+
+- Keyword Density Checker tool
+- Content textarea input
+- Target keyword input
+- Word and character counters
+- Target keyword count
+- Keyword density percentage
+- Keyword density status indicator
+- Top single-word keyword analysis
+- Top 2-word phrase analysis
+- Top 3-word phrase analysis
+- Stop words ignore option
+- Copy report action
+- Sample and reset actions
+- SEO guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.71.0 - Meta Description Generator Tool
 
 ## Added

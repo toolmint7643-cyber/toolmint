@@ -133,6 +133,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Open Graph Preview Generator
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
+- [x] Keyword Density Checker
 ---
 
 # Phase 7 - Launch and Monetization

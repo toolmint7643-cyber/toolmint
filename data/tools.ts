@@ -477,4 +477,11 @@ export const tools = [
   href: "/meta-description-generator",
   category: "SEO",
 },
+{
+  title: "Keyword Density Checker",
+  description:
+    "Check keyword density, target keyword count, top repeated words and SEO phrase frequency in your content.",
+  href: "/keyword-density-checker",
+  category: "SEO",
+},
 ];
