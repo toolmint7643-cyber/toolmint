@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.68.0 - Sitemap Generator Tool
+
+## Added
+
+- Sitemap Generator tool
+- Website base URL input
+- Page URLs and paths textarea
+- XML sitemap generation
+- Last modified date option
+- Change frequency selector
+- Priority setting
+- Include or remove lastmod, changefreq and priority fields
+- Valid and invalid URL counters
+- Copy sitemap XML action
+- Download sitemap.xml action
+- Sample and reset actions
+- SEO guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.67.0 - Robots.txt Generator Tool
 
 ## Added

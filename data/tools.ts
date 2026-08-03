@@ -449,4 +449,11 @@ export const tools = [
   href: "/robots-txt-generator",
   category: "SEO",
 },
+{
+  title: "Sitemap Generator",
+  description:
+    "Generate SEO-friendly XML sitemaps online with page URLs, last modified date, change frequency and priority settings.",
+  href: "/sitemap-generator",
+  category: "SEO",
+},
 ];

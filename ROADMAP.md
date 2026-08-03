@@ -119,7 +119,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 # Phase 6 - SEO and Growth
 
-- [ ] Sitemap
+- [x] Sitemap Generator
 - [ ] Robots.txt
 - [ ] Metadata for every tool
 - [ ] Open Graph images
