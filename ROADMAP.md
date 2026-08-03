@@ -138,6 +138,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Alt Text Checker
 - [x] Canonical URL Checker
 - [x] Broken Link Checker
+- [x] Noindex Nofollow Checker
 ---
 
 # Phase 7 - Launch and Monetization

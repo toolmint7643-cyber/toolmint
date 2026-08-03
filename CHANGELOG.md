@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.77.0 - Noindex Nofollow Checker Tool
+
+## Added
+
+- Noindex Nofollow Checker tool
+- Backend API route to fetch page HTML and X-Robots-Tag header
+- URL mode for single page indexability checks
+- Manual HTML paste mode
+- Robots meta tag extraction
+- Googlebot and Bingbot meta tag detection
+- X-Robots-Tag header input and detection
+- Noindex and nofollow detection
+- Noarchive, nosnippet and noimageindex detection
+- Indexable and followable status summary
+- Found directives list
+- Copy report action
+- Sample and reset actions
+- SEO indexability guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.76.0 - Broken Link Checker Tool
 
 ## Added

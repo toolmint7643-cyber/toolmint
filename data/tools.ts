@@ -512,4 +512,11 @@ export const tools = [
   href: "/broken-link-checker",
   category: "SEO",
 },
+{
+  title: "Noindex Nofollow Checker",
+  description:
+    "Check robots meta tags and X-Robots-Tag headers for noindex, nofollow, noarchive, nosnippet and indexability issues.",
+  href: "/noindex-nofollow-checker",
+  category: "SEO",
+},
 ];
