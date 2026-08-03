@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 76 / 100+
+Tools Completed: 77 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -103,6 +103,7 @@ Status: In Progress
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
 - [x] Canonical URL Checker
+- [x] Broken Link Checker
 
 ### High SEO Priority
 - [x] Word Counter
@@ -219,6 +220,7 @@ Status: In Progress
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
 - [x] Canonical URL Checker
+- [x] Broken Link Checker
 
 ## Homepage Features
 

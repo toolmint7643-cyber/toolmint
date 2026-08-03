@@ -137,6 +137,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
 - [x] Canonical URL Checker
+- [x] Broken Link Checker
 ---
 
 # Phase 7 - Launch and Monetization

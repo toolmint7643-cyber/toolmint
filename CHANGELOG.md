@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.76.0 - Broken Link Checker Tool
+
+## Added
+
+- Broken Link Checker tool
+- Backend API route to fetch page HTML
+- Backend API route to check link status
+- URL mode for single page link checks
+- Manual HTML paste mode
+- Anchor link extraction
+- Internal and external link classification
+- Special, hash and empty link handling
+- HTTP status checking with HEAD and GET fallback
+- Good, broken and unknown link status
+- Link summary dashboard
+- Copy report action
+- Sample and reset actions
+- SEO broken link guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.75.0 - Canonical URL Checker Tool
 
 ## Added

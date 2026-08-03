@@ -505,4 +505,11 @@ export const tools = [
   href: "/canonical-url-checker",
   category: "SEO",
 },
+{
+  title: "Broken Link Checker",
+  description:
+    "Find broken links, internal links, external links, duplicate links and unknown link status from a URL or HTML.",
+  href: "/broken-link-checker",
+  category: "SEO",
+},
 ];
