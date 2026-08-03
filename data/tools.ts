@@ -463,4 +463,11 @@ export const tools = [
   href: "/open-graph-preview-generator",
   category: "SEO",
 },
+{
+  title: "Google SERP Preview Generator",
+  description:
+    "Preview Google search result snippets with SEO title, URL and meta description length checks for desktop and mobile.",
+  href: "/google-serp-preview-generator",
+  category: "SEO",
+},
 ];

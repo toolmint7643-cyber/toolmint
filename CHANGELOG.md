@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.70.0 - Google SERP Preview Generator Tool
+
+## Added
+
+- Google SERP Preview Generator tool
+- SEO title input
+- Page URL input
+- Meta description input
+- Desktop Google search preview
+- Mobile Google search preview
+- Title character counter
+- Meta description character counter
+- Length status indicators
+- Copy title, description and full snippet actions
+- Sample and reset actions
+- SEO writing guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.69.0 - Open Graph Preview Generator Tool
 
 ## Added
