@@ -134,6 +134,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
+- [x] Heading Tag Checker
 ---
 
 # Phase 7 - Launch and Monetization

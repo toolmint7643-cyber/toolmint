@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 73 / 100+
+Tools Completed: 74 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -100,6 +100,7 @@ Status: In Progress
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
+- [x] Heading Tag Checker
 
 ### High SEO Priority
 - [x] Word Counter
@@ -213,6 +214,7 @@ Status: In Progress
 - [x] Keyword Density Checker
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
+- [x] Heading Tag Checker
 
 ## Homepage Features
 

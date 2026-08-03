@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.73.0 - Heading Tag Checker Tool
+
+## Added
+
+- Heading Tag Checker tool
+- Backend API route to fetch page HTML
+- URL mode for single page heading checks
+- Manual HTML paste mode
+- H1 to H6 heading extraction
+- Heading count summary
+- H1 count warnings
+- Empty heading warning
+- Heading order jump warnings
+- Heading structure preview
+- Copy report action
+- Sample and reset actions
+- SEO heading guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.72.0 - Keyword Density Checker Tool
 
 ## Added

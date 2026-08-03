@@ -484,4 +484,11 @@ export const tools = [
   href: "/keyword-density-checker",
   category: "SEO",
 },
+{
+  title: "Heading Tag Checker",
+  description:
+    "Check H1 to H6 heading tags, heading structure, H1 count, empty headings and SEO heading order issues.",
+  href: "/heading-tag-checker",
+  category: "SEO",
+},
 ];
