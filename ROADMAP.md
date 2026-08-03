@@ -141,6 +141,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Noindex Nofollow Checker
 - [x] Robots Meta Tag Generator
 - [x] Structured data (Schema Markup Generator)
+- [x] On-Page SEO Checker
 ---
 
 # Phase 7 - Launch and Monetization

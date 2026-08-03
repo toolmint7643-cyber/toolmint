@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.80.0 - On-Page SEO Checker Tool
+
+## Added
+
+- On-Page SEO Checker tool
+- Backend API route to fetch page HTML and X-Robots-Tag header
+- URL mode for single page SEO audits
+- Manual HTML paste mode
+- SEO title check
+- Meta description check
+- H1 and H2 heading checks
+- Canonical URL check
+- Robots noindex and nofollow checks
+- Image alt text summary
+- Open Graph check
+- Content length and link count checks
+- Overall SEO score
+- Copy report action
+- Sample and reset actions
+- On-page SEO guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.79.0 - Schema Markup Generator Tool
 
 ## Added
