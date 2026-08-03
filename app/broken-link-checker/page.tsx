@@ -7,11 +7,13 @@ import PageTitle from "@/components/PageTitle";
 import ToolCard from "@/components/ToolCard";
 import Button from "@/components/Button";
 
+type LinkKind = "http" | "internal" | "external" | "hash" | "mailto" | "tel" | "javascript" | "empty" | "other";
+
 type LinkItem = {
   href: string;
   text: string;
   absoluteUrl: string;
-  type: "internal" | "external" | "special" | "hash" | "empty";
+  kind: LinkKind;
   index: number;
 };
 
@@ -32,6 +34,10 @@ const sampleHtml = `<main>
   <a href="https://example.com/not-found-page">Broken example</a>
   <a href="#features">Features</a>
   <a href="mailto:hello@example.com">Email us</a>
+  <a href="tel:+919999999999">Call us</a>
+  <a href="javascript:void(0)">Unsafe JS link</a>
+  <a href="">Empty link</a>
+  <section id="features">Features section</section>
 </main>`;
 
 function getAttribute(tag: string, attribute: string) {
@@ -69,29 +75,6 @@ function getBaseUrl(value: string) {
   }
 }
 
-function getLinkType(href: string, absoluteUrl: string, sourceUrl: string): LinkItem["type"] {
-  if (!href.trim()) {
-    return "empty";
-  }
-
-  if (href.startsWith("#")) {
-    return "hash";
-  }
-
-  if (/^(mailto:|tel:|sms:|javascript:)/i.test(href)) {
-    return "special";
-  }
-
-  try {
-    const source = new URL(sourceUrl || "https://example.com");
-    const target = new URL(absoluteUrl);
-
-    return source.hostname === target.hostname ? "internal" : "external";
-  } catch {
-    return "external";
-  }
-}
-
 function makeAbsoluteUrl(href: string, sourceUrl: string) {
   if (!href.trim()) {
     return "";
@@ -108,6 +91,28 @@ function makeAbsoluteUrl(href: string, sourceUrl: string) {
   }
 }
 
+function getLinkKind(href: string, absoluteUrl: string, sourceUrl: string): LinkKind {
+  const cleanHref = href.trim();
+
+  if (!cleanHref) return "empty";
+  if (cleanHref.startsWith("#")) return "hash";
+  if (/^mailto:/i.test(cleanHref)) return "mailto";
+  if (/^tel:/i.test(cleanHref)) return "tel";
+  if (/^javascript:/i.test(cleanHref)) return "javascript";
+
+  if (/^https?:\/\//i.test(absoluteUrl)) {
+    try {
+      const source = new URL(sourceUrl || "https://example.com");
+      const target = new URL(absoluteUrl);
+      return source.hostname === target.hostname ? "internal" : "external";
+    } catch {
+      return "http";
+    }
+  }
+
+  return "other";
+}
+
 function extractLinks(html: string, sourceUrl: string): LinkItem[] {
   const links: LinkItem[] = [];
   const regex = /<a\b[^>]*>([\s\S]*?)<\/a>/gi;
@@ -120,13 +125,13 @@ function extractLinks(html: string, sourceUrl: string): LinkItem[] {
     const href = decodeHtml(getAttribute(tag, "href")).trim();
     const text = decodeHtml(stripTags(match[1] || ""));
     const absoluteUrl = makeAbsoluteUrl(href, sourceUrl);
-    const type = getLinkType(href, absoluteUrl, sourceUrl);
+    const kind = getLinkKind(href, absoluteUrl, sourceUrl);
 
     links.push({
       href,
       text,
       absoluteUrl,
-      type,
+      kind,
       index,
     });
 
@@ -134,6 +139,100 @@ function extractLinks(html: string, sourceUrl: string): LinkItem[] {
   }
 
   return links;
+}
+
+function htmlHasAnchor(html: string, hashHref: string) {
+  const id = hashHref.replace(/^#/, "").trim();
+
+  if (!id) {
+    return false;
+  }
+
+  const escapedId = id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const idRegex = new RegExp(`\\sid\\s*=\\s*["']${escapedId}["']`, "i");
+  const nameRegex = new RegExp(`\\sname\\s*=\\s*["']${escapedId}["']`, "i");
+
+  return idRegex.test(html) || nameRegex.test(html);
+}
+
+function validateEmailLink(href: string) {
+  const email = href.replace(/^mailto:/i, "").split("?")[0].trim();
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validateTelLink(href: string) {
+  const phone = href.replace(/^tel:/i, "").replace(/[()\s-]/g, "").trim();
+  return /^\+?[0-9]{7,15}$/.test(phone);
+}
+
+function getLocalStatus(link: LinkItem, html: string): LinkStatus | null {
+  if (link.kind === "hash") {
+    const found = htmlHasAnchor(html, link.href);
+
+    return {
+      url: link.absoluteUrl,
+      status: found ? 200 : 404,
+      statusText: found ? "Hash target found" : "Hash target missing",
+      type: found ? "good" : "broken",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  if (link.kind === "mailto") {
+    const valid = validateEmailLink(link.href);
+
+    return {
+      url: link.absoluteUrl,
+      status: valid ? 200 : 400,
+      statusText: valid ? "Valid email link" : "Invalid email link",
+      type: valid ? "good" : "broken",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  if (link.kind === "tel") {
+    const valid = validateTelLink(link.href);
+
+    return {
+      url: link.absoluteUrl,
+      status: valid ? 200 : 400,
+      statusText: valid ? "Valid phone link" : "Invalid phone link",
+      type: valid ? "good" : "broken",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  if (link.kind === "javascript") {
+    return {
+      url: link.absoluteUrl,
+      status: 400,
+      statusText: "Unsafe JavaScript link",
+      type: "broken",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  if (link.kind === "empty") {
+    return {
+      url: link.absoluteUrl || "(empty href)",
+      status: 400,
+      statusText: "Empty href",
+      type: "broken",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  if (link.kind === "other") {
+    return {
+      url: link.absoluteUrl,
+      status: 0,
+      statusText: "Unsupported link type",
+      type: "unknown",
+      finalUrl: link.absoluteUrl,
+    };
+  }
+
+  return null;
 }
 
 function getStatusStyle(type?: LinkStatus["type"]) {
@@ -180,50 +279,48 @@ export default function BrokenLinkCheckerPage() {
 
   const links = useMemo(() => extractLinks(html, sourceUrl), [html, sourceUrl]);
 
-  const checkableLinks = useMemo(
-    () =>
-      links.filter(
-        (link) => link.type === "internal" || link.type === "external"
-      ),
-    [links]
-  );
-
   const duplicateCount = useMemo(() => {
     const counts = new Map<string, number>();
 
-    checkableLinks.forEach((link) => {
-      counts.set(link.absoluteUrl, (counts.get(link.absoluteUrl) || 0) + 1);
+    links.forEach((link) => {
+      const key = link.absoluteUrl || link.href || `empty-${link.index}`;
+      counts.set(key, (counts.get(key) || 0) + 1);
     });
 
     return Array.from(counts.values()).filter((count) => count > 1).length;
-  }, [checkableLinks]);
+  }, [links]);
 
   const summary = useMemo(() => {
     const checkedStatuses = Object.values(statuses);
 
     return {
       total: links.length,
-      checkable: checkableLinks.length,
-      internal: links.filter((link) => link.type === "internal").length,
-      external: links.filter((link) => link.type === "external").length,
-      ignored: links.filter(
+      checked: checkedStatuses.length,
+      internal: links.filter((link) => link.kind === "internal").length,
+      external: links.filter((link) => link.kind === "external").length,
+      special: links.filter(
         (link) =>
-          link.type === "special" || link.type === "hash" || link.type === "empty"
+          link.kind === "hash" ||
+          link.kind === "mailto" ||
+          link.kind === "tel" ||
+          link.kind === "javascript" ||
+          link.kind === "empty" ||
+          link.kind === "other"
       ).length,
       good: checkedStatuses.filter((status) => status.type === "good").length,
       broken: checkedStatuses.filter((status) => status.type === "broken").length,
       unknown: checkedStatuses.filter((status) => status.type === "unknown").length,
     };
-  }, [links, checkableLinks, statuses]);
+  }, [links, statuses]);
 
   const report = `Broken Link Checker Report
 
 Source: ${mode === "url" ? sourceUrl || url : "Manual HTML"}
 Total links: ${summary.total}
-Checkable links: ${summary.checkable}
+Checked links: ${summary.checked}
 Internal links: ${summary.internal}
 External links: ${summary.external}
-Ignored links: ${summary.ignored}
+Special/local links: ${summary.special}
 Duplicate links: ${duplicateCount}
 
 Checked status:
@@ -234,11 +331,13 @@ Unknown: ${summary.unknown}
 Links:
 ${links
   .map((link) => {
-    const status = statuses[link.absoluteUrl];
+    const key = link.absoluteUrl || link.href || `empty-${link.index}`;
+    const status = statuses[key];
+
     return `${link.index + 1}. ${link.absoluteUrl || link.href || "(empty)"}
    Text: ${link.text || "(no text)"}
-   Type: ${link.type}
-   Status: ${status ? `${status.status || "Unknown"} ${status.statusText}` : "Not checked"}`;
+   Type: ${link.kind}
+   Status: ${status ? `${status.status || "Unknown"} ${status.statusText}` : "Not checked yet"}`;
   })
   .join("\n\n")}`;
 
@@ -276,8 +375,8 @@ ${links
   };
 
   const checkLinks = async () => {
-    if (checkableLinks.length === 0) {
-      alert("No checkable links found.");
+    if (links.length === 0) {
+      alert("No links found.");
       return;
     }
 
@@ -286,17 +385,26 @@ ${links
 
     const nextStatuses: Record<string, LinkStatus> = {};
 
-    for (const link of checkableLinks.slice(0, 40)) {
+    for (const link of links) {
+      const key = link.absoluteUrl || link.href || `empty-${link.index}`;
+      const localStatus = getLocalStatus(link, html);
+
+      if (localStatus) {
+        nextStatuses[key] = localStatus;
+        setStatuses({ ...nextStatuses });
+        continue;
+      }
+
       try {
         const response = await fetch(
           `/api/check-link-status?url=${encodeURIComponent(link.absoluteUrl)}`
         );
         const data = await response.json();
 
-        nextStatuses[link.absoluteUrl] = data as LinkStatus;
+        nextStatuses[key] = data as LinkStatus;
         setStatuses({ ...nextStatuses });
       } catch {
-        nextStatuses[link.absoluteUrl] = {
+        nextStatuses[key] = {
           url: link.absoluteUrl,
           status: 0,
           statusText: "Check failed",
@@ -308,7 +416,7 @@ ${links
     }
 
     setCheckingLinks(false);
-    alert("Link check completed!");
+    alert("All links checked!");
   };
 
   const copyReport = async () => {
@@ -341,7 +449,7 @@ ${links
       <main className="mx-auto max-w-7xl px-4 py-10">
         <PageTitle
           title="🔗 Broken Link Checker"
-          description="Find broken links, internal links, external links, duplicate links and unknown link status from a URL or HTML."
+          description="Find broken links, internal links, external links, hash links, email links, phone links and unsafe JavaScript links from a URL or HTML."
         />
 
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
@@ -352,8 +460,8 @@ ${links
                   🔎 Check Page Links
                 </h2>
                 <p className="text-slate-300">
-                  Fetch a page URL or paste HTML manually, then check link
-                  status from the backend.
+                  Fetch a page URL or paste HTML manually, then check every
+                  extracted link.
                 </p>
               </div>
 
@@ -418,7 +526,7 @@ ${links
 
               <div className="grid gap-3 sm:grid-cols-2">
                 <Button onClick={checkLinks}>
-                  {checkingLinks ? "⏳ Checking" : "✅ Check Link Status"}
+                  {checkingLinks ? "⏳ Checking" : "✅ Check All Links"}
                 </Button>
                 <Button onClick={copyReport}>📋 Copy Report</Button>
                 <Button onClick={loadSample}>✨ Sample</Button>
@@ -428,8 +536,8 @@ ${links
               </div>
 
               <p className="text-sm text-slate-400">
-                Free version checks first 40 links per run to keep the tool fast
-                and stable.
+                This tool checks HTTP links with backend requests and validates
+                hash, email, phone, JavaScript and empty links locally.
               </p>
             </div>
           </ToolCard>
@@ -453,6 +561,13 @@ ${links
                   </p>
                 </div>
 
+                <div className="rounded-xl border border-purple-500/30 bg-purple-500/10 p-4">
+                  <p className="text-sm text-slate-300">Checked</p>
+                  <p className="mt-1 text-3xl font-bold text-purple-300">
+                    {summary.checked}
+                  </p>
+                </div>
+
                 <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
                   <p className="text-sm text-slate-300">Good</p>
                   <p className="mt-1 text-3xl font-bold text-emerald-300">
@@ -464,13 +579,6 @@ ${links
                   <p className="text-sm text-slate-300">Broken</p>
                   <p className="mt-1 text-3xl font-bold text-red-300">
                     {summary.broken}
-                  </p>
-                </div>
-
-                <div className="rounded-xl border border-yellow-500/30 bg-yellow-500/10 p-4">
-                  <p className="text-sm text-slate-300">Unknown</p>
-                  <p className="mt-1 text-3xl font-bold text-yellow-300">
-                    {summary.unknown}
                   </p>
                 </div>
               </div>
@@ -491,9 +599,9 @@ ${links
                 </div>
 
                 <div className="rounded-xl border border-slate-700 bg-slate-900 p-4">
-                  <p className="text-sm text-slate-300">Ignored</p>
+                  <p className="text-sm text-slate-300">Special</p>
                   <p className="mt-1 text-2xl font-bold text-slate-100">
-                    {summary.ignored}
+                    {summary.special}
                   </p>
                 </div>
               </div>
@@ -510,11 +618,13 @@ ${links
                     summary.broken > 0 ? "text-red-300" : "text-emerald-300"
                   }`}
                 >
-                  {summary.broken > 0 ? "⚠️ Broken Links Found" : "✅ No Broken Links Found"}
+                  {summary.broken > 0
+                    ? "⚠️ Broken Links Found"
+                    : "✅ No Broken Links Found"}
                 </h3>
                 <p className="text-slate-200">
-                  Unknown links can happen when websites block automated
-                  requests or timeout.
+                  Unknown links usually mean the website blocked automated
+                  requests or timed out.
                 </p>
               </div>
             </div>
@@ -530,7 +640,8 @@ ${links
             </ToolCard>
           ) : (
             links.map((link) => {
-              const status = statuses[link.absoluteUrl];
+              const key = link.absoluteUrl || link.href || `empty-${link.index}`;
+              const status = statuses[key];
               const style = getStatusStyle(status?.type);
 
               return (
@@ -544,10 +655,10 @@ ${links
                         <span
                           className={`rounded-lg border px-3 py-1 text-sm font-bold ${style.bg} ${style.color}`}
                         >
-                          {status ? style.label : "Not Checked"}
+                          {status ? style.label : "Pending"}
                         </span>
                         <span className="rounded-lg border border-slate-700 bg-slate-800 px-3 py-1 text-sm font-bold text-slate-300">
-                          {link.type}
+                          {link.kind}
                         </span>
                         {status && (
                           <span className="text-sm text-slate-400">
@@ -589,8 +700,9 @@ ${links
               ✅ Best Practice
             </h2>
             <p className="text-slate-300">
-              Fix 404 links, update redirected links, and regularly check
-              important internal and external resources.
+              Fix 404 links, update redirected links, avoid empty href values
+              and replace unsafe JavaScript links with real buttons where
+              possible.
             </p>
           </ToolCard>
 
@@ -599,8 +711,8 @@ ${links
               ⚠️ Important Note
             </h2>
             <p className="text-slate-300">
-              Some websites block automated checks, so unknown status does not
-              always mean the link is broken.
+              Some websites block automated HTTP checks, so unknown status does
+              not always mean the link is broken.
             </p>
           </ToolCard>
         </div>
