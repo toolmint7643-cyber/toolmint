@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 84 / 100+
+Tools Completed: 85 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -130,8 +130,7 @@ Status: In Progress
 - [x] Image to Base64
 - [x] PDF Merge
 - [x] PDF to Image
-
-
+- [x] PDF Metadata Viewer
 
 ---
 
@@ -211,6 +210,7 @@ Status: In Progress
 - [x] Image to PDF
 - [x] PDF to Image
 - [x] PDF Rotate Pages
+- [x] PDF Metadata Viewer
 
 ---
 ### Color Tools

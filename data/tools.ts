@@ -561,4 +561,11 @@ export const tools = [
   href: "/pdf-rotate",
   category: "PDF",
 },
+{
+  title: "PDF Metadata Viewer",
+  description:
+    "View PDF title, author, subject, keywords, creator, producer, dates, page count and file size in your browser.",
+  href: "/pdf-metadata-viewer",
+  category: "PDF",
+},
 ];

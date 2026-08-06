@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.84.0 - PDF Metadata Viewer Tool
+
+## Added
+
+- PDF Metadata Viewer tool
+- Browser-side PDF metadata reading with pdf-lib
+- PDF title display
+- Author, subject and keywords display
+- Creator and producer display
+- Creation and modification date display
+- Page count and file size summary
+- Metadata fields found counter
+- Copy metadata report action
+- Privacy-friendly local processing note
+- PDF category homepage entry
+
+---
+
 # v0.83.0 - PDF Rotate Pages Tool
 
 ## Added
