@@ -540,4 +540,11 @@ export const tools = [
   href: "/on-page-seo-checker",
   category: "SEO",
 },
+{
+  title: "Page Size Checker",
+  description:
+    "Analyze real page HTML size, transfer size, response time, resource counts, compression headers and performance risk.",
+  href: "/page-size-checker",
+  category: "SEO",
+},
 ];

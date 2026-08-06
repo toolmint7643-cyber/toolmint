@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.81.0 - Page Size Checker Tool
+
+## Added
+
+- Page Size Checker tool
+- Backend API route to fetch real page HTML and headers
+- HTML size calculation
+- Transfer size and header size summary
+- Response time measurement
+- Content encoding and cache-control detection
+- Image, script, stylesheet, link, form, iframe and video counts
+- DOM element estimate
+- Performance risk score based on real page data
+- Optimization recommendations
+- Copy report action
+- Sample and reset actions
+- SEO performance guidance notes
+- SEO category homepage entry
+
+---
+
 # v0.80.0 - On-Page SEO Checker Tool
 
 ## Added

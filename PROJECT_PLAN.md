@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 81 / 100+
+Tools Completed: 82 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -108,6 +108,7 @@ Status: In Progress
 - [x] Robots Meta Tag Generator
 - [x] Schema Markup Generator
 - [x] On-Page SEO Checker
+- [x] Page Size Checker
 
 ### High SEO Priority
 - [x] Word Counter
@@ -229,6 +230,7 @@ Status: In Progress
 - [x] Robots Meta Tag Generator
 - [x] Schema Markup Generator
 - [x] On-Page SEO Checker
+- [x] Page Size Checker
 
 ## Homepage Features
 
