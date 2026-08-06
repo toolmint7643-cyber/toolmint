@@ -554,4 +554,11 @@ export const tools = [
   href: "/pdf-to-image-converter",
   category: "PDF",
 },
+{
+  title: "PDF Rotate Pages",
+  description:
+    "Rotate all PDF pages or selected PDF pages by 90, 180 or 270 degrees directly in your browser.",
+  href: "/pdf-rotate",
+  category: "PDF",
+},
 ];

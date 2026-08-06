@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 83 / 100+
+Tools Completed: 84 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -38,6 +38,7 @@ Status: In Progress
 - [x] Text Compare
 - [x] PDF Split
 - [x] Image to PDF
+- [x] PDF Rotate Pages
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -131,6 +132,7 @@ Status: In Progress
 - [x] PDF to Image
 
 
+
 ---
 
 ## Planned Developer Tools
@@ -208,6 +210,7 @@ Status: In Progress
 - [ ] PDF Compressor
 - [x] Image to PDF
 - [x] PDF to Image
+- [x] PDF Rotate Pages
 
 ---
 ### Color Tools

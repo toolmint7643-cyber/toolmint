@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.83.0 - PDF Rotate Pages Tool
+
+## Added
+
+- PDF Rotate Pages tool
+- Browser-side PDF rotation with pdf-lib
+- Rotate all pages option
+- Rotate page range option
+- Rotate custom pages option
+- 90, 180 and 270 degree rotation options
+- Rotated PDF download
+- PDF page count and file size summary
+- Copy rotation summary action
+- Privacy-friendly local processing note
+- PDF category homepage entry
+
+---
+
 # v0.82.0 - PDF to Image Converter Tool
 
 ## Added
