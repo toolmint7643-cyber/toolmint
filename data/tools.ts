@@ -547,4 +547,11 @@ export const tools = [
   href: "/page-size-checker",
   category: "SEO",
 },
+{
+  title: "PDF to Image Converter",
+  description:
+    "Convert PDF pages to PNG or JPG images in your browser with page range, quality and resolution options.",
+  href: "/pdf-to-image-converter",
+  category: "PDF",
+},
 ];

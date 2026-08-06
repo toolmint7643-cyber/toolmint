@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.82.0 - PDF to Image Converter Tool
+
+## Added
+
+- PDF to Image Converter tool
+- Browser-side PDF rendering with pdfjs-dist
+- PNG and JPG output formats
+- JPG quality control
+- Resolution scale options
+- Page range support
+- Converted page previews
+- Individual page download action
+- Download all converted images action
+- Copy conversion summary action
+- Privacy-friendly local conversion note
+- PDF category homepage entry
+
+---
+
 # v0.81.0 - Page Size Checker Tool
 
 ## Added
