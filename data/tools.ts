@@ -568,4 +568,11 @@ export const tools = [
   href: "/pdf-metadata-viewer",
   category: "PDF",
 },
+{
+  title: "PDF Metadata Remover",
+  description:
+    "Remove basic PDF document metadata like title, author, subject, keywords, creator and producer in your browser.",
+  href: "/pdf-metadata-cleaner",
+  category: "PDF",
+},
 ];

@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.85.0 - PDF Metadata Remover Tool
+
+## Added
+
+- PDF Metadata Remover tool
+- Browser-side PDF metadata cleaning with pdf-lib
+- Title, author, subject and keywords clearing
+- Creator and producer clearing
+- Optional creation and modification date reset
+- Original metadata preview
+- Cleaned PDF download
+- Copy cleaning summary action
+- Privacy-friendly local processing note
+- PDF category homepage entry
+
+---
+
 # v0.84.0 - PDF Metadata Viewer Tool
 
 ## Added

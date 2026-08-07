@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 85 / 100+
+Tools Completed: 86 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -131,6 +131,7 @@ Status: In Progress
 - [x] PDF Merge
 - [x] PDF to Image
 - [x] PDF Metadata Viewer
+- [x] PDF Metadata Remover
 
 ---
 
@@ -211,6 +212,7 @@ Status: In Progress
 - [x] PDF to Image
 - [x] PDF Rotate Pages
 - [x] PDF Metadata Viewer
+- [x] PDF Metadata Remover
 
 ---
 ### Color Tools
