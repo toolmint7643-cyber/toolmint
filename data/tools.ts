@@ -575,4 +575,10 @@ export const tools = [
   href: "/pdf-metadata-cleaner",
   category: "PDF",
 },
+{
+  title: "PDF Page Number Adder",
+  description: "Add page numbers to PDF online for free. Choose position, start number, style, color, margin, prefix, suffix and selected pages.",
+  href: "/pdf-page-number-adder",
+  category: "PDF",
+},
 ];

@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.87.0 - PDF Page Number Adder Tool
+
+## Added
+
+- PDF Page Number Adder tool
+- Page number position selector
+- Start number option
+- Font size, color and margin controls
+- Prefix and suffix support
+- Total page placeholder using {total}
+- Skip first page and skip last page options
+- Selected page range support
+- Odd pages only and even pages only modes
+- Roman and alphabet numbering styles
+- Text opacity control
+- Optional background box
+- Date with page number option
+- Batch multiple PDF processing
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.85.0 - PDF Metadata Remover Tool
 
 ## Added
