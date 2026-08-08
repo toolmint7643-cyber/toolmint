@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 88 / 100+
+Tools Completed: 89 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -40,6 +40,7 @@ Status: In Progress
 - [x] Image to PDF
 - [x] PDF Rotate Pages
 - [x] PDF Page Number Adder
+- [x] Delete PDF Pages
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -217,6 +218,7 @@ Status: In Progress
 - [x] PDF Metadata Remover
 - [x] PDF Page Number Adder
 - [x] Watermark PDF
+- [x] Delete PDF Pages
 
 ---
 ### Color Tools

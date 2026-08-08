@@ -588,4 +588,11 @@ export const tools = [
   href: "/watermark-pdf",
   category: "PDF",
 },
+{
+  title: "Delete PDF Pages",
+  description:
+    "Delete pages from PDF online for free. Remove selected pages, ranges, odd or even pages with visual thumbnails and browser-side privacy.",
+  href: "/delete-pdf-pages",
+  category: "PDF",
+},
 ];

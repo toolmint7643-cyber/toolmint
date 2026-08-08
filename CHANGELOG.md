@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.89.0 - Delete PDF Pages Tool
+
+## Added
+
+- Delete PDF Pages tool
+- Multiple PDF upload support
+- Drag and drop PDF upload
+- PDF file list with size, page count and status
+- Delete selected pages mode
+- Keep selected pages mode
+- Page range and custom page selection
+- Remove first page, last page, odd pages and even pages options
+- Visual PDF page thumbnails
+- Click-to-select page deletion
+- Select all and deselect all actions
+- Empty PDF protection
+- Batch PDF processing
+- Individual cleaned PDF downloads
+- Download all as ZIP
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.88.0 - Watermark PDF Tool
 
 ## Added

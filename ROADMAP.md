@@ -120,6 +120,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Metadata Remover
 - [x] PDF Page Number Adder
 - [x] Watermark PDF
+- [x] Delete PDF Pages
 
 ---
 
