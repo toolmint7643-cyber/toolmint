@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.97.0 - PDF Header/Footer Tool
+
+## Added
+
+- PDF Header/Footer tool
+- Browser-side PDF header and footer processing
+- PDF upload with drag and drop
+- Header enable and disable option
+- Footer enable and disable option
+- Header and footer text inputs
+- Left, center and right alignment options
+- Font size controls
+- Text color controls
+- Header and footer margin controls
+- All pages and selected pages modes
+- Page range parser for formats like 1, 1-3 and 1-3,7,10
+- Skip first page option
+- Skip last page option
+- Placeholder support for `{page}`, `{total}`, `{filename}`, `{date}` and `{time}`
+- Date format options
+- Quick presets for page number, confidential, draft, generated date and filename footer
+- Configuration preview
+- Overlap warning
+- Real page-by-page processing status
+- Download generated PDF action
+- Browser-side privacy note
+- PDF category homepage entry
+
+---
+
 # v0.96.0 - PDF Text Extractor Tool
 
 ## Added

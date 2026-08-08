@@ -644,4 +644,11 @@ export const tools = [
   href: "/pdf-text-extractor",
   category: "PDF",
 },
+{
+  title: "PDF Header/Footer",
+  description:
+    "Add headers and footers to PDF pages online in your browser with page numbers, filename, date, alignment, color and selected pages.",
+  href: "/pdf-header-footer",
+  category: "PDF",
+},
 ];

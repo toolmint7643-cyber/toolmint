@@ -144,6 +144,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] PDF Repair
 - [ ] PDF Security Info
 - [ ] PDF Protect / Password Protect
+- [x] PDF Header/Footer
 
 # Phase 6 - SEO and Growth
 
