@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.91.0 - Organize PDF Tool
+
+## Added
+
+- Organize PDF tool
+- Browser-side PDF page organization
+- PDF upload with drag and drop
+- Visual PDF page thumbnails
+- Drag and drop page reordering
+- Page selection
+- Move page left and right actions
+- Move page to start and end actions
+- Delete selected pages
+- Restore deleted pages
+- Duplicate selected pages
+- Rotate selected pages by 90 and 180 degrees
+- Undo and redo support
+- Reset arrangement action
+- Smart summary for deleted, duplicated, rotated and reordered pages
+- Organized PDF download
+- Copy summary action
+- Privacy-friendly local PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.90.0 - Extract PDF Pages Tool
 
 ## Added

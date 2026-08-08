@@ -602,4 +602,11 @@ export const tools = [
   href: "/extract-pdf-pages",
   category: "PDF",
 },
+{
+  title: "Organize PDF",
+  description:
+    "Organize PDF pages online for free. Reorder, delete, duplicate and rotate PDF pages visually with browser-side privacy.",
+  href: "/organize-pdf",
+  category: "PDF",
+},
 ];

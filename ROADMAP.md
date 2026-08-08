@@ -122,6 +122,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Watermark PDF
 - [x] Delete PDF Pages
 - [x] Extract PDF Pages
+- [x] Organize PDF
 
 ---
 
