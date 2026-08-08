@@ -581,4 +581,11 @@ export const tools = [
   href: "/pdf-page-number-adder",
   category: "PDF",
 },
+{
+  title: "Watermark PDF",
+  description:
+    "Add text or image watermark to PDF online for free. Create confidential, draft, sample or custom watermarks with opacity, rotation, position and selected pages.",
+  href: "/watermark-pdf",
+  category: "PDF",
+},
 ];

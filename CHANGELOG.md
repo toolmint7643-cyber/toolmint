@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.88.0 - Watermark PDF Tool
+
+## Added
+
+- Watermark PDF tool
+- Text watermark support
+- Image and logo watermark support
+- Drag and drop PDF upload
+- Multiple PDF batch processing
+- File list with page count and status
+- CONFIDENTIAL, DRAFT, SAMPLE and PAID presets
+- Single, diagonal and tiled watermark placement
+- Position selector with nine placement options
+- Opacity, rotation, scale and offset controls
+- Font selection, font size and color controls
+- Page range, custom pages, odd pages and even pages support
+- Skip first page option
+- Live watermark preview
+- Individual PDF downloads
+- Download all as ZIP
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.87.0 - PDF Page Number Adder Tool
 
 ## Added
@@ -788,6 +814,8 @@ All notable changes to this project will be documented in this file.
 - Image category homepage entry
 
 ---
+
+
 
 # v0.47.0 - Currency Converter Tool
 

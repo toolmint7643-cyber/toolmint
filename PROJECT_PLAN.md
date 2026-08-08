@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 87 / 100+
+Tools Completed: 88 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -133,6 +133,7 @@ Status: In Progress
 - [x] PDF to Image
 - [x] PDF Metadata Viewer
 - [x] PDF Metadata Remover
+- [x] Watermark PDF
 
 ---
 
@@ -215,6 +216,7 @@ Status: In Progress
 - [x] PDF Metadata Viewer
 - [x] PDF Metadata Remover
 - [x] PDF Page Number Adder
+- [x] Watermark PDF
 
 ---
 ### Color Tools

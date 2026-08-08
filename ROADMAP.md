@@ -119,6 +119,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Metadata Viewer
 - [x] PDF Metadata Remover
 - [x] PDF Page Number Adder
+- [x] Watermark PDF
 
 ---
 
