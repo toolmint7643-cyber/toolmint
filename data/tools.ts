@@ -630,4 +630,11 @@ export const tools = [
   href: "/crop-pdf",
   category: "PDF",
 },
+{
+  title: "PDF Compressor",
+  description:
+    "Compress PDF online for free. Reduce PDF file size in your browser with preserve-quality and image compression modes without uploading files.",
+  href: "/pdf-compressor",
+  category: "PDF",
+},
 ];

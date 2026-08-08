@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.95.0 - PDF Compressor Lite Tool
+
+## Added
+
+- PDF Compressor Lite tool
+- Browser-side PDF compression
+- Preserve PDF Quality mode
+- Image Compression mode
+- Smart compression recommendation
+- PDF analysis with page count and content-type estimate
+- First page preview
+- High Quality, Balanced and Small Size presets
+- Image quality control
+- 72, 120 and 150 DPI rendering presets
+- Optional metadata cleanup
+- Actual before and after byte-size comparison
+- Real saved bytes and percentage calculation
+- Larger output warning
+- Output PDF validation
+- Download compressed PDF action
+- Copy summary action
+- Honest browser-side compression limitations
+- PDF category homepage entry
+
+---
+
 # v0.94.0 - Crop PDF Tool
 
 ## Added

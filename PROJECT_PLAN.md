@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 94 / 100+
+Tools Completed: 95 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -216,7 +216,7 @@ Status: In Progress
 - [x] Image to Base64
 - [x] PDF Merge
 - [x] PDF Split
-- [ ] PDF Compressor
+- [x] PDF Compressor
 - [x] Image to PDF
 - [x] PDF to Image
 - [x] PDF Rotate Pages
@@ -230,6 +230,7 @@ Status: In Progress
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
 - [x] Crop PDF
+- [x] PDF Compressor
 
 ---
 ### Color Tools

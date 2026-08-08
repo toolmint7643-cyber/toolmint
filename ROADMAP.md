@@ -110,7 +110,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PNG to JPG
 - [x] PDF Merge
 - [x] PDF Split
-- [ ] PDF Compressor
+- [x] PDF Compressor
 - [x] Image to PDF
 - [x] WEBP Converter
 - [x] Image to Base64
@@ -126,6 +126,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
 - [x] Crop PDF
+
 
 ---
 
