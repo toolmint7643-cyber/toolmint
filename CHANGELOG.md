@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.90.0 - Extract PDF Pages Tool
+
+## Added
+
+- Extract PDF Pages tool
+- PDF upload with drag and drop
+- Multiple PDF batch support
+- File list with size, page count and status
+- Visual page thumbnails
+- Click-to-select page extraction
+- Page range and custom page selection
+- Extract first page, last page, odd pages, even pages and all pages
+- Invert selection action
+- Extract selected pages into one PDF
+- Extract each selected page separately
+- Extract page ranges separately
+- Individual extracted PDF downloads
+- Download all as ZIP
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.89.0 - Delete PDF Pages Tool
 
 ## Added

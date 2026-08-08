@@ -132,8 +132,7 @@ function getRemainingPages(totalPages: number, editMode: EditMode, selectedPages
 async function renderThumbnails(file: File, maxPages: number) {
     const pdfjsLib = await import("pdfjs-dist");
 
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/6.2.108/pdf.worker.min.mjs";
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
     const buffer = await file.arrayBuffer();
     const task = pdfjsLib.getDocument({ data: buffer });

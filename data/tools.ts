@@ -595,4 +595,11 @@ export const tools = [
   href: "/delete-pdf-pages",
   category: "PDF",
 },
+{
+  title: "Extract PDF Pages",
+  description:
+    "Extract pages from PDF online for free. Select pages visually, use page ranges, extract into one PDF or separate PDF files with browser-side privacy.",
+  href: "/extract-pdf-pages",
+  category: "PDF",
+},
 ];
