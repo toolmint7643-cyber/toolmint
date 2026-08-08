@@ -4,6 +4,32 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.94.0 - Crop PDF Tool
+
+## Added
+
+- Crop PDF tool
+- PDF upload with drag and drop
+- PDF validation, file size and page count display
+- Visual PDF page thumbnails
+- Click-to-select page cropping
+- Crop all pages, selected pages, page range and custom pages
+- Top, right, bottom and left crop controls
+- Millimeter, centimeter, inch and point units
+- Linked margin control
+- Manual trim margin preset
+- Crop 5 mm and crop 10 mm presets
+- Remove header and remove footer presets
+- Visual crop preview with crop boundary overlay
+- Crop validation to prevent empty page areas
+- Different page size support
+- Cropped PDF download
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.93.0 - PDF Page Size Converter Tool
 
 ## Added

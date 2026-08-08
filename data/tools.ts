@@ -623,4 +623,11 @@ export const tools = [
   href: "/pdf-page-size-converter",
   category: "PDF",
 },
+{
+  title: "Crop PDF",
+  description:
+    "Crop PDF online for free. Remove PDF margins, trim PDF pages and crop selected PDF pages with accurate units and browser-side privacy.",
+  href: "/crop-pdf",
+  category: "PDF",
+},
 ];

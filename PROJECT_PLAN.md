@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 93 / 100+
+Tools Completed: 94 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -45,6 +45,7 @@ Status: In Progress
 - [x] Organize PDF
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
+- [x] Crop PDF
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -228,6 +229,7 @@ Status: In Progress
 - [x] Organize PDF
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
+- [x] Crop PDF
 
 ---
 ### Color Tools
