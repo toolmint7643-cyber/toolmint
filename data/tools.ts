@@ -609,4 +609,11 @@ export const tools = [
   href: "/organize-pdf",
   category: "PDF",
 },
+{
+  title: "Insert Blank Page into PDF",
+  description:
+    "Insert blank pages into PDF online for free. Add pages before, after, at the beginning or end with custom size, orientation and background color.",
+  href: "/insert-blank-page-pdf",
+  category: "PDF",
+},
 ];

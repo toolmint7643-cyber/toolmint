@@ -4,6 +4,33 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.92.0 - Insert Blank Page into PDF Tool
+
+## Added
+
+- Insert Blank Page into PDF tool
+- PDF upload with drag and drop
+- Visual PDF page thumbnails
+- Insert blank pages before selected page
+- Insert blank pages after selected page
+- Insert blank pages at beginning or end
+- Multiple blank page insertion
+- Same as selected page size option
+- A4, A5, Letter and Legal page size options
+- Custom page width and height
+- Millimeter, inch and point units
+- Portrait and landscape orientation
+- Custom blank page background color
+- Live document structure preview
+- Undo, redo and reset actions
+- Original, blank and final page summary
+- Updated PDF download
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.91.0 - Organize PDF Tool
 
 ## Added
