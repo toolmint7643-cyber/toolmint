@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { ChangeEvent, DragEvent, useMemo, useState } from "react";
 import { PDFDocument, rgb } from "pdf-lib";
@@ -426,21 +426,21 @@ Result: ${result ? result.message : "Not compressed yet"}`;
 
       <main className="mx-auto max-w-7xl px-4 py-10 text-white">
         <PageTitle
-          title="🗜️ PDF Compressor Lite"
+          title="PDF Compressor Lite"
           description="Compress PDF online for free directly in your browser. Reduce PDF file size with honest preserve-quality and image compression modes without uploading files."
         />
 
         <div className="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-6">
             <ToolCard>
-              <h2 className="mb-4 text-2xl font-bold text-white">📄 Upload PDF</h2>
+              <h2 className="mb-4 text-2xl font-bold text-white">Upload PDF</h2>
 
               <label
                 onDragOver={(event) => event.preventDefault()}
                 onDrop={handleDrop}
                 className="flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-blue-500/70 bg-slate-900/70 p-8 text-center transition hover:border-blue-400 hover:bg-slate-900 focus-within:border-blue-400"
               >
-                <span className="text-4xl">📎</span>
+                <span className="text-4xl">PDF</span>
                 <span className="mt-3 text-lg font-bold">Drop a PDF here or choose file</span>
                 <span className="mt-1 text-sm text-slate-300">Your PDF stays on your device. No server upload.</span>
                 <input type="file" accept="application/pdf" onChange={handleFileInput} className="sr-only" />
@@ -451,7 +451,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
                   <div>
                     <p className="break-all font-bold text-white">{file.name}</p>
                     <p className="mt-1 text-sm text-slate-300">
-                      {formatBytes(file.size)} · {pdfInfo?.pageCount || 0} pages
+                      {formatBytes(file.size)} - {pdfInfo?.pageCount || 0} pages
                     </p>
                   </div>
 
@@ -483,7 +483,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
             </ToolCard>
 
             <ToolCard>
-              <h2 className="mb-4 text-2xl font-bold text-white">🧠 PDF Analysis</h2>
+              <h2 className="mb-4 text-2xl font-bold text-white">PDF Analysis</h2>
 
               <div className="grid gap-4 sm:grid-cols-3">
                 <div className="rounded-2xl border border-blue-500/40 bg-blue-950/30 p-4">
@@ -512,7 +512,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
             </ToolCard>
 
             <ToolCard>
-              <h2 className="mb-4 text-2xl font-bold text-white">⚙️ Compression Settings</h2>
+              <h2 className="mb-4 text-2xl font-bold text-white">Compression Settings</h2>
 
               <label className="block">
                 <span className="mb-2 block text-sm font-semibold text-slate-300">Compression Mode</span>
@@ -617,7 +617,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
 
           <div className="space-y-6">
             <ToolCard>
-              <h2 className="mb-4 text-2xl font-bold text-white">👀 Preview</h2>
+              <h2 className="mb-4 text-2xl font-bold text-white">Preview</h2>
 
               {pdfInfo?.firstPagePreview ? (
                 <div className="mx-auto max-w-sm rounded-2xl border border-slate-700 bg-slate-950 p-4">
@@ -630,12 +630,12 @@ Result: ${result ? result.message : "Not compressed yet"}`;
               )}
 
               <p className="mt-4 rounded-xl bg-slate-900 p-4 text-sm text-slate-300">
-                Mode: {modeUsed === "image" ? "Image Compression" : "Preserve PDF Quality"} · Preset: {selectedPreset.label}
+                Mode: {modeUsed === "image" ? "Image Compression" : "Preserve PDF Quality"} - Preset: {selectedPreset.label}
               </p>
             </ToolCard>
 
             <ToolCard>
-              <h2 className="mb-4 text-2xl font-bold text-white">🚀 Compress & Download</h2>
+              <h2 className="mb-4 text-2xl font-bold text-white">Compress & Download</h2>
 
               <button
                 type="button"
@@ -643,7 +643,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
                 disabled={!file || isCompressing || isAnalyzing}
                 className="w-full rounded-xl bg-blue-600 p-4 font-bold text-white transition hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                {isCompressing ? "Compressing..." : "🗜️ Compress PDF"}
+                {isCompressing ? "Compressing..." : "Compress PDF"}
               </button>
 
               <button
@@ -651,7 +651,7 @@ Result: ${result ? result.message : "Not compressed yet"}`;
                 onClick={copySummary}
                 className="mt-3 w-full rounded-xl border border-slate-700 bg-slate-800 p-4 font-bold text-white transition hover:bg-slate-700"
               >
-                📋 Copy Summary
+                Copy Summary
               </button>
 
               {result ? (
@@ -706,14 +706,14 @@ Result: ${result ? result.message : "Not compressed yet"}`;
             </ToolCard>
 
             <ToolCard>
-              <h2 className="mb-3 text-xl font-bold text-white">🔒 Privacy</h2>
+              <h2 className="mb-3 text-xl font-bold text-white">Privacy</h2>
               <p className="text-slate-300">
                 PDF compression is performed locally in your browser. Files are not uploaded to our server.
               </p>
             </ToolCard>
 
             <ToolCard>
-              <h2 className="mb-3 text-xl font-bold text-white">⚠️ Known Limitations</h2>
+              <h2 className="mb-3 text-xl font-bold text-white">Known Limitations</h2>
               <p className="text-slate-300">
                 Browser-side compression cannot match every native/server PDF optimizer. Text/vector-heavy PDFs may show
                 little or no size reduction. Image Compression can remove text searchability. Some PDFs may become larger
