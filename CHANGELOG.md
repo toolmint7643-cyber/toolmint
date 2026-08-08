@@ -4,6 +4,40 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.96.0 - PDF Text Extractor Tool
+
+## Added
+
+- PDF Text Extractor / PDF to Text Converter tool
+- Browser-side PDF.js text extraction
+- Multiple PDF upload support
+- Maximum 10 PDF files at a time
+- Maximum 100 total pages per extraction
+- Drag and drop PDF upload
+- All pages and selected pages extraction modes
+- Page range parser for formats like 1-3, 1-3,7,10 and 2,5,8-10
+- Duplicate page number cleanup
+- Invalid page range validation
+- Clean text and page-separated output modes
+- Combined extracted text output
+- File-wise extraction results
+- Page-wise extraction results
+- Copy all, copy file and copy page actions
+- Combined TXT download
+- Individual TXT download per PDF
+- Search extracted text with match count
+- Character, word and line counts
+- Pages with text and pages requiring OCR summary
+- Clear scanned/image-only page warning
+- Privacy note for browser-side processing
+- PDF category homepage entry
+
+## Fixed
+
+- Corrected PDF Metadata Remover homepage route from `/pdf-metadata-cleaner` to `/pdf-metadata-remover`
+
+---
+
 # v0.95.0 - PDF Compressor Lite Tool
 
 ## Added

@@ -126,9 +126,24 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
 - [x] Crop PDF
-
+- [x] PDF Text Extractor / PDF to Text Converter
 
 ---
+
+# Future PDF Tools
+
+- [ ] PDF OCR
+- [ ] PDF to JPG
+- [ ] PDF to PNG
+- [ ] PDF to Word
+- [ ] PDF to Excel
+- [ ] PDF Flatten
+- [ ] PDF Header/Footer
+- [ ] PDF Compare
+- [ ] PDF Validator
+- [ ] PDF Repair
+- [ ] PDF Security Info
+- [ ] PDF Protect / Password Protect
 
 # Phase 6 - SEO and Growth
 

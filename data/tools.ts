@@ -572,7 +572,7 @@ export const tools = [
   title: "PDF Metadata Remover",
   description:
     "Remove basic PDF document metadata like title, author, subject, keywords, creator and producer in your browser.",
-  href: "/pdf-metadata-cleaner",
+  href: "/pdf-metadata-remover",
   category: "PDF",
 },
 {
@@ -635,6 +635,13 @@ export const tools = [
   description:
     "Compress PDF online for free. Reduce PDF file size in your browser with preserve-quality and image compression modes without uploading files.",
   href: "/pdf-compressor",
+  category: "PDF",
+},
+{
+  title: "PDF Text Extractor",
+  description:
+    "Extract embedded text from PDF files online in your browser. Convert PDF to TXT, extract selected pages and detect scanned pages without OCR.",
+  href: "/pdf-text-extractor",
   category: "PDF",
 },
 ];

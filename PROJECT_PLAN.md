@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 95 / 100+
+Tools Completed: 96 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -36,16 +36,25 @@ Status: In Progress
 - [x] Lorem Ipsum Generator
 - [x] Password Strength Checker
 - [x] Text Compare
+
+
+### PDF Tools
+- [x] PDF Merge
 - [x] PDF Split
-- [x] Image to PDF
+- [x] PDF Compressor
+- [x] PDF to Image Converter
 - [x] PDF Rotate Pages
+- [x] PDF Metadata Viewer
+- [x] PDF Metadata Remover
 - [x] PDF Page Number Adder
+- [x] Watermark PDF
 - [x] Delete PDF Pages
 - [x] Extract PDF Pages
-- [x] Organize PDF
+- [x] Organize PDF / Reorder PDF Pages
 - [x] Insert Blank Page into PDF
 - [x] PDF Page Size Converter
 - [x] Crop PDF
+- [x] PDF Text Extractor / PDF to Text Converter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -135,14 +144,48 @@ Status: In Progress
 - [x] PNG to JPG
 - [x] WEBP Converter
 - [x] Image to Base64
-- [x] PDF Merge
-- [x] PDF to Image
-- [x] PDF Metadata Viewer
-- [x] PDF Metadata Remover
-- [x] Watermark PDF
-
 
 ---
+
+## PDF Toolkit Roadmap
+
+### Completed / Implemented PDF Tools
+
+- [x] PDF Merge
+- [x] PDF Split
+- [x] PDF Compressor
+- [x] Watermark PDF
+- [x] Delete PDF Pages
+- [x] Extract PDF Pages
+- [x] Organize PDF / Reorder PDF Pages
+- [x] Insert Blank Page into PDF
+- [x] PDF Page Size Converter
+- [x] Crop PDF
+- [x] PDF Metadata Viewer
+- [x] PDF Metadata Remover
+- [x] PDF Rotate Pages
+- [x] PDF Page Number Adder
+- [x] PDF to Image Converter
+- [x] PDF Text Extractor / PDF to Text Converter
+
+### Future PDF Tools
+
+- [ ] PDF OCR
+- [ ] PDF to Images
+- [ ] PDF to JPG
+- [ ] PDF to PNG
+- [ ] PDF to Word
+- [ ] PDF to Excel
+- [ ] PDF Flatten
+- [ ] PDF Header/Footer
+- [ ] PDF Booklet
+- [ ] PDF Compare
+- [ ] PDF Validator
+- [ ] PDF Repair
+- [ ] PDF Security Info
+- [ ] PDF Protect / Password Protect
+
+Important note for PDF Protect / Password Protect: Requires verification of a real PDF encryption/password-protection implementation. Do not fake password protection with client-side metadata or unsupported pdf-lib functionality.
 
 ## Planned Developer Tools
 
@@ -231,6 +274,7 @@ Status: In Progress
 - [x] PDF Page Size Converter
 - [x] Crop PDF
 - [x] PDF Compressor
+- [x] PDF Text Extractor / PDF to Text Converter
 
 ---
 ### Color Tools
