@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.93.0 - PDF Page Size Converter Tool
+
+## Added
+
+- PDF Page Size Converter tool
+- PDF upload with drag and drop
+- A3, A4, A5, A6, Letter, Legal, Tabloid and Executive page size presets
+- Custom page width and height
+- Millimeter, centimeter, inch and point units
+- Portrait, landscape, smart and preserve orientation modes
+- Fit inside, fill/crop, keep original size and stretch fit modes
+- Linked and custom margins
+- White, custom color and no background fill options
+- Page range and custom page selection
+- Visual PDF page thumbnails
+- First-page before and after preview
+- Before and after conversion summary
+- Content-preserving PDF page transformation
+- Converted PDF download
+- Copy summary action
+- Browser-side private PDF processing
+- PDF category homepage entry
+
+---
+
 # v0.92.0 - Insert Blank Page into PDF Tool
 
 ## Added

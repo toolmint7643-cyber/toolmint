@@ -616,4 +616,11 @@ export const tools = [
   href: "/insert-blank-page-pdf",
   category: "PDF",
 },
+{
+  title: "PDF Page Size Converter",
+  description:
+    "Resize PDF page size online for free. Convert PDF to A4, A5, Letter, Legal or custom size with margins, fit modes and selected pages.",
+  href: "/pdf-page-size-converter",
+  category: "PDF",
+},
 ];
