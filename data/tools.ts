@@ -658,4 +658,18 @@ export const tools = [
   href: "/pdf-validator",
   category: "PDF",
 },
+{
+  title: "PDF Security Info",
+  description:
+    "Inspect PDF security, metadata, JavaScript markers, embedded files, forms, annotations and parser compatibility in your browser.",
+  href: "/pdf-security-info",
+  category: "PDF",
+},
+{
+  title: "PDF Repair Lite",
+  description:
+    "Rebuild accessible PDF pages into a fresh PDF online in your browser. Repair Lite does not bypass passwords or guarantee full recovery.",
+  href: "/pdf-repair-lite",
+  category: "PDF",
+},
 ];

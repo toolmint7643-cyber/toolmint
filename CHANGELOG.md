@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.0.0 - PDF Security Info and PDF Repair Lite Tools
+
+## Added
+
+- PDF Security Info tool
+- Browser-side PDF security and structure inspection
+- Encryption/password status where reliably detectable
+- PDF version detection from file header
+- pdf-lib and PDF.js compatibility checks
+- Metadata inspection
+- JavaScript marker detection
+- Embedded file marker detection
+- XFA marker detection
+- Form field detection
+- Annotation detection where available
+- Extractable text structure check
+- Copy and download security report actions
+- PDF Repair Lite tool
+- Browser-side PDF rebuild workflow
+- PDF.js page accessibility check
+- pdf-lib page copy and rebuild process
+- Original and rebuilt size comparison
+- Original and rebuilt page count comparison
+- Before and after validation notes
+- Rebuilt PDF download action
+- Honest repair limitations and no password bypass warning
+- PDF category homepage entries
+
+---
+
 # v0.98.0 - PDF Validator Tool
 
 ## Added

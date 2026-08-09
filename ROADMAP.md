@@ -128,7 +128,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Crop PDF
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Validator
-
+- [x] PDF Security Info
+- [x] PDF Repair Lite
 ---
 
 # Future PDF Tools
@@ -142,8 +143,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] PDF Header/Footer
 - [ ] PDF Compare
 - [x] PDF Validator
-- [ ] PDF Repair
-- [ ] PDF Security Info
+- [x] PDF Repair
+- [x] PDF Security Info
 - [ ] PDF Protect / Password Protect
 - [x] PDF Header/Footer
 

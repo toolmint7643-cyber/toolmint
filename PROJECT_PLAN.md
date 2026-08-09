@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 98 / 100+
+Tools Completed: 100 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -57,6 +57,8 @@ Status: In Progress
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
 - [x] PDF Validator
+- [x] PDF Security Info
+- [x] PDF Repair Lite
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -171,6 +173,8 @@ Status: In Progress
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
 - [x] PDF Validator
+- [x] PDF Security Info
+- [x] PDF Repair Lite
 
 ### Future PDF Tools
 
@@ -185,8 +189,7 @@ Status: In Progress
 - [ ] PDF Booklet
 - [ ] PDF Compare
 
-- [ ] PDF Repair
-- [ ] PDF Security Info
+
 - [ ] PDF Protect / Password Protect
 
 Important note for PDF Protect / Password Protect: Requires verification of a real PDF encryption/password-protection implementation. Do not fake password protection with client-side metadata or unsupported pdf-lib functionality.
@@ -281,6 +284,8 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
 - [x] PDF Validator
+- [x] PDF Security Info
+- [x] PDF Repair Lite
 ---
 ### Color Tools
 - [x] Color Picker
