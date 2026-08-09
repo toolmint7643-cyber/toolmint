@@ -651,4 +651,11 @@ export const tools = [
   href: "/pdf-header-footer",
   category: "PDF",
 },
+{
+  title: "PDF Validator",
+  description:
+    "Validate and inspect PDF files online in your browser. Check PDF parsing, pages, metadata, text extraction and common PDF issues without upload.",
+  href: "/pdf-validator",
+  category: "PDF",
+},
 ];

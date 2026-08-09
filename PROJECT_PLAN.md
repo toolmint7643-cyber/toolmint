@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 97 / 100+
+Tools Completed: 98 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -56,6 +56,7 @@ Status: In Progress
 - [x] Crop PDF
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
+- [x] PDF Validator
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -169,6 +170,7 @@ Status: In Progress
 - [x] PDF to Image Converter
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
+- [x] PDF Validator
 
 ### Future PDF Tools
 
@@ -182,7 +184,7 @@ Status: In Progress
 
 - [ ] PDF Booklet
 - [ ] PDF Compare
-- [ ] PDF Validator
+
 - [ ] PDF Repair
 - [ ] PDF Security Info
 - [ ] PDF Protect / Password Protect
@@ -278,7 +280,7 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] PDF Compressor
 - [x] PDF Text Extractor / PDF to Text Converter
 - [x] PDF Header/Footer
-
+- [x] PDF Validator
 ---
 ### Color Tools
 - [x] Color Picker

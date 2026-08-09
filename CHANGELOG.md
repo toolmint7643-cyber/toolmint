@@ -4,6 +4,37 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v0.98.0 - PDF Validator Tool
+
+## Added
+
+- PDF Validator tool
+- Browser-side PDF validation and inspection
+- PDF file picker and drag and drop upload
+- Real PDF signature/header check
+- Empty file validation
+- PDF version detection from file header where available
+- pdf-lib parser compatibility check
+- PDF.js parser compatibility check
+- Parser disagreement warning
+- Page count detection
+- Page-by-page validation results
+- Extractable text detection per page
+- Likely scanned/image-only page warning
+- Document-level no-text warning
+- Encryption/password-protection handling where parsers expose it
+- Metadata inspection for title, author, subject, keywords, creator, producer and dates
+- Overall status using Valid, Valid with warnings and Error states
+- Detailed issue list with severity labels
+- Practical recommendations based on detected conditions
+- Copy validation report action
+- Download validation report as TXT
+- Browser-side privacy note
+- Honest limitations for browser-side validation
+- PDF category homepage entry
+
+---
+
 # v0.97.0 - PDF Header/Footer Tool
 
 ## Added
