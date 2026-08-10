@@ -693,4 +693,11 @@ export const tools = [
   href: "/pdf-to-png",
   category: "PDF",
 },
+{
+  title: "PDF Flatten",
+  description:
+    "Flatten PDF form fields online in your browser with preserve-quality form flattening, visual image flattening, verification and privacy-first processing.",
+  href: "/pdf-flatten",
+  category: "PDF",
+},
 ];

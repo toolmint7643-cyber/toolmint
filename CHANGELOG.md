@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.5.0 - PDF Flatten Tool
+
+## Added
+
+- PDF Flatten tool
+- Preserve Quality form field flattening using pdf-lib
+- Visual/Image Flatten mode using PDF.js page rendering
+- Browser-side PDF flattening with no server upload
+- PDF analysis before processing
+- Form field count and field inventory
+- PDF version detection from file header
+- Metadata presence summary
+- Annotation detection where PDF.js exposes it
+- Page range support for visual flattening
+- DPI selector for raster visual flattening
+- Visual flatten warning and confirmation
+- Sequential page processing for safer memory usage
+- Output PDF verification after processing
+- Before and after flattening report
+- Download flattened PDF action
+- Privacy and honest limitation notes
+- PDF category homepage entry
+
+---
+
 # v1.4.0 - PDF to PNG Converter Tool
 
 ## Added
