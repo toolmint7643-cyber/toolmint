@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.3.0 - PDF to JPG Converter Tool
+
+## Added
+
+- PDF to JPG Converter tool
+- Browser-side PDF to JPG conversion using PDF.js
+- Drag and drop PDF upload
+- PDF validation and password-protected PDF handling
+- Page thumbnails and visual page selection
+- Custom page range support
+- Quick page selection actions
+- JPG quality slider
+- Resolution scale control
+- Large output memory warning
+- Per-page conversion status
+- Individual JPG downloads
+- Download all converted JPG files as ZIP
+- Actual output size statistics
+- Conversion result gallery
+- Clear results and reset actions
+- Privacy-first browser-side processing note
+- PDF category homepage entry
+
+---
+
 # v1.1.0 - PDF OCR Tool
 
 ## Added

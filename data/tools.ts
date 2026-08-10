@@ -679,4 +679,11 @@ export const tools = [
   href: "/pdf-ocr",
   category: "PDF",
 },
+{
+  title: "PDF to JPG Converter",
+  description:
+    "Convert PDF pages to JPG images online with page selection, range support, JPG quality, resolution scale, previews and ZIP download.",
+  href: "/pdf-to-jpg",
+  category: "PDF",
+},
 ];
