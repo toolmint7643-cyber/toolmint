@@ -132,13 +132,14 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Repair Lite
 - [x] PDF OCR
 - [x] PDF to JPG Converter
+- [x] PDF to PNG Converter
 ---
 
 # Future PDF Tools
 
 - [x] PDF OCR
 - [x] PDF to JPG
-- [ ] PDF to PNG
+- [x] PDF to PNG
 - [ ] PDF to Word
 - [ ] PDF to Excel
 - [ ] PDF Flatten

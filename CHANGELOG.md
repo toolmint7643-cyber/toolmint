@@ -4,6 +4,30 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.4.0 - PDF to PNG Converter Tool
+
+## Added
+
+- PDF to PNG Converter tool
+- Browser-side PDF to PNG conversion using PDF.js
+- Drag and drop PDF upload
+- PDF validation and password-protected PDF handling
+- Page thumbnails and visual page selection
+- Custom page range support
+- Quick page selection actions
+- DPI resolution selector
+- High-resolution memory warning
+- Per-page conversion status
+- Individual PNG downloads
+- Download all converted PNG files as ZIP
+- Actual output size statistics
+- PNG result gallery
+- Clear results, stop processing and reset actions
+- Privacy-first browser-side processing note
+- PDF category homepage entry
+
+---
+
 # v1.3.0 - PDF to JPG Converter Tool
 
 ## Added

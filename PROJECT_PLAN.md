@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 102 / 100+
+Tools Completed: 103 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -61,6 +61,7 @@ Status: In Progress
 - [x] PDF Repair Lite
 - [x] PDF OCR
 - [x] PDF to JPG Converter
+- [x] PDF to PNG Converter
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -185,7 +186,6 @@ Status: In Progress
 
 - [ ] PDF to Images
 
-- [ ] PDF to PNG
 - [ ] PDF to Word
 - [ ] PDF to Excel
 - [ ] PDF Flatten
@@ -290,6 +290,7 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] PDF Validator
 - [x] PDF Security Info
 - [x] PDF Repair Lite
+- [x] PDF to PNG Converter
 ---
 ### Color Tools
 - [x] Color Picker

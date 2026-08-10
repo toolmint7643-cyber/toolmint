@@ -686,4 +686,11 @@ export const tools = [
   href: "/pdf-to-jpg",
   category: "PDF",
 },
+{
+  title: "PDF to PNG Converter",
+  description:
+    "Convert PDF pages to PNG images online with page selection, DPI resolution control, previews, individual downloads and ZIP export.",
+  href: "/pdf-to-png",
+  category: "PDF",
+},
 ];
