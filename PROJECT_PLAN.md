@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 104 / 100+
+Tools Completed: 105 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -63,6 +63,7 @@ Status: In Progress
 - [x] PDF to JPG Converter
 - [x] PDF to PNG Converter
 - [x] PDF Flatten
+- [x] PDF Compare
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -192,7 +193,6 @@ Status: In Progress
 - [ ] PDF to Excel
 
 - [ ] PDF Booklet
-- [ ] PDF Compare
 
 
 - [ ] PDF Protect / Password Protect

@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.6.0 - PDF Compare Tool
+
+## Added
+
+- PDF Compare tool
+- Browser-side two-PDF comparison
+- PDF A and PDF B upload workflow
+- SHA-256 same-file detection
+- Document analysis for file size, page count, metadata and page dimensions
+- Page orientation comparison
+- Extractable text comparison using PDF.js
+- Line-level added and removed text reporting
+- Scanned/image-only PDF text availability warnings
+- Quick Compare, Text Compare, Visual Compare and Full Compare modes
+- Real rendered visual page comparison
+- Visual pixel difference percentage per page
+- Side-by-side PDF A and PDF B previews
+- Difference view preview for visual changes
+- Page-by-page comparison report
+- Added, removed, modified and unchanged page statuses
+- Difference filters and search
+- JSON comparison report download
+- Copy summary action
+- Privacy-first browser-side processing note
+- PDF category homepage entry
+
+---
+
 # v1.5.0 - PDF Flatten Tool
 
 ## Added

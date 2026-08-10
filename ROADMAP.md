@@ -145,7 +145,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] PDF to Excel
 - [x] PDF Flatten
 - [ ] PDF Header/Footer
-- [ ] PDF Compare
+- [x] PDF Compare
 - [x] PDF Validator
 - [x] PDF Repair
 - [x] PDF Security Info

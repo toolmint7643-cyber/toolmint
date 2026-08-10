@@ -700,4 +700,11 @@ export const tools = [
   href: "/pdf-flatten",
   category: "PDF",
 },
+{
+  title: "PDF Compare",
+  description:
+    "Compare two PDF files online in your browser with document analysis, metadata checks, extractable text differences and rendered visual page comparison.",
+  href: "/pdf-compare",
+  category: "PDF",
+},
 ];
