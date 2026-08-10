@@ -4,6 +4,36 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.1.0 - PDF OCR Tool
+
+## Added
+
+- PDF OCR tool
+- Real browser-side OCR using PDF.js and Tesseract.js
+- Scanned PDF to editable text extraction
+- English, Hindi, Arabic, Urdu and multilingual OCR language selection
+- Tesseract traineddata language model loading without silent English fallback
+- RTL display support for Arabic, Urdu and Persian OCR output
+- Page range OCR processing
+- Maximum 20 selected pages per OCR job
+- Fast, Balanced, High Quality and Maximum Quality DPI presets
+- Custom DPI option from 72 to 300 DPI
+- High DPI and multilingual OCR memory warnings
+- Page-separated and clean continuous output modes
+- Page-wise OCR results with character, word and line counts
+- Average OCR confidence display from Tesseract data
+- Controlled retry with alternate preprocessing for poor OCR results
+- Real progress and descriptive OCR status messages
+- Cancel OCR action with worker cleanup
+- Unicode-safe copy action
+- UTF-8 TXT export
+- Search inside OCR output
+- Browser-side privacy note
+- Honest OCR accuracy limitations and no password bypass warning
+- PDF category homepage entry
+
+---
+
 # v1.0.0 - PDF Security Info and PDF Repair Lite Tools
 
 ## Added

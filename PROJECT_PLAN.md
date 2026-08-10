@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 100 / 100+
+Tools Completed: 101 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -59,6 +59,7 @@ Status: In Progress
 - [x] PDF Validator
 - [x] PDF Security Info
 - [x] PDF Repair Lite
+- [x] PDF OCR
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -175,10 +176,11 @@ Status: In Progress
 - [x] PDF Validator
 - [x] PDF Security Info
 - [x] PDF Repair Lite
+- [x] PDF OCR
 
 ### Future PDF Tools
 
-- [ ] PDF OCR
+
 - [ ] PDF to Images
 - [ ] PDF to JPG
 - [ ] PDF to PNG

@@ -672,4 +672,11 @@ export const tools = [
   href: "/pdf-repair-lite",
   category: "PDF",
 },
+{
+  title: "PDF OCR",
+  description:
+    "Extract editable text from scanned PDFs with real browser-side OCR, multilingual language models, page ranges, DPI presets, UTF-8 TXT export and no server upload.",
+  href: "/pdf-ocr",
+  category: "PDF",
+},
 ];

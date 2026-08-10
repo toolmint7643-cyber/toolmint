@@ -130,11 +130,12 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Validator
 - [x] PDF Security Info
 - [x] PDF Repair Lite
+- [x] PDF OCR
 ---
 
 # Future PDF Tools
 
-- [ ] PDF OCR
+- [x] PDF OCR
 - [ ] PDF to JPG
 - [ ] PDF to PNG
 - [ ] PDF to Word
