@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 105 / 100+
+Tools Completed: 106 / 100+
 Homepage Features Completed: 6 / 15
 Status: In Progress
 
@@ -64,6 +64,7 @@ Status: In Progress
 - [x] PDF to PNG Converter
 - [x] PDF Flatten
 - [x] PDF Compare
+- [x] PDF Redaction Lite
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -292,6 +293,7 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] PDF Security Info
 - [x] PDF Repair Lite
 - [x] PDF to PNG Converter
+- [x] PDF Redaction Lite
 ---
 ### Color Tools
 - [x] Color Picker

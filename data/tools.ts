@@ -707,4 +707,11 @@ export const tools = [
   href: "/pdf-compare",
   category: "PDF",
 },
+{
+  title: "PDF Redaction Lite",
+  description:
+    "Redact visible sensitive information from PDF files in your browser with rectangle selection, rasterized output, DPI options, labels and privacy-first processing.",
+  href: "/pdf-redaction",
+  category: "PDF",
+},
 ];

@@ -134,6 +134,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF to JPG Converter
 - [x] PDF to PNG Converter
 - [x] PDF Flatten
+- [x] PDF Redaction Lite
 ---
 
 # Future PDF Tools
@@ -151,6 +152,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Security Info
 - [ ] PDF Protect / Password Protect
 - [x] PDF Header/Footer
+- [x] PDF Redaction Lite
 
 
 # Phase 6 - SEO and Growth

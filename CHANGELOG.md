@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.7.0 - PDF Redaction Lite Tool
+
+## Added
+
+- PDF Redaction Lite tool
+- Browser-side PDF upload and preview
+- Rectangle-based visible redaction selection
+- Rasterized redaction mode for safer visible-content removal
+- Visual overlay mode with clear security warning
+- Black and white redaction colors
+- Optional REDACTED label
+- DPI quality options
+- Page navigation and zoom controls
+- Redaction summary and redaction list
+- Download redacted PDF action
+- Privacy-first no-upload processing note
+- PDF category homepage entry
+
+---
+
 # v1.6.0 - PDF Compare Tool
 
 ## Added
