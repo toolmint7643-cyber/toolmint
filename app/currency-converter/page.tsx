@@ -136,15 +136,15 @@ export default function CurrencyConverterPage() {
   useEffect(() => {
     if (useManualRate) return;
 
-    if (!Number.isFinite(numericAmount) || numericAmount <= 0) {
-      setResult({
-        success: false,
-        error: "Please enter a valid amount greater than 0.",
-      });
-      return;
-    }
-
     const timer = window.setTimeout(async () => {
+      if (!Number.isFinite(numericAmount) || numericAmount <= 0) {
+        setResult({
+          success: false,
+          error: "Please enter a valid amount greater than 0.",
+        });
+        return;
+      }
+
       setIsLoading(true);
 
       try {
@@ -172,10 +172,6 @@ export default function CurrencyConverterPage() {
     return () => window.clearTimeout(timer);
   }, [numericAmount, from, to, useManualRate]);
 
-  useEffect(() => {
-    setManualRate(getManualRate(from, to).toFixed(4));
-  }, [from, to]);
-
   const activeConverted = useManualRate
     ? manualResult?.converted
     : result?.converted;
@@ -189,9 +185,14 @@ export default function CurrencyConverterPage() {
   const fromCurrency = getCurrency(from);
   const toCurrency = getCurrency(to);
 
+  function setCurrencyPair(nextFrom: string, nextTo: string) {
+    setFrom(nextFrom);
+    setTo(nextTo);
+    setManualRate(getManualRate(nextFrom, nextTo).toFixed(4));
+  }
+
   function handleSwap() {
-    setFrom(to);
-    setTo(from);
+    setCurrencyPair(to, from);
   }
 
   function handleReset() {
@@ -218,8 +219,7 @@ export default function CurrencyConverterPage() {
 
   function applyExample(example: (typeof quickExamples)[number]) {
     setAmount(example.amount);
-    setFrom(example.from);
-    setTo(example.to);
+    setCurrencyPair(example.from, example.to);
     setUseManualRate(false);
   }
 
@@ -231,7 +231,7 @@ export default function CurrencyConverterPage() {
         <div className="mx-auto max-w-6xl">
           <PageTitle
             title="Currency Converter"
-            description="Convert USD, INR, EUR, GBP, AED and more currencies with live exchange rates, manual fallback and quick copy result."
+            description="Convert USD, INR, EUR, GBP, AED and more currencies with live rates when available, approximate fallback rates and quick copy result."
           />
 
           <section className="mt-8 grid gap-6 lg:grid-cols-[1fr_0.9fr]">
@@ -247,7 +247,7 @@ export default function CurrencyConverterPage() {
                 </div>
 
                 <span className="rounded-full border border-blue-500/40 bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-200">
-                  Live ready
+                  Live or fallback
                 </span>
               </div>
 
@@ -289,7 +289,7 @@ export default function CurrencyConverterPage() {
                   </span>
                   <select
                     value={from}
-                    onChange={(event) => setFrom(event.target.value)}
+                    onChange={(event) => setCurrencyPair(event.target.value, to)}
                     className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-lg text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                   >
                     {currencies.map((currency) => (
@@ -306,7 +306,7 @@ export default function CurrencyConverterPage() {
                   </span>
                   <select
                     value={to}
-                    onChange={(event) => setTo(event.target.value)}
+                    onChange={(event) => setCurrencyPair(from, event.target.value)}
                     className="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-lg text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30"
                   >
                     {currencies.map((currency) => (
@@ -454,9 +454,10 @@ export default function CurrencyConverterPage() {
 
               <div className="mt-5 rounded-xl border border-slate-700 bg-slate-950 p-4 text-sm leading-6 text-slate-300">
                 <strong className="text-white">Important note:</strong>{" "}
-                Currency rates change frequently. Use this tool for quick
-                estimates, invoices, travel planning and simple conversions.
-                Final bank or exchange rates may be different.
+                Currency rates change frequently. Live rates depend on the API
+                provider, and fallback rates are approximate. Use this tool for
+                quick estimates, invoices, travel planning and simple
+                conversions. Final bank or exchange rates may be different.
               </div>
             </div>
           </section>
@@ -478,7 +479,8 @@ export default function CurrencyConverterPage() {
               </h3>
               <p className="mt-2 text-slate-400">
                 The tool tries live exchange rates first. If the API is not
-                available, fallback mode keeps the converter usable.
+                available, clearly labeled approximate fallback rates keep the
+                converter usable.
               </p>
             </div>
 

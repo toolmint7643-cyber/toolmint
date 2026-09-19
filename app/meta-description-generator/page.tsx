@@ -153,7 +153,7 @@ export default function MetaDescriptionGeneratorPage() {
       <main className="mx-auto max-w-7xl px-4 py-10">
         <PageTitle
           title="📝 Meta Description Generator"
-          description="Generate SEO-friendly meta description ideas with keyword, audience and tone options for better search snippets."
+          description="Generate template-based meta description ideas with keyword, audience and tone options for better search snippets."
         />
 
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -262,7 +262,7 @@ export default function MetaDescriptionGeneratorPage() {
               {bestDescription && (
                 <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/10 p-5">
                   <p className="mb-2 text-sm font-bold uppercase tracking-wide text-emerald-300">
-                    ⭐ Recommended
+                    ⭐ Best length match
                   </p>
                   <p className="leading-7 text-slate-100">
                     {bestDescription}
@@ -349,8 +349,8 @@ export default function MetaDescriptionGeneratorPage() {
               ⚠️ Important Note
             </h2>
             <p className="text-slate-300">
-              This free version uses smart templates, not an AI API. Always
-              review and edit descriptions before publishing.
+              This tool uses local templates, not live SEO data or an AI API.
+              Always review, fact-check and edit descriptions before publishing.
             </p>
           </ToolCard>
         </div>

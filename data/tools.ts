@@ -263,7 +263,7 @@ export const tools = [
 {
   title: "Password Strength Checker",
   description:
-    "Check password strength online, test password security, view strength score, get improvement tips and privacy-friendly feedback instantly.",
+    "Estimate password strength locally, view a rule-based score, get improvement tips and privacy-friendly feedback without a breach database check.",
   href: "/password-strength-checker",
   category: "Text",
 },
@@ -305,7 +305,7 @@ export const tools = [
 {
   title: "Currency Converter",
   description:
-    "Convert USD, INR, EUR, GBP, AED and more currencies with live exchange rates, manual fallback and quick copy result.",
+    "Convert USD, INR, EUR, GBP, AED and more currencies with live rates when available, approximate fallback rates and quick copy result.",
   href: "/currency-converter",
   category: "Calculator",
 },
@@ -459,14 +459,14 @@ export const tools = [
 {
   title: "Google SERP Preview Generator",
   description:
-    "Preview Google search result snippets with SEO title, URL and meta description length checks for desktop and mobile.",
+    "Preview approximate Google-style search snippets with SEO title, URL and meta description length checks for desktop and mobile.",
   href: "/google-serp-preview-generator",
   category: "SEO",
 },
 {
   title: "Meta Description Generator",
   description:
-    "Generate SEO-friendly meta description ideas with keyword, audience, tone and character length guidance.",
+    "Generate template-based SEO meta description ideas with keyword, audience, tone and character length guidance.",
   href: "/meta-description-generator",
   category: "SEO",
 },
@@ -626,7 +626,7 @@ export const tools = [
 {
   title: "PDF Compressor",
   description:
-    "Compress PDF online for free. Reduce PDF file size in your browser with preserve-quality and image compression modes without uploading files.",
+    "Compress PDF online in your browser with preserve-quality and image compression modes. Results depend on PDF content and may not always be smaller.",
   href: "/pdf-compressor",
   category: "PDF",
 },
@@ -661,7 +661,7 @@ export const tools = [
 {
   title: "PDF Repair Lite",
   description:
-    "Rebuild accessible PDF pages into a fresh PDF online in your browser. Repair Lite does not bypass passwords or guarantee full recovery.",
+    "Rebuild accessible PDF pages into a fresh PDF in your browser. Repair Lite is best-effort and does not bypass passwords or guarantee full recovery.",
   href: "/pdf-repair-lite",
   category: "PDF",
 },
@@ -703,7 +703,7 @@ export const tools = [
 {
   title: "PDF Redaction Lite",
   description:
-    "Redact visible sensitive information from PDF files in your browser with rectangle selection, rasterized output, DPI options, labels and privacy-first processing.",
+    "Redact visible PDF content in your browser with rectangle selection and rasterized output. Always verify the final file before sharing sensitive information.",
   href: "/pdf-redaction",
   category: "PDF",
 },

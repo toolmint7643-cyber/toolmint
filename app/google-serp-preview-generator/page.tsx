@@ -104,7 +104,7 @@ Meta Description: ${description}`;
       <main className="mx-auto max-w-7xl px-4 py-10">
         <PageTitle
           title="🔍 Google SERP Preview Generator"
-          description="Preview how your SEO title, URL and meta description may appear in Google search results on desktop and mobile."
+          description="Preview an approximate Google-style snippet for your SEO title, URL and meta description on desktop and mobile."
         />
 
         <div className="grid gap-6 lg:grid-cols-2">
@@ -310,8 +310,9 @@ Meta Description: ${description}`;
               ⚠️ Important Note
             </h2>
             <p className="text-slate-300">
-              This tool does not fetch live Google rankings. It previews and
-              optimizes how your search snippet may appear.
+              This tool does not fetch live Google rankings, search volume or
+              real SERP data. It shows an approximate snippet preview based on
+              common display patterns.
             </p>
           </ToolCard>
         </div>

@@ -154,7 +154,7 @@ export default function PasswordStrengthCheckerPage() {
       <main className="max-w-6xl mx-auto px-5 py-10">
         <PageTitle
           title="🔐 Password Strength Checker"
-          description="Check password strength online, test password security, view strength score, get improvement tips and privacy-friendly feedback instantly."
+          description="Estimate password strength locally, view a rule-based score, get improvement tips and privacy-friendly feedback without a breach database check."
         />
 
         <ToolCard>
@@ -259,7 +259,7 @@ export default function PasswordStrengthCheckerPage() {
                 </div>
 
                 <div className="mt-5 rounded-xl border border-slate-700 bg-slate-800 p-4 text-center">
-                  <p className="text-slate-400">Estimated Crack Time</p>
+                  <p className="text-slate-400">Estimated Crack Time (Local Estimate)</p>
                   <p className="mt-2 text-xl font-bold text-blue-400">
                     {result.crackTime}
                   </p>
@@ -333,8 +333,9 @@ export default function PasswordStrengthCheckerPage() {
 
             <div className="rounded-2xl border border-yellow-700 bg-yellow-950/30 p-5 text-sm text-yellow-100">
               This password strength checker runs in your browser. Your password
-              is not sent to a server. For real accounts, use unique passwords and
-              a trusted password manager.
+              is not sent to a server. Scores and crack-time labels are local
+              estimates only and do not check leaked-password databases. For real
+              accounts, use unique passwords and a trusted password manager.
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
