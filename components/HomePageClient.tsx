@@ -75,6 +75,9 @@ const faqItems = [
   },
 ];
 
+const directoryInitialLimit = 40;
+const directoryLoadStep = 40;
+
 function toolMatches(tool: Tool, query: string) {
   if (!query) return true;
 
@@ -114,8 +117,10 @@ export default function HomePageClient({
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [openFaq, setOpenFaq] = useState("free");
+  const [visibleDirectoryCount, setVisibleDirectoryCount] = useState(directoryInitialLimit);
 
   const query = search.trim().toLowerCase();
+  const shouldLimitDirectory = !query && category === "All";
 
   const filteredTools = useMemo(() => {
     return tools.filter((tool) => {
@@ -125,6 +130,8 @@ export default function HomePageClient({
   }, [category, query, tools]);
 
   const emptySuggestions = useMemo(() => uniqueByHref([...quickPicks, ...featuredTools]).slice(0, 5), [featuredTools, quickPicks]);
+  const visibleDirectoryTools = shouldLimitDirectory ? filteredTools.slice(0, visibleDirectoryCount) : filteredTools;
+  const hasMoreDirectoryTools = shouldLimitDirectory && visibleDirectoryTools.length < filteredTools.length;
   const pdfCount = categories.find((item) => item.name === "PDF")?.count ?? 0;
   const imageCount =
     (categories.find((item) => item.name === "Image")?.count ?? 0) +
@@ -155,13 +162,13 @@ export default function HomePageClient({
                 <input
                   id="home-tool-search"
                   value={search}
-                  onChange={(event) => setSearch(event.target.value)}
+                  onChange={(event) => { setSearch(event.target.value); setVisibleDirectoryCount(directoryInitialLimit); }}
                   placeholder="Search a tool or describe what you need..."
                   className="min-w-0 flex-1 bg-transparent text-base text-white outline-none placeholder:text-slate-500"
                 />
                 <span className="hidden rounded-md border border-slate-700 px-2 py-1 text-xs font-bold text-slate-500 sm:inline-flex">Ctrl K</span>
                 {search ? (
-                  <button type="button" onClick={() => setSearch("")} className="rounded-lg border border-slate-700 px-2.5 py-1 text-sm font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">
+                  <button type="button" onClick={() => { setSearch(""); setVisibleDirectoryCount(directoryInitialLimit); }} className="rounded-lg border border-slate-700 px-2.5 py-1 text-sm font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">
                     Clear
                   </button>
                 ) : null}
@@ -170,7 +177,7 @@ export default function HomePageClient({
 
             <div className="mt-4 flex flex-wrap gap-2">
               {categories.slice(0, 6).map((item) => (
-                <button key={item.name} type="button" onClick={() => { setCategory(item.name); document.getElementById("tools")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="rounded-full border border-slate-800 bg-slate-950/70 px-3 py-2 text-sm font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">
+                <button key={item.name} type="button" onClick={() => { setCategory(item.name); setVisibleDirectoryCount(directoryInitialLimit); document.getElementById("tools")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="rounded-full border border-slate-800 bg-slate-950/70 px-3 py-2 text-sm font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">
                   {item.name}
                 </button>
               ))}
@@ -219,7 +226,7 @@ export default function HomePageClient({
         <SectionIntro eyebrow="Explore by workflow" title="Find the right category quickly." text="Counts come from the real ToolMint catalog and update as tools are added." />
         <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-slate-800 bg-slate-800 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((item) => (
-            <button key={item.name} type="button" onClick={() => { setCategory(item.name); document.getElementById("tools")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="group flex items-center justify-between gap-4 bg-slate-950 px-4 py-4 text-left transition hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500/60">
+            <button key={item.name} type="button" onClick={() => { setCategory(item.name); setVisibleDirectoryCount(directoryInitialLimit); document.getElementById("tools")?.scrollIntoView({ behavior: "smooth", block: "start" }); }} className="group flex items-center justify-between gap-4 bg-slate-950 px-4 py-4 text-left transition hover:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500/60">
               <span className="flex min-w-0 items-center gap-3">
                 <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-slate-900 text-xs font-black text-blue-200 ring-1 ring-slate-800">{categoryInitials[item.name] ?? item.name.slice(0, 2).toUpperCase()}</span>
                 <span className="min-w-0">
@@ -248,30 +255,46 @@ export default function HomePageClient({
               <h2 className="mt-2 text-3xl font-black text-white sm:text-4xl">Find the right tool in seconds.</h2>
               <p className="mt-3 max-w-2xl leading-7 text-slate-400">Search the catalog, filter by workflow and scan compact utility cards without heavy visual noise.</p>
             </div>
-            <div className="text-sm font-bold text-slate-400">Showing <span className="text-white">{filteredTools.length}</span> of <span className="text-white">{tools.length}</span></div>
+            <div className="text-sm font-bold text-slate-400">Showing <span className="text-white">{visibleDirectoryTools.length}</span> of <span className="text-white">{filteredTools.length}</span></div>
           </div>
 
           <div className="mt-6 grid gap-3 lg:grid-cols-[1fr_auto]">
             <label className="flex min-h-13 items-center gap-3 rounded-xl border border-slate-800 bg-slate-950 px-4 transition focus-within:border-blue-400 focus-within:shadow-[0_0_0_4px_rgba(59,130,246,0.12)]">
               <span className="text-xs font-black uppercase text-slate-500">Search</span>
-              <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Try PDF compressor, JSON, image, meta tags..." className="min-w-0 flex-1 bg-transparent text-white outline-none placeholder:text-slate-500" />
+              <input value={search} onChange={(event) => { setSearch(event.target.value); setVisibleDirectoryCount(directoryInitialLimit); }} placeholder="Try PDF compressor, JSON, image, meta tags..." className="min-w-0 flex-1 bg-transparent text-white outline-none placeholder:text-slate-500" />
             </label>
-            <button type="button" onClick={() => { setSearch(""); setCategory("All"); }} className="min-h-13 rounded-xl border border-slate-800 px-5 font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">Reset</button>
+            <button type="button" onClick={() => { setSearch(""); setCategory("All"); setVisibleDirectoryCount(directoryInitialLimit); }} className="min-h-13 rounded-xl border border-slate-800 px-5 font-bold text-slate-300 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50">Reset</button>
           </div>
 
           <div className="mt-4 flex gap-2 overflow-x-auto pb-2">
-            <button type="button" onClick={() => setCategory("All")} className={categoryButtonClass(category === "All")}>All <span className="text-slate-500">{tools.length}</span></button>
+            <button type="button" onClick={() => { setCategory("All"); setVisibleDirectoryCount(directoryInitialLimit); }} className={categoryButtonClass(category === "All")}>All <span className="text-slate-500">{tools.length}</span></button>
             {categories.map((item) => (
-              <button key={item.name} type="button" onClick={() => setCategory(item.name)} className={categoryButtonClass(category === item.name)}>{item.name} <span className="text-slate-500">{item.count}</span></button>
+              <button key={item.name} type="button" onClick={() => { setCategory(item.name); setVisibleDirectoryCount(directoryInitialLimit); }} className={categoryButtonClass(category === item.name)}>{item.name} <span className="text-slate-500">{item.count}</span></button>
             ))}
           </div>
 
           {filteredTools.length > 0 ? (
-            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5">
-              {filteredTools.map((tool) => <DirectoryCard key={tool.href} tool={tool} />)}
-            </div>
+            <>
+              <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5">
+                {visibleDirectoryTools.map((tool) => <DirectoryCard key={tool.href} tool={tool} />)}
+              </div>
+              {hasMoreDirectoryTools ? (
+                <div className="mt-8 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setVisibleDirectoryCount((count) => count + directoryLoadStep)}
+                    className="rounded-xl border border-slate-700 bg-slate-950 px-6 py-3 font-bold text-slate-200 transition hover:border-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50"
+                  >
+                    Load more tools
+                    <span className="ml-2 text-slate-500">
+                      {visibleDirectoryTools.length}/{filteredTools.length}
+                    </span>
+                  </button>
+                </div>
+              ) : null}
+            </>
           ) : (
-            <EmptyState suggestions={emptySuggestions} reset={() => { setSearch(""); setCategory("All"); }} />
+            <EmptyState suggestions={emptySuggestions} reset={() => { setSearch(""); setCategory("All"); setVisibleDirectoryCount(directoryInitialLimit); }} />
           )}
         </div>
       </section>

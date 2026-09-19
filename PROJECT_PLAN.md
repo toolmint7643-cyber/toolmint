@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 106 / 100+
+Tools Completed: 103 / 100+
 Homepage Features Completed: 15 / 15
 Status: Premium homepage 2.0 completed and verified
 
@@ -157,6 +157,83 @@ Status: Premium homepage 2.0 completed and verified
 
 ---
 
+## Upcoming Tool Ideas
+
+These are potential future tools for ToolMint. Build only tools that can be implemented honestly with real functionality, clear limitations and no fake claims.
+
+### Upcoming PDF Tools
+- [ ] PDF to Word
+- [ ] PDF to Excel
+- [ ] PDF Protect / Password Protect
+- [ ] PDF Page Counter
+- [ ] PDF Grayscale Converter
+- [ ] PDF Extract Images
+- [ ] PDF Add Signature Image
+- [ ] PDF Sort Pages by Size / Orientation
+- [ ] PDF Compress Images Only
+- [ ] PDF Form Field Viewer
+
+### Upcoming Image Tools
+- [ ] Image Cropper
+- [ ] Image Rotate / Flip
+- [ ] Image Watermark
+- [ ] Image Metadata Viewer
+- [ ] EXIF Remover
+- [ ] SVG to PNG
+- [ ] PNG to WEBP
+- [ ] JPG to WEBP
+- [ ] AVIF Converter
+- [ ] Background Remover Lite
+
+### Upcoming SEO Tools
+- [ ] Title Tag Checker
+- [ ] Meta Tags Checker
+- [ ] Hreflang Tag Checker
+- [ ] Sitemap URL Extractor
+- [ ] Robots.txt Tester
+- [ ] Open Graph Image Size Checker
+- [ ] Keyword Suggestion Lite
+- [ ] URL Slug SEO Checker
+- [ ] Internal Link Counter
+- [ ] Schema Validator Lite
+
+### Upcoming Developer Tools
+- [ ] JSON to CSV
+- [ ] CSV to JSON
+- [ ] XML to JSON
+- [ ] JSON to YAML
+- [ ] YAML to JSON
+- [ ] HTML Entity Encoder / Decoder
+- [ ] Unix Timestamp Converter
+- [ ] Cron Expression Generator
+- [ ] HTTP Status Code Checker
+- [ ] User Agent Parser
+
+### Upcoming Text Tools
+- [ ] Word Frequency Counter
+- [ ] Sentence Counter
+- [ ] Reading Level Checker
+- [ ] Text to ASCII
+- [ ] ASCII to Text
+- [ ] Whitespace Cleaner
+- [ ] Text Encrypt / Decrypt
+- [ ] CSV Cleaner
+- [ ] Email Extractor
+- [ ] URL Extractor
+
+### Upcoming Calculator Tools
+- [ ] Salary Calculator
+- [ ] Tax Calculator India
+- [ ] Profit Margin Calculator
+- [ ] Break-even Calculator
+- [ ] Inflation Calculator
+- [ ] Time Duration Calculator
+- [ ] Calorie Calculator
+- [ ] Unit Converter
+- [ ] Fuel Cost Calculator
+- [ ] GPA Calculator
+
+---
 ## PDF Toolkit Roadmap
 
 ### Completed / Implemented PDF Tools

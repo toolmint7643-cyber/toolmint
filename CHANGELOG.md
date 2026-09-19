@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.1 - Homepage Directory Performance
+
+## Updated
+
+- Optimized homepage all-tools directory to render the first 40 tools by default
+- Added Load more tools action for the full catalog
+- Kept search and category filters showing full matching results
+- Synced project plan completed tool count with the actual tools catalog
+- Added upcoming tool ideas to the project plan
+
+---
+
 # v1.9.0 - Premium Homepage 2.0 Polish
 
 ## Added
@@ -28,6 +40,7 @@ All notable changes to this project will be documented in this file.
 - Improved global background, typography and selection styling
 
 ---
+
 # v1.8.0 - Homepage UI Upgrade
 
 ## Added
