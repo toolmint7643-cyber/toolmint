@@ -15,12 +15,19 @@ const categoryLinks = [
   { label: "FAQ", href: "/#faq" },
 ];
 
+const legalLinks = [
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms", href: "/terms" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-300">
       <RelatedToolsFooter />
 
-      <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.3fr_0.7fr_0.7fr_0.7fr] lg:px-8">
         <div>
           <Link href="/" className="inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-blue-500/60">
             <span className="grid size-10 place-items-center rounded-xl border border-blue-400/30 bg-blue-500/15 text-sm font-black text-blue-100">
@@ -38,6 +45,7 @@ export default function Footer() {
 
         <FooterColumn title="Useful tools" links={toolLinks} />
         <FooterColumn title="Explore" links={categoryLinks} />
+        <FooterColumn title="Company" links={legalLinks} />
       </div>
     </footer>
   );

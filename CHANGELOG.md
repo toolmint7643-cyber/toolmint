@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.5 - Launch Readiness Pages
+
+## Added
+
+- Privacy Policy page
+- Terms of Use page
+- Contact page
+- About page
+- Company links in the footer
+
+## Updated
+
+- Synced older roadmap items for Robots.txt, structured data and PDF Header/Footer
+- Added launch readiness tracking to the project plan
+
+---
+
 # v1.9.4 - Dynamic Open Graph Images
 
 ## Added

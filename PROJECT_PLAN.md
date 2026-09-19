@@ -443,6 +443,18 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 
 ---
 
+## Launch Readiness
+
+- [x] Privacy Policy page
+- [x] Terms page
+- [x] Contact page
+- [x] About page
+- [ ] Vercel deployment
+- [ ] Custom domain
+- [ ] AdSense approval preparation
+
+---
+
 ## Monetization Plan
 
 - [ ] Google AdSense
