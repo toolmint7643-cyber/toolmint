@@ -435,7 +435,7 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] On-Page SEO Checker
 - [x] Page Size Checker
 - [x] Internal linking between tools
-- [ ] Metadata for every tool
+- [x] Metadata for every tool
 - [ ] Open Graph images
 - [ ] Blog or guide pages
 - [ ] Google Search Console

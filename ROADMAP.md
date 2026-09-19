@@ -159,7 +159,7 @@ Build one of the best free online developer and productivity tool websites with 
 
 - [x] Sitemap Generator
 - [ ] Robots.txt
-- [ ] Metadata for every tool
+- [x] Metadata for every tool
 - [ ] Open Graph images
 - [ ] Structured data
 - [x] Internal linking between tools

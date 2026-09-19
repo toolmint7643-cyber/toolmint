@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.3 - Tool Metadata SEO
+
+## Added
+
+- Shared metadata helper for ToolMint tool pages
+- Route-level metadata for every existing tool page
+- Tool-specific titles, descriptions, keywords, canonical links, Open Graph and Twitter metadata
+- Site metadata base support with `NEXT_PUBLIC_SITE_URL` fallback
+
+## Updated
+
+- Marked metadata for every tool as complete in the roadmap and project plan
+
+---
+
 # v1.9.2 - Related Tools Internal Linking
 
 ## Added

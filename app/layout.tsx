@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteName, siteUrl } from "@/data/toolMetadata";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "ToolMint | Free Online Tools",
     template: "%s | ToolMint",
@@ -18,6 +20,20 @@ export const metadata: Metadata = {
     "browser-based tools",
     "ToolMint",
   ],
+  openGraph: {
+    title: "ToolMint | Free Online Tools",
+    description:
+      "Use ToolMint free online tools for PDFs, images, SEO, developers, calculators, text cleanup, colors and everyday productivity workflows.",
+    url: "/",
+    siteName,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "ToolMint | Free Online Tools",
+    description:
+      "Free online tools for PDFs, images, SEO, developers, calculators, text cleanup, colors and productivity workflows.",
+  },
 };
 
 export default function RootLayout({
