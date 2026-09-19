@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.6 - SEO Guide Pages
+
+## Added
+
+- Guides index page
+- PDF compression guide
+- PDF to JPG conversion guide
+- Image compression guide
+- JSON formatter guide
+- SEO meta tags guide
+- Footer link to the guides section
+
+## Updated
+
+- Marked blog or guide pages as complete in the roadmap and project plan
+
+---
+
 # v1.9.5 - Launch Readiness Pages
 
 ## Added

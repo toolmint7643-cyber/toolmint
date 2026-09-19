@@ -163,7 +163,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Open Graph images
 - [x] Structured data
 - [x] Internal linking between tools
-- [ ] Blog or guide pages
+- [x] Blog or guide pages
 - [ ] Google Search Console
 - [ ] Google Analytics
 - [x] SEO Meta Tag Generator

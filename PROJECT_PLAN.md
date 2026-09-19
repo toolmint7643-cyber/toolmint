@@ -437,7 +437,7 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] Internal linking between tools
 - [x] Metadata for every tool
 - [x] Open Graph images
-- [ ] Blog or guide pages
+- [x] Blog or guide pages
 - [ ] Google Search Console
 - [ ] Google Analytics
 
