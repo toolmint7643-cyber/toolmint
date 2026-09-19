@@ -85,13 +85,6 @@ export const tools = [
     category: "Calculator",
 },
 {
-  title: "Base64 Encoder / Decoder",
-  description: "Encode and decode Base64 text.",
-  href: "/base64-encoder",
-  category: "Developer",
-  
-},
-{
   title: "URL Encoder / Decoder",
   description:
     "Encode and decode URLs, query strings, URL components, spaces and special characters instantly.",
