@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.4 - Dynamic Open Graph Images
+
+## Added
+
+- Dynamic Open Graph image endpoint for ToolMint pages
+- Tool-specific OG/Twitter image URLs generated from tool title and category
+- Homepage Open Graph and Twitter image metadata
+
+## Updated
+
+- Marked Open Graph images as complete in the roadmap and project plan
+
+---
+
 # v1.9.3 - Tool Metadata SEO
 
 ## Added

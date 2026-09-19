@@ -3,9 +3,11 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HomePageClient, { type Tool } from "@/components/HomePageClient";
+import { getOgImageUrl } from "@/data/toolMetadata";
 import { tools } from "@/data/tools";
 
 const siteUrl = "https://toolmint.com";
+const homeOgImage = getOgImageUrl("ToolMint", "Free Online Tools");
 
 export const metadata: Metadata = {
   title: "ToolMint - Free Online PDF, Image, SEO, Developer and Calculator Tools",
@@ -21,6 +23,21 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "ToolMint",
     type: "website",
+    images: [
+      {
+        url: homeOgImage,
+        width: 1200,
+        height: 630,
+        alt: "ToolMint free online tools",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ToolMint - Free Online Tools",
+    description:
+      "Free online PDF, image, SEO, developer, text, color and calculator tools built for fast everyday workflows.",
+    images: [homeOgImage],
   },
 };
 

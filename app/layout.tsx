@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { siteName, siteUrl } from "@/data/toolMetadata";
+import { getOgImageUrl, siteName, siteUrl } from "@/data/toolMetadata";
+
+const homeOgImage = getOgImageUrl("ToolMint", "Free Online Tools");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -27,12 +29,21 @@ export const metadata: Metadata = {
     url: "/",
     siteName,
     type: "website",
+    images: [
+      {
+        url: homeOgImage,
+        width: 1200,
+        height: 630,
+        alt: "ToolMint free online tools",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "ToolMint | Free Online Tools",
     description:
       "Free online tools for PDFs, images, SEO, developers, calculators, text cleanup, colors and productivity workflows.",
+    images: [homeOgImage],
   },
 };
 

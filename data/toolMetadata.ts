@@ -38,10 +38,21 @@ function getKeywords(title: string, category: string) {
   ]);
 }
 
+export function getOgImageUrl(title: string, category: string) {
+  const params = new URLSearchParams({
+    title,
+    category,
+  });
+
+  return `/api/og-image?${params.toString()}`;
+}
+
 export function getToolMetadata(href: string): Metadata {
   const tool = tools.find((item) => item.href === href);
 
   if (!tool) {
+    const fallbackImage = getOgImageUrl("ToolMint", "Free Online Tools");
+
     return {
       title: "Free Online Tool",
       description:
@@ -49,10 +60,25 @@ export function getToolMetadata(href: string): Metadata {
       alternates: {
         canonical: href,
       },
+      openGraph: {
+        images: [
+          {
+            url: fallbackImage,
+            width: 1200,
+            height: 630,
+            alt: "ToolMint free online tools",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        images: [fallbackImage],
+      },
     };
   }
 
   const title = `${tool.title} - Free Online ${tool.category} Tool`;
+  const image = getOgImageUrl(tool.title, tool.category);
 
   return {
     title,
@@ -67,11 +93,20 @@ export function getToolMetadata(href: string): Metadata {
       url: tool.href,
       siteName,
       type: "website",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: `${tool.title} on ${siteName}`,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description: tool.description,
+      images: [image],
     },
     robots: {
       index: true,
