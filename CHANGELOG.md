@@ -4,6 +4,66 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.0 - Premium Homepage 2.0 Polish
+
+## Added
+
+- Server-rendered homepage shell with isolated client-side search and filtering
+- Premium hero with command-center search, quick actions and truthful value indicators
+- Dynamic metrics derived from the actual tools catalog
+- Featured tools bento section
+- Quick picks section with verified routes
+- Category explorer generated from actual tool categories
+- Truthful latest-tools fallback when reliable added-date metadata is unavailable
+- Premium all-tools directory with search, category filters, result count and empty state
+- SEO content and FAQ section
+- WebSite and FAQPage structured data
+- Premium header and footer refresh
+- Lightweight CSS animation system with reduced-motion support
+
+## Updated
+
+- Fixed homepage shortcuts to use verified routes such as /pdf-to-jpg and /pdf-to-png
+- Improved reusable ToolPreviewCard styling and focus states
+- Improved global background, typography and selection styling
+
+---
+# v1.8.0 - Homepage UI Upgrade
+
+## Added
+
+- Premium homepage hero section
+- Homepage search-first layout
+- Statistics cards
+- Featured tools section
+- Popular tools section
+- Latest tools section
+- Dynamic category filters
+- Empty search state
+- SEO homepage content blocks
+- Improved footer text encoding
+
+---
+
+# v1.8.0 - Premium Homepage 2.0
+
+## Added
+
+- Premium homepage redesign with a stronger hero section, polished search UI, category discovery, featured/popular/latest tool sections, and a richer SEO-focused landing page
+- Dynamic homepage statistics derived from actual tools metadata
+- Improved reusable homepage card styling, header navigation, and footer navigation
+- Improved search experience with category-aware filtering and empty-state guidance
+- Enhanced metadata and global styling for a more premium, mobile-friendly presentation
+- Duplicate Base64 Encoder / Decoder tool entry removed from the homepage catalog
+
+## Updated
+
+- Homepage structure now reflects verified existing routes only, including PDF to JPG, PDF to PNG, and PDF Text Extractor links
+- Footer JSX was rebuilt into a valid, useful premium footer layout with verified internal links
+- Root layout metadata now has accurate ToolMint branding and descriptions
+
+---
+
 # v1.7.0 - PDF Redaction Lite Tool
 
 ## Added
