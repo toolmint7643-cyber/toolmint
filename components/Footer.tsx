@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RelatedToolsFooter from "@/components/RelatedToolsFooter";
 
 const toolLinks = [
   { label: "PDF Compressor", href: "/pdf-compressor" },
@@ -17,6 +18,8 @@ const categoryLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-slate-300">
+      <RelatedToolsFooter />
+
       <div className="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
         <div>
           <Link href="/" className="inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-blue-500/60">

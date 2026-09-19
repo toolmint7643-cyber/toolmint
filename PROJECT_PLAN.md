@@ -416,6 +416,33 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 
 ---
 
+## SEO and Growth
+
+- [x] Sitemap Generator
+- [x] SEO Meta Tag Generator
+- [x] Robots.txt Generator
+- [x] Open Graph Preview Generator
+- [x] Google SERP Preview Generator
+- [x] Meta Description Generator
+- [x] Keyword Density Checker
+- [x] Heading Tag Checker
+- [x] Alt Text Checker
+- [x] Canonical URL Checker
+- [x] Broken Link Checker
+- [x] Noindex Nofollow Checker
+- [x] Robots Meta Tag Generator
+- [x] Schema Markup Generator
+- [x] On-Page SEO Checker
+- [x] Page Size Checker
+- [x] Internal linking between tools
+- [ ] Metadata for every tool
+- [ ] Open Graph images
+- [ ] Blog or guide pages
+- [ ] Google Search Console
+- [ ] Google Analytics
+
+---
+
 ## Monetization Plan
 
 - [ ] Google AdSense

@@ -162,7 +162,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [ ] Metadata for every tool
 - [ ] Open Graph images
 - [ ] Structured data
-- [ ] Internal linking between tools
+- [x] Internal linking between tools
 - [ ] Blog or guide pages
 - [ ] Google Search Console
 - [ ] Google Analytics

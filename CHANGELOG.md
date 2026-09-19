@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# v1.9.2 - Related Tools Internal Linking
+
+## Added
+
+- Related tools section in the shared footer for tool pages
+- Category-aware internal links for PDF, image, developer, SEO, text, color and calculator tools
+- Browse all tools link from the related tools section
+
+## Updated
+
+- Marked internal linking between tools as complete in the roadmap
+
+---
+
 # v1.9.1 - Homepage Directory Performance
 
 ## Updated
