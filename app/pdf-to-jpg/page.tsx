@@ -1,6 +1,7 @@
 "use client";
 
 import { ChangeEvent, DragEvent, useEffect, useMemo, useRef, useState } from "react";
+import type { PDFDocumentProxy } from "pdfjs-dist";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTitle from "@/components/PageTitle";
@@ -121,7 +122,7 @@ async function canvasToJpgBlob(canvas: HTMLCanvasElement, quality: number) {
 }
 
 export default function PdfToJpgPage() {
-  const pdfRef = useRef<any>(null);
+  const pdfRef = useRef<PDFDocumentProxy | null>(null);
 
   const [file, setFile] = useState<File | null>(null);
   const [buffer, setBuffer] = useState<ArrayBuffer | null>(null);
@@ -221,7 +222,7 @@ export default function PdfToJpgPage() {
     setProgress(0);
   }
 
-  async function renderThumbnail(pdf: any, pageNumber: number) {
+  async function renderThumbnail(pdf: PDFDocumentProxy, pageNumber: number) {
     const page = await pdf.getPage(pageNumber);
     const viewport = page.getViewport({ scale: THUMBNAIL_SCALE });
     const canvas = document.createElement("canvas");
@@ -243,7 +244,7 @@ export default function PdfToJpgPage() {
     return { url, width: Math.round(viewport.width / THUMBNAIL_SCALE), height: Math.round(viewport.height / THUMBNAIL_SCALE) };
   }
 
-  async function buildPageItems(pdf: any) {
+  async function buildPageItems(pdf: PDFDocumentProxy) {
     const nextPages: PageItem[] = Array.from({ length: pdf.numPages }, (_, index) => ({
       pageNumber: index + 1,
       selected: true,
@@ -406,7 +407,7 @@ export default function PdfToJpgPage() {
     }
   }
 
-  async function convertSinglePage(pdf: any, pageNumber: number) {
+  async function convertSinglePage(pdf: PDFDocumentProxy, pageNumber: number) {
     const page = await pdf.getPage(pageNumber);
     const viewport = page.getViewport({ scale });
     const width = Math.ceil(viewport.width);

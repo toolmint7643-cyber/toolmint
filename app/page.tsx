@@ -3,10 +3,9 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HomePageClient, { type Tool } from "@/components/HomePageClient";
-import { getOgImageUrl } from "@/data/toolMetadata";
+import { getOgImageUrl, siteUrl } from "@/data/toolMetadata";
 import { tools } from "@/data/tools";
 
-const siteUrl = "https://toolmint.com";
 const homeOgImage = getOgImageUrl("ToolMint", "Free Online Tools");
 
 export const metadata: Metadata = {

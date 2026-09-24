@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -111,12 +111,7 @@ export default function AgeCalculatorPage() {
   const selectedMonth = Number(month);
   const selectedYear = Number(year);
   const maxDay = getDaysInMonth(selectedMonth, selectedYear);
-
-  useEffect(() => {
-    if (Number(day) > maxDay) {
-      setDay(maxDay.toString());
-    }
-  }, [day, maxDay]);
+  const selectedDay = Math.min(Math.max(Number(day) || 1, 1), maxDay);
 
   const resetCalculator = () => {
     setDay("1");
@@ -157,14 +152,14 @@ export default function AgeCalculatorPage() {
     setError("");
 
     const birth = startOfDay(
-      new Date(Number(year), Number(month) - 1, Number(day))
+      new Date(Number(year), Number(month) - 1, selectedDay)
     );
     const today = startOfDay(new Date(calculateOn));
 
     const isValidBirthDate =
       birth.getFullYear() === Number(year) &&
       birth.getMonth() === Number(month) - 1 &&
-      birth.getDate() === Number(day);
+      birth.getDate() === selectedDay;
 
     if (!isValidBirthDate) {
       setResult(initialResult);
@@ -200,12 +195,12 @@ export default function AgeCalculatorPage() {
     const totalSeconds = totalMinutes * 60;
 
     let nextBirthday = startOfDay(
-      new Date(today.getFullYear(), Number(month) - 1, Number(day))
+      new Date(today.getFullYear(), Number(month) - 1, selectedDay)
     );
 
     if (nextBirthday < today) {
       nextBirthday = startOfDay(
-        new Date(today.getFullYear() + 1, Number(month) - 1, Number(day))
+        new Date(today.getFullYear() + 1, Number(month) - 1, selectedDay)
       );
     }
 
@@ -237,7 +232,7 @@ export default function AgeCalculatorPage() {
       daysUntilBirthday,
       nextBirthdayDate,
       dayOfBirth,
-      zodiacSign: getZodiacSign(Number(month), Number(day)),
+      zodiacSign: getZodiacSign(Number(month), selectedDay),
       calculated: true,
     });
   };
@@ -268,7 +263,7 @@ export default function AgeCalculatorPage() {
           <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <select
-                value={day}
+                value={selectedDay}
                 onChange={(e) => setDay(e.target.value)}
                 className="rounded-xl bg-slate-800 border border-slate-700 p-4"
               >

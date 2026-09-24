@@ -98,9 +98,9 @@ export default function BarcodeGeneratorPage() {
   const [displayValue, setDisplayValue] = useState(true);
   const [lineColor, setLineColor] = useState("#111827");
   const [background, setBackground] = useState("#ffffff");
-  const [error, setError] = useState("");
 
   const currentFormat = getFormatInfo(format);
+  const error = validateValue(barcodeValue, format);
 
   const settingsSummary = useMemo(() => {
     return `${currentFormat.label} • ${barWidth}px width • ${barHeight}px height`;
@@ -109,12 +109,7 @@ export default function BarcodeGeneratorPage() {
   useEffect(() => {
     const validationError = validateValue(barcodeValue, format);
 
-    if (validationError) {
-      setError(validationError);
-      return;
-    }
-
-    if (!svgRef.current) return;
+    if (validationError || !svgRef.current) return;
 
     try {
       JsBarcode(svgRef.current, barcodeValue.trim(), {
@@ -128,9 +123,8 @@ export default function BarcodeGeneratorPage() {
         background,
       });
 
-      setError("");
     } catch {
-      setError("This barcode value is not valid for the selected format.");
+      return;
     }
   }, [
     barcodeValue,
@@ -158,7 +152,6 @@ export default function BarcodeGeneratorPage() {
     setDisplayValue(true);
     setLineColor("#111827");
     setBackground("#ffffff");
-    setError("");
   }
 
   async function copyValue() {
