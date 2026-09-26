@@ -536,11 +536,10 @@ Result: ${result ? result.message : "Not compressed yet"}`;
                     key={item}
                     type="button"
                     onClick={() => applyPreset(item)}
-                    className={`rounded-xl border p-4 text-left font-bold transition ${
-                      preset === item
+                    className={`rounded-xl border p-4 text-left font-bold transition ${preset === item
                         ? "border-blue-500 bg-blue-600 text-white"
                         : "border-slate-700 bg-slate-800 text-slate-200 hover:bg-slate-700"
-                    }`}
+                      }`}
                   >
                     <span className="block">{presetSettings[item].label}</span>
                     <span className="mt-1 block text-xs font-medium text-slate-300">{presetSettings[item].note}</span>
@@ -692,11 +691,35 @@ Result: ${result ? result.message : "Not compressed yet"}`;
                   <a
                     href={result.url}
                     download={result.name}
-                    className="flex flex-col gap-2 rounded-xl border border-blue-500/50 bg-blue-950/40 p-4 font-bold text-white transition hover:bg-blue-900/50 sm:flex-row sm:items-center sm:justify-between"
+                    aria-label={`Download ${result.name}`}
+                    className="group mt-1 flex w-full items-center justify-center gap-3 rounded-xl bg-blue-600 px-5 py-4 text-base font-bold text-white shadow-lg shadow-blue-950/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-950/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 active:translate-y-0"
                   >
-                    <span className="break-all">{result.name}</span>
-                    <span className="text-sm text-blue-200">Download Compressed PDF</span>
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="h-5 w-5 shrink-0 transition-transform duration-200 group-hover:translate-y-0.5"
+                    >
+                      <path d="M12 3v12" />
+                      <path d="m7 10 5 5 5-5" />
+                      <path d="M5 21h14" />
+                    </svg>
+
+                    <span>Download Compressed PDF</span>
                   </a>
+
+                  <div className="rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-3 text-center">
+                    <p className="break-all text-sm font-semibold text-slate-200">
+                      {result.name}
+                    </p>
+                    <p className="mt-1 text-xs text-slate-400">
+                      {formatBytes(result.outputSize)} • Ready to download
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <div className="mt-5 rounded-2xl border border-dashed border-slate-700 bg-slate-900 p-6 text-center text-slate-300">
