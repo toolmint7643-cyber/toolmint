@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file.
 - Rejected private/reserved network addresses, credentials, and non-standard ports
 - Reported truncated HTML samples in the page-size checker
 
+# Unreleased - Deployment Readiness
+
+## Fixed
+
+- Switched PDF-to-Image to the same-origin PDF.js worker committed with the project, avoiding a mismatched external CDN worker
+
 # v1.9.6 - SEO Guide Pages
 
 ## Added
