@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { fetchPublicUrl } from "@/lib/safePublicFetch";
 
 function isBlockedHostname(hostname: string) {
   const lowerHostname = hostname.toLowerCase();
@@ -51,18 +52,14 @@ export async function GET(request: Request) {
   }
 
   try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
-
-    const response = await fetch(parsedUrl.toString(), {
-      signal: controller.signal,
+    const response = await fetchPublicUrl(parsedUrl, {
+      timeoutMs: 8000,
+      maxResponseBytes: 600000,
       headers: {
         "User-Agent": "Mozilla/5.0 (compatible; ToolMintHeadingChecker/1.0)",
         Accept: "text/html,application/xhtml+xml",
       },
     });
-
-    clearTimeout(timeout);
 
     if (!response.ok) {
       return NextResponse.json(
@@ -80,7 +77,7 @@ export async function GET(request: Request) {
       );
     }
 
-    const html = (await response.text()).slice(0, 600000);
+    const html = await response.text();
 
     return NextResponse.json({
       html,

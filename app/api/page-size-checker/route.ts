@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { fetchPublicUrl } from "@/lib/safePublicFetch";
 
 function isBlockedHostname(hostname: string) {
   const lowerHostname = hostname.toLowerCase();
@@ -66,19 +67,14 @@ export async function GET(request: Request) {
 
   try {
     const startedAt = Date.now();
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 10000);
-
-    const response = await fetch(parsedUrl.toString(), {
-      signal: controller.signal,
-      redirect: "follow",
+    const response = await fetchPublicUrl(parsedUrl, {
+      timeoutMs: 10000,
+      maxResponseBytes: 1000000,
       headers: {
         "User-Agent": "Mozilla/5.0 (compatible; ToolMintPageSizeChecker/1.0)",
         Accept: "text/html,application/xhtml+xml",
       },
     });
-
-    clearTimeout(timeout);
 
     const responseTime = Date.now() - startedAt;
 
@@ -100,9 +96,11 @@ export async function GET(request: Request) {
 
     const html = await response.text();
     const encoder = new TextEncoder();
-    const htmlBytes = encoder.encode(html).length;
-
     const contentLength = Number(response.headers.get("content-length") || 0);
+    const sampledHtmlBytes = encoder.encode(html).length;
+    const htmlBytes = response.bodyTruncated && contentLength > 0
+      ? contentLength
+      : sampledHtmlBytes;
     const transferSize = contentLength > 0 ? contentLength : htmlBytes;
     const headerSize = getHeaderSize(response.headers);
 
@@ -116,6 +114,7 @@ export async function GET(request: Request) {
       cacheControl: response.headers.get("cache-control") || "",
       server: response.headers.get("server") || "",
       htmlBytes,
+      bodyTruncated: response.bodyTruncated,
       transferSize,
       headerSize,
       totalEstimatedBytes: transferSize + headerSize,

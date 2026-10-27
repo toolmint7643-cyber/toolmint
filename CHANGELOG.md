@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+# Unreleased - Outbound URL Fetch Hardening
+
+## Security
+
+- Added public-address validation and DNS-pinned requests for URL-based SEO checks
+- Revalidated redirect destinations and limited redirects, request duration, and response body size
+- Rejected private/reserved network addresses, credentials, and non-standard ports
+- Reported truncated HTML samples in the page-size checker
+
 # v1.9.6 - SEO Guide Pages
 
 ## Added

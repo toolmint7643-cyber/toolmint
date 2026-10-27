@@ -17,6 +17,7 @@ type PageSizeResult = {
   cacheControl: string;
   server: string;
   htmlBytes: number;
+  bodyTruncated: boolean;
   transferSize: number;
   headerSize: number;
   totalEstimatedBytes: number;
@@ -316,6 +317,17 @@ ${recommendations.map((tip) => `- ${tip}`).join("\n")}`;
                   Review page weight, response time and optimization risk.
                 </p>
               </div>
+
+              {result?.bodyTruncated && (
+                <p
+                  role="status"
+                  className="rounded-xl border border-amber-500/40 bg-amber-500/10 p-4 text-sm text-amber-100"
+                >
+                  HTML analysis was limited to the first 1 MB of the response.
+                  Resource and DOM counts may be partial; byte-size figures use
+                  the response Content-Length when the server provides it.
+                </p>
+              )}
 
               <div className={`rounded-2xl border p-6 ${risk.bg}`}>
                 <p className="text-sm font-bold uppercase tracking-wide text-slate-300">
