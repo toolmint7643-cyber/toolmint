@@ -211,7 +211,7 @@ export default function HomePageClient({
         </div>
       </section>
 
-      {/* Future AdSense placement: render only after the publisher and ad unit are configured. */}
+      <AdSlot placement="homepage-featured-popular" />
 
       <section className="mx-auto max-w-7xl px-5 py-10 sm:px-6 lg:px-8" id="popular">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
@@ -374,4 +374,15 @@ function DirectoryCard({ tool }: { tool: Tool }) {
 
 function EmptyState({ suggestions, reset }: { suggestions: Tool[]; reset: () => void }) {
   return <div className="mt-7 border-y border-slate-800 py-10 text-center"><h3 className="text-2xl font-black text-white">Nothing matched that search.</h3><p className="mx-auto mt-3 max-w-xl leading-7 text-slate-400">Try another keyword or explore a quick pick.</p><div className="mt-5 flex flex-wrap justify-center gap-2">{suggestions.map((tool) => <Link key={tool.href} href={tool.href} className="rounded-full border border-slate-800 px-3 py-2 text-sm font-bold text-slate-300 transition hover:border-blue-400 hover:text-white">{tool.title}</Link>)}</div><button type="button" onClick={reset} className="mt-6 rounded-xl bg-blue-600 px-5 py-3 font-bold text-white transition hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400/60">Reset search</button></div>;
+}
+
+function AdSlot({ placement }: { placement: string }) {
+  return (
+    <aside aria-label="Advertisement" data-ad-placement={placement} className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div className="relative flex min-h-[120px] items-center justify-center border-y border-slate-800/80 py-8 text-center md:min-h-[250px]">
+        <span className="absolute left-5 top-3 text-[10px] font-bold uppercase text-slate-500">Advertisement</span>
+        <span className="text-sm text-slate-600">Ad space reserved</span>
+      </div>
+    </aside>
+  );
 }

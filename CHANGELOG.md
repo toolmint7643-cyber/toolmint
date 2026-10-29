@@ -8,6 +8,9 @@ All notable changes to this project will be documented in this file.
 ### Updated
 - Updated the Privacy Policy to disclose active Google Analytics 4 usage and current advertising status.
 
+### Monetization
+- Added a responsive homepage ad placement placeholder; real AdSense delivery remains unconfigured.
+
 ## Unreleased
 
 ### SEO
