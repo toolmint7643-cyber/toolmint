@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { getOgImageUrl, siteName, siteUrl } from "@/data/toolMetadata";
 
-const GA_MEASUREMENT_ID = "G-VGQ8D60JG0";
+const GA_MEASUREMENT_ID = "G-WNYEYZVJR1";
 const homeOgImage = getOgImageUrl("ToolMint", "Free Online Tools");
 
 export const metadata: Metadata = {
