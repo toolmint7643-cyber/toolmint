@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## Unreleased
+### Fixed
+- Made the QR Generator action generate the displayed code and added clear empty-input/download feedback.
+- Updated Base64 encoding and decoding to handle UTF-8 text, including non-ASCII characters.
+- Switched Password Generator to unbiased Web Crypto randomness and ensure each selected character group is represented.
+
+### Updated
+- Improved visible descriptions and search metadata for core text and developer tools to match their actual behavior.
+
+## Unreleased
 ### Updated
 - Updated the Privacy Policy to disclose active Google Analytics 4 usage and current advertising status.
 

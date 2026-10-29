@@ -79,7 +79,7 @@ export default function CharacterCounterPage() {
       <main className="max-w-6xl mx-auto px-5 py-10">
         <PageTitle
           title="🔤 Character Counter"
-          description="Count characters, letters, numbers, spaces, words and lines instantly."
+          description="Check text length, characters with and without spaces, letters, numbers, special characters, words and lines."
         />
 
         <ToolCard>

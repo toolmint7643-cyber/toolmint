@@ -52,7 +52,7 @@ export default function JsonFormatterPage() {
 
       <PageTitle
         title="JSON Formatter"
-        description="Format, Validate, Beautify and Minify JSON instantly."
+        description="Validate JSON syntax and format valid JSON with readable indentation. Copy the formatted result directly from your browser."
       />
 
       <ToolCard>

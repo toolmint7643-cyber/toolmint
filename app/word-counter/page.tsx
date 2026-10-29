@@ -83,7 +83,7 @@ export default function WordCounterPage() {
       <main className="max-w-6xl mx-auto px-5 py-10">
         <PageTitle
           title="📝 Word Counter"
-          description="Count words, characters, sentences, paragraphs, lines and reading time instantly."
+          description="Count words, characters, sentences, paragraphs and lines, with estimated reading and speaking time as you type."
         />
 
         <ToolCard>

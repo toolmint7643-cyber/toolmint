@@ -16,33 +16,57 @@ const [includeLowercase, setIncludeLowercase] = useState(true);
 const [includeNumbers, setIncludeNumbers] = useState(true);
 const [includeSymbols, setIncludeSymbols] = useState(true);
 const generatePassword = () => {
-  let chars = "";
+  const groups: string[] = [];
 
 if (includeUppercase)
-  chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  groups.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 
 if (includeLowercase)
-  chars += "abcdefghijklmnopqrstuvwxyz";
+  groups.push("abcdefghijklmnopqrstuvwxyz");
 
 if (includeNumbers)
-  chars += "0123456789";
+  groups.push("0123456789");
 
 if (includeSymbols)
-  chars += "!@#$%^&*";
+  groups.push("!@#$%^&*");
 
-if (!chars) {
+if (groups.length === 0) {
   alert("Please select at least one option.");
   return;
 }
-  let result = "";
 
-  for (let i = 0; i < length; i++) {
-    result += chars.charAt(
-      Math.floor(Math.random() * chars.length)
-    );
+  try {
+    const randomIndex = (maxExclusive: number) => {
+      const range = 0x1_0000_0000;
+      const limit = Math.floor(range / maxExclusive) * maxExclusive;
+      const value = new Uint32Array(1);
+
+      do {
+        crypto.getRandomValues(value);
+      } while (value[0] >= limit);
+
+      return value[0] % maxExclusive;
+    };
+
+    const allCharacters = groups.join("");
+    const characters = groups.map((group) => group[randomIndex(group.length)]);
+
+    while (characters.length < length) {
+      characters.push(allCharacters[randomIndex(allCharacters.length)]);
+    }
+
+    for (let index = characters.length - 1; index > 0; index -= 1) {
+      const swapIndex = randomIndex(index + 1);
+      [characters[index], characters[swapIndex]] = [
+        characters[swapIndex],
+        characters[index],
+      ];
+    }
+
+    setPassword(characters.join(""));
+  } catch {
+    alert("Secure password generation is unavailable in this browser context.");
   }
-
-  setPassword(result);
 };
 const copyPassword = async () => {
   if (!password) return;
@@ -88,7 +112,7 @@ const getStrength = () => {
 
         <PageTitle
           title="Password Generator"
-          description="Generate strong and secure passwords instantly."
+          description="Generate cryptographically random passwords in your browser. Choose a length from 6 to 32 characters and select character types."
         />
 
         <ToolCard>

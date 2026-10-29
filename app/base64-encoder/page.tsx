@@ -15,7 +15,15 @@ export default function Base64EncoderPage() {
 
 const encodeText = () => {
   try {
-    setOutput(btoa(input));
+    const bytes = new TextEncoder().encode(input);
+    let binary = "";
+    const chunkSize = 0x8000;
+
+    for (let index = 0; index < bytes.length; index += chunkSize) {
+      binary += String.fromCharCode(...bytes.subarray(index, index + chunkSize));
+    }
+
+    setOutput(btoa(binary));
   } catch {
     alert("Unable to encode the text.");
   }
@@ -23,9 +31,11 @@ const encodeText = () => {
 
 const decodeText = () => {
   try {
-    setOutput(atob(input));
+    const binary = atob(input.trim());
+    const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+    setOutput(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
   } catch {
-    alert("Invalid Base64 text.");
+    alert("Invalid Base64 or the decoded content is not valid UTF-8 text.");
   }
 };
 
@@ -49,7 +59,7 @@ const clearAll = () => {
 
         <PageTitle
           title="Base64 Encoder / Decoder"
-          description="Encode and decode Base64 instantly."
+          description="Encode Unicode text as UTF-8 Base64 or decode Base64 back to readable text in your browser."
         />
 
         <ToolCard>

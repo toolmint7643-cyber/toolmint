@@ -30,7 +30,7 @@ export default function UUIDGeneratorPage() {
 
         <PageTitle
           title="UUID Generator"
-          description="Generate random UUID v4 instantly."
+          description="Generate a random UUID version 4 with the browser Web Crypto API, then copy it for use in your application."
         />
 
         <ToolCard>

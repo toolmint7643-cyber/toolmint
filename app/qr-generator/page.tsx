@@ -12,24 +12,41 @@ import TextArea from "@/components/TextArea";
 
 export default function QRGeneratorPage() {
   const [text, setText] = useState("");
-const qrRef = useRef<HTMLDivElement>(null);
-const clearAll = () => {
-  setText("");
-};
-const downloadQR = async () => {
-  if (!qrRef.current) return;
+  const [generatedText, setGeneratedText] = useState("");
+  const qrRef = useRef<HTMLDivElement>(null);
 
-  try {
-    const dataUrl = await toPng(qrRef.current);
+  const generateQR = () => {
+    const value = text.trim();
+    if (!value) {
+      alert("Enter text or a URL to generate a QR code.");
+      return;
+    }
 
-    const link = document.createElement("a");
-    link.download = "toolmint-qr.png";
-    link.href = dataUrl;
-    link.click();
-  } catch (err) {
-    console.error(err);
-  }
-};
+    setGeneratedText(value);
+  };
+
+  const clearAll = () => {
+    setText("");
+    setGeneratedText("");
+  };
+
+  const downloadQR = async () => {
+    if (!qrRef.current) {
+      alert("Generate a QR code before downloading.");
+      return;
+    }
+
+    try {
+      const dataUrl = await toPng(qrRef.current);
+
+      const link = document.createElement("a");
+      link.download = "toolmint-qr.png";
+      link.href = dataUrl;
+      link.click();
+    } catch {
+      alert("Unable to download this QR code. Please try again.");
+    }
+  };
   return (
     <>
       <Header />
@@ -38,18 +55,21 @@ const downloadQR = async () => {
 
         <PageTitle
           title="QR Code Generator"
-          description="Generate QR Codes instantly from any text or URL."
+          description="Create a QR code from text or a URL, preview it, and download it as a PNG in your browser."
         />
 <ToolCard>
   <div className="space-y-6">
 
     <TextArea
   value={text}
-  onChange={(e) => setText(e.target.value)}
+  onChange={(e) => {
+    setText(e.target.value);
+    setGeneratedText("");
+  }}
   placeholder="https://example.com"
 />
 
-    <Button onClick={() => {}}>
+    <Button onClick={generateQR}>
   Generate QR Code
 </Button>
 
@@ -67,13 +87,13 @@ const downloadQR = async () => {
   Download QR
 </Button>
 
-{text.trim() && (
+{generatedText && (
  <div
   ref={qrRef}
   className="flex justify-center mt-8 bg-white p-6 rounded-xl"
 >
     <QRCode
-      value={text}
+      value={generatedText}
       size={220}
     />
   </div>
