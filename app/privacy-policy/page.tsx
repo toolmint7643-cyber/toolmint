@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Read the ToolMint privacy policy for browser-side tools, public URL checks, cookies, analytics, ads and user data handling.",
+    "Read the ToolMint privacy policy for browser-side tools, public URL checks, Google Analytics 4, advertising and user data handling.",
   alternates: {
     canonical: "/privacy-policy",
   },
 };
 
-const sections = [
+const sections: { title: string; body: ReactNode }[] = [
   {
     title: "Privacy-first tools",
     body: "ToolMint is built around free online tools that run in your browser where practical. Many PDF, image, text, color, calculator and developer tools process data locally on your device without uploading files to ToolMint servers.",
@@ -22,7 +23,30 @@ const sections = [
   },
   {
     title: "Analytics and advertising",
-    body: "ToolMint may use privacy-respecting analytics, Google Analytics, Google Search Console, Google AdSense or similar services in the future to understand traffic, improve tools and support free access. These services may use cookies or similar technologies according to their own policies.",
+    body: (
+      <>
+        ToolMint currently uses Google Analytics 4 (GA4) to understand website
+        traffic and how visitors use the site. GA4 may collect information such
+        as pages viewed, interactions, browser and device details, approximate
+        location, and referral information. It may use cookies or similar
+        technologies for measurement. Learn more in{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-300 underline underline-offset-4 hover:text-blue-200"
+        >
+          Google&apos;s Privacy Policy
+        </a>
+        .
+        <br />
+        <br />
+        ToolMint also uses Google Search Console to monitor search indexing and
+        aggregated performance in Google Search. ToolMint does not currently
+        display Google AdSense advertisements. If our analytics or advertising
+        practices change, we will update this policy.
+      </>
+    ),
   },
   {
     title: "No sensitive data guarantee",
@@ -54,12 +78,11 @@ export default function PrivacyPolicyPage() {
           <p className="mt-5 text-lg leading-8 text-slate-300">
             ToolMint is designed for fast, practical tools with clear privacy
             expectations. This page explains how data is handled across
-            browser-side tools, public URL checks, analytics and future
-            monetization.
+            browser-side tools, public URL checks, analytics and advertising.
           </p>
 
           <div className="mt-8 rounded-2xl border border-blue-500/30 bg-blue-500/10 p-5 text-blue-100">
-            Last updated: September 19, 2026
+            Last updated: October 29, 2026
           </div>
 
           <div className="mt-8 grid gap-5">

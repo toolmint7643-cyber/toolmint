@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## Unreleased
+### Updated
+- Updated the Privacy Policy to disclose active Google Analytics 4 usage and current advertising status.
+
+## Unreleased
 
 ### SEO
 - Verified toolmintco.com in Google Search Console.
