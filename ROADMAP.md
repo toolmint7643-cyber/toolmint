@@ -164,8 +164,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Structured data
 - [x] Internal linking between tools
 - [x] Blog or guide pages
-- [ ] Google Search Console
-- [ ] Google Analytics
+- [x] Google Search Console
+- [x] Google Analytics
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
 - [x] Open Graph Preview Generator

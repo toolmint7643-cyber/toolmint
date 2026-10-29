@@ -438,8 +438,8 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] Metadata for every tool
 - [x] Open Graph images
 - [x] Blog or guide pages
-- [ ] Google Search Console
-- [ ] Google Analytics
+- [x] Google Search Console
+- [x] Google Analytics
 
 ---
 

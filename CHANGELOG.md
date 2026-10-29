@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Unreleased
+
+### SEO
+- Verified toolmintco.com in Google Search Console.
+- Submitted sitemap.xml and requested a crawl for the homepage.
+
+## Unreleased
+
+### Added
+- Google Analytics 4 tracking across ToolMint pages.
+
 # Unreleased - Outbound URL Fetch Hardening
 
 ## Security
