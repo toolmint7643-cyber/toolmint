@@ -36,6 +36,26 @@ const terms = [
     title: "Changes to tools",
     body: "ToolMint may add, remove, update or limit tools at any time to improve quality, performance, security and reliability.",
   },
+  {
+    title: "Files, text and public URLs",
+    body: "Processing depends on the individual tool. Many file tools work in your browser, while some URL checks or live-data features send requests to ToolMint or an external provider. Read the privacy and limitation notes shown on the tool page before using it, and avoid submitting confidential or sensitive information unless you have confirmed that the workflow is appropriate for it.",
+  },
+  {
+    title: "Your content and generated results",
+    body: "You remain responsible for the files, text, URLs and other material you submit, including having the right to use them. ToolMint does not claim ownership of your input. You are responsible for reviewing, saving and checking any generated or converted output before sharing it or using it in another service.",
+  },
+  {
+    title: "Accuracy and service availability",
+    body: "Results may depend on your input, browser, file format, third-party data or the limits described on a tool page. Outputs are not guaranteed to be complete or suitable for a particular purpose. ToolMint may experience interruptions, maintenance or changes to features, and users should keep their own copies of important source files and results.",
+  },
+  {
+    title: "Privacy and third-party services",
+    body: "The ToolMint Privacy Policy explains analytics, public URL requests and other data handling. Some tools rely on external websites, APIs, libraries or hosting services, which may have separate terms and privacy practices. Use of those services is subject to their applicable conditions; check the relevant tool notes and provider information where shown.",
+  },
+  {
+    title: "Questions or reports",
+    body: "If a tool gives an unexpected result or these terms are unclear, contact ToolMint at toolmint7643@gmail.com. Include the tool name and a concise description. Do not email passwords, private documents or other sensitive information as part of a support request.",
+  },
 ];
 
 export default function TermsPage() {
@@ -57,7 +77,7 @@ export default function TermsPage() {
           </p>
 
           <div className="mt-8 rounded-2xl border border-blue-500/30 bg-blue-500/10 p-5 text-blue-100">
-            Last updated: September 19, 2026
+            Last updated: November 3, 2026
           </div>
 
           <div className="mt-8 grid gap-5">

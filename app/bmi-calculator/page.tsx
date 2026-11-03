@@ -395,6 +395,33 @@ Ideal Weight Estimate: ${formatNumber(result.idealWeight)} kg`;
             </div>
           </div>
         </ToolCard>
+
+        <section
+          aria-labelledby="bmi-guide-heading"
+          className="mt-10 max-w-4xl border-t border-slate-800 pt-8"
+        >
+          <h2 id="bmi-guide-heading" className="text-2xl font-black text-white">
+            How this BMI calculator works
+          </h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Body mass index is calculated from weight and height. In metric units,
+            the formula is weight in kilograms divided by height in metres squared.
+            The imperial inputs are converted to the same units before the result
+            and estimated adult reference range are calculated. Choose the unit
+            controls that match your measurements, enter both values, and review
+            the category alongside the number rather than treating the number alone
+            as a health assessment.
+          </p>
+          <p className="mt-4 leading-8 text-slate-300">
+            BMI is a broad screening measure and does not distinguish muscle from
+            body fat or account for every factor that affects health. Adult category
+            thresholds may not apply to children and teenagers, and the estimate may
+            be unsuitable during pregnancy or for some athletes and medical
+            situations. The healthy-weight range is an estimate based on the
+            selected height, not an individual medical target. Ask a qualified
+            healthcare professional for advice about personal health decisions.
+          </p>
+        </section>
       </main>
 
       <Footer />

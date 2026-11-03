@@ -179,6 +179,7 @@ export default function RegexTesterPage() {
           description="Test regular expressions online, highlight regex matches, inspect capture groups and replace matched text instantly."
         />
 
+        <section aria-label="Regular expression tester workspace">
         <ToolCard>
           <div className="space-y-6">
             <div className="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-6">
@@ -406,6 +407,7 @@ export default function RegexTesterPage() {
             </div>
           </div>
         </ToolCard>
+        </section>
       </main>
 
       <Footer />

@@ -391,8 +391,8 @@ Weekends: ${result.weekends}`;
             </div>
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
-                <h2 className="mb-3 text-2xl font-bold text-white">
+              <section aria-labelledby="date-difference-explained" className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                <h2 id="date-difference-explained" className="mb-3 text-2xl font-bold text-white">
                   📌 What is a Date Difference Calculator?
                 </h2>
                 <p className="text-slate-300">
@@ -401,10 +401,17 @@ Weekends: ${result.weekends}`;
                   timelines, travel plans, deadlines, age gaps and event
                   countdowns.
                 </p>
-              </div>
+                <p className="mt-3 text-slate-300">
+                  The result can be shown as elapsed days and as a calendar
+                  years-months-days breakdown. Use the include-end-date control
+                  when your task counts both the first and final dates; otherwise,
+                  the day total represents the elapsed interval. Leap days are
+                  handled as calendar dates.
+                </p>
+              </section>
 
-              <div className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
-                <h2 className="mb-3 text-2xl font-bold text-white">
+              <section aria-labelledby="date-difference-uses" className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                <h2 id="date-difference-uses" className="mb-3 text-2xl font-bold text-white">
                   🔍 Common Uses
                 </h2>
                 <p className="text-slate-300">
@@ -412,7 +419,14 @@ Weekends: ${result.weekends}`;
                   between dates, weekends, date duration, business planning
                   ranges and add or subtract days from a selected date.
                 </p>
-              </div>
+                <p className="mt-3 text-slate-300">
+                  Weekday totals do not account for public holidays, local working
+                  calendars or organization-specific schedules. For payroll,
+                  contracts, travel bookings or official deadlines, confirm the
+                  counting rule with the relevant authority before relying on the
+                  result.
+                </p>
+              </section>
             </div>
           </div>
         </ToolCard>

@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 - Made homepage search results visible as users type, added a working `/` focus shortcut, and removed the misleading browser-reserved `Ctrl+K` hint.
 
 ### SEO and Crawlability
+- Expanded ToolMint Terms and added focused, server-rendered usage guidance to report-sampled pages with genuinely short explanatory copy; clarified count, unit, date and PDF page-selection limitations, and added named semantic sections to two sectionless tool workspaces.
 - Added a server-rendered all-tools directory and linked it from site navigation so every catalog route has a crawlable internal link.
 - Added an `llms.txt` discovery file and included the all-tools directory in the sitemap.
 - Corrected the default canonical/site URL to ToolMint's current `toolmintco.com` domain.

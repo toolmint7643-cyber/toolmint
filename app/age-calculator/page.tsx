@@ -259,6 +259,7 @@ export default function AgeCalculatorPage() {
           description="Calculate your exact age instantly with birthday details and zodiac insights."
         />
 
+        <section aria-label="Age calculator inputs and results">
         <ToolCard>
           <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -381,6 +382,7 @@ export default function AgeCalculatorPage() {
             )}
           </div>
         </ToolCard>
+        </section>
       </main>
 
       <Footer />

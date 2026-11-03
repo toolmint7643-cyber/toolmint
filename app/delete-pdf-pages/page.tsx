@@ -854,6 +854,31 @@ Output: New cleaned PDF files`;
                         </p>
                     </ToolCard>
                 </div>
+
+                <section
+                    aria-labelledby="delete-pdf-pages-guide"
+                    className="mt-8 rounded-2xl border border-slate-700 bg-slate-900 p-6"
+                >
+                    <h2 id="delete-pdf-pages-guide" className="mb-3 text-xl font-bold text-white">
+                        How to remove or keep PDF pages
+                    </h2>
+                    <p className="leading-7 text-slate-300">
+                        Upload a PDF, choose the active file, and select pages using
+                        the page controls or rendered thumbnails. Delete mode removes
+                        selected pages; keep mode creates a copy containing only the
+                        selected pages. Review the remaining-page summary before
+                        processing, especially when working with multiple documents.
+                        The source file is left untouched and the edited copy is
+                        downloaded separately.
+                    </p>
+                    <p className="mt-3 leading-7 text-slate-300">
+                        Removing a page is not the same as redacting information from
+                        pages that remain. If private text or images need to be hidden,
+                        use a genuine redaction workflow and verify the resulting
+                        document. Encrypted, damaged or unusually large PDFs may not
+                        be supported by the browser libraries used here.
+                    </p>
+                </section>
             </main>
 
             <Footer />

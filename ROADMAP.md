@@ -209,6 +209,8 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Build crawlable all-tools directory, add llms.txt, and align sitemap/canonical host (local changes; publish and verify)
 - [x] Improve tool-to-tool related links to distribute internal links across categories (local changes; verify after crawl)
 - [x] Add useful page-specific guidance to selected thin pages and link Contrast Checker from the footer and related color tools (local changes; verify after crawl)
+- [x] Expand Terms and add page-specific guidance to the November 3 Semrush examples; improve semantic grouping in two sectionless workspaces (local changes; publish and verify)
+- [ ] Identify the affected URL for the low semantic HTML notice and confirm it after re-crawl
 - [ ] Publish SEO audit fixes and rerun Site Audit with JavaScript rendering enabled
 - [ ] Reassess remaining low-word-count warnings after recrawl; do not pad legal pages
 - [ ] Reassess low text-to-HTML warnings after recrawl without adding boilerplate

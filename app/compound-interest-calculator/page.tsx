@@ -311,8 +311,8 @@ Extra Earned vs Simple Interest: ${formatCurrency(result.extraEarned)}`;
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
-                <h2 className="mb-3 text-2xl font-bold text-white">
+              <section aria-labelledby="compound-interest-explained" className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                <h2 id="compound-interest-explained" className="mb-3 text-2xl font-bold text-white">
                   📌 What is Compound Interest?
                 </h2>
                 <p className="text-slate-300">
@@ -320,10 +320,16 @@ Extra Earned vs Simple Interest: ${formatCurrency(result.extraEarned)}`;
                   principal and previously earned interest. It helps money grow
                   faster over time compared to simple interest.
                 </p>
-              </div>
+                <p className="mt-3 text-slate-300">
+                  This calculator applies the selected annual rate and compounding
+                  frequency to a one-time starting amount over the chosen duration.
+                  More frequent compounding can change the estimate because interest
+                  is added to the balance at different intervals.
+                </p>
+              </section>
 
-              <div className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
-                <h2 className="mb-3 text-2xl font-bold text-white">
+              <section aria-labelledby="compound-interest-uses" className="rounded-2xl border border-slate-700 bg-slate-900 p-6">
+                <h2 id="compound-interest-uses" className="mb-3 text-2xl font-bold text-white">
                   🔍 Common Uses
                 </h2>
                 <p className="text-slate-300">
@@ -331,7 +337,14 @@ Extra Earned vs Simple Interest: ${formatCurrency(result.extraEarned)}`;
                   planning, education examples and comparing simple interest with
                   compound interest.
                 </p>
-              </div>
+                <p className="mt-3 text-slate-300">
+                  The estimate does not model recurring deposits, changing rates,
+                  taxes, fees, inflation or market performance. For regular monthly
+                  contributions, use a calculator built for recurring investments;
+                  compare assumptions before using any estimate for a financial
+                  decision.
+                </p>
+              </section>
             </div>
           </div>
         </ToolCard>

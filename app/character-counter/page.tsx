@@ -165,6 +165,16 @@ export default function CharacterCounterPage() {
             as two code units. Check the destination application&apos;s own limit when
             an exact accepted count matters.
           </p>
+          <h3 className="mt-6 text-lg font-bold text-white">What each total includes</h3>
+          <p className="mt-2 leading-8 text-slate-300">
+            The total includes spaces and line breaks; the no-spaces total removes
+            whitespace. Letter and number subtotals currently count A-Z and 0-9,
+            while punctuation, emoji and other non-whitespace symbols appear in
+            the special-character subtotal. Words are separated by whitespace,
+            and lines are counted from newline characters. These definitions may
+            differ from a social network, word processor or form, so use that
+            destination&apos;s own counter when its limit is strict.
+          </p>
         </section>
       </main>
 

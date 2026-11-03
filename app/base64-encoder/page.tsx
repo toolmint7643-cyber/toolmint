@@ -110,17 +110,25 @@ const clearAll = () => {
         </ToolCard>
 
         <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
-          <div>
-            <h2 className="text-2xl font-black text-white">Encode and decode Base64 text</h2>
+          <article aria-labelledby="base64-how-to" className="md:col-span-2">
+            <h2 id="base64-how-to" className="text-2xl font-black text-white">Encode and decode Base64 text</h2>
             <p className="mt-3 leading-7 text-slate-300">
               Paste plain text and choose Encode to create its Base64 representation.
               To reverse the process, paste a valid Base64 value and choose Decode.
               The tool converts text through UTF-8, so common non-English characters
               can be handled as text rather than being restricted to basic ASCII.
             </p>
-          </div>
-          <div>
-            <h2 className="text-2xl font-black text-white">Base64 is not encryption</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Base64 is commonly used when text needs a predictable ASCII representation
+              for a data field or text-based format. It is an encoding, not a compression
+              method, so the encoded string is usually longer than the original text.
+              This page handles UTF-8 text; it is not a file-to-Base64 converter. For
+              binary files, use a tool designed for file input and confirm the receiving
+              system expects the same Base64 format.
+            </p>
+          </article>
+          <article aria-labelledby="base64-security">
+            <h2 id="base64-security" className="text-2xl font-black text-white">Base64 is not encryption</h2>
             <p className="mt-3 leading-7 text-slate-300">
               Base64 changes how bytes are represented; it does not hide or protect
               the content. Anyone can decode it. Do not use this encoder to secure
@@ -128,7 +136,7 @@ const clearAll = () => {
               tools unless you have confirmed the handling policy you need. Decoding
               only succeeds when the input is valid Base64 that represents UTF-8 text.
             </p>
-          </div>
+          </article>
         </section>
 
       </main>
