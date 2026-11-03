@@ -282,6 +282,13 @@ export const tools = [
   category: "Calculator",
 },
 {
+  title: "Salary Calculator",
+  description:
+    "Estimate take-home salary from gross pay and entered deductions. Compare annual, monthly, semi-monthly, biweekly and weekly pay in multiple currencies without assumed tax rates.",
+  href: "/salary-calculator",
+  category: "Calculator",
+},
+{
   title: "Simple Interest Calculator",
   description:
     "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",

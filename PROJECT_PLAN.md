@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 114 / 100+
+Tools Completed: 115 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -108,6 +108,7 @@ Status: Premium homepage 2.0 completed and verified
 - [x] Discount Calculator
 - [x] BMI Calculator
 - [x] Loan Calculator
+- [x] Salary Calculator
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
@@ -234,7 +235,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 - [ ] URL Extractor
 
 ### Upcoming Calculator Tools
-- [ ] Salary Calculator
+- [x] Salary Calculator
 - [ ] Tax Calculator India
 - [ ] Profit Margin Calculator
 - [ ] Break-even Calculator
@@ -346,6 +347,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] EMI Calculator
 - [x] BMI Calculator
 - [x] Loan Calculator
+- [x] Salary Calculator
 - [x] Discount Calculator
 - [x] Land Area Converter
 - [x] Currency Converter

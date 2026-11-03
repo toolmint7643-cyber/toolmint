@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Calculator Tools
+- Added a Salary Calculator with annual, monthly, semi-monthly, biweekly and weekly pay frequencies.
+- Added multiple currency display options, user-entered pay-period deductions, annual/monthly take-home estimates, examples, copy and reset actions.
+- Clearly states that income tax, local payroll rules, benefits and currency conversion are not calculated automatically.
+
 ### PDF Tools
 - Added a browser-side PDF to Word converter with editable text DOCX and visual page-image DOCX modes.
 - Added page-range selection, batch conversion, per-file results, progress/cancellation and ZIP download for batches.
