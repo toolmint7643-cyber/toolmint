@@ -687,6 +687,13 @@ export const tools = [
   category: "PDF",
 },
 {
+  title: "PDF to Word Converter",
+  description:
+    "Convert PDF to Word DOCX in your browser with editable text extraction or image-based pages, page ranges, batch files and ZIP download. Scanned PDFs are reported; OCR is not claimed.",
+  href: "/pdf-to-word",
+  category: "PDF",
+},
+{
   title: "PDF Flatten",
   description:
     "Flatten PDF form fields online in your browser with preserve-quality form flattening, visual image flattening, verification and privacy-first processing.",

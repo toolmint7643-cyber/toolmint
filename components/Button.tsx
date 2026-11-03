@@ -2,12 +2,16 @@ type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
   variant?: "primary" | "secondary" | "success" | "danger";
+  disabled?: boolean;
+  className?: string;
 };
 
 export default function Button({
   children,
   onClick,
   variant = "primary",
+  disabled = false,
+  className = "",
 }: ButtonProps) {
   const styles = {
     primary: "bg-blue-600 hover:bg-blue-700",
@@ -19,7 +23,8 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`${styles[variant]} px-5 py-3 rounded-lg text-white font-semibold transition`}
+      disabled={disabled}
+      className={styles[variant] + " px-5 py-3 rounded-lg text-white font-semibold transition disabled:cursor-not-allowed disabled:opacity-50 " + className}
     >
       {children}
     </button>

@@ -135,6 +135,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF to PNG Converter
 - [x] PDF Flatten
 - [x] PDF Redaction Lite
+- [x] PDF to Word
 ---
 
 # Future PDF Tools
@@ -142,7 +143,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF OCR
 - [x] PDF to JPG
 - [x] PDF to PNG
-- [ ] PDF to Word
+- [x] PDF to Word
 - [ ] PDF to Excel
 - [x] PDF Flatten
 - [x] PDF Header/Footer

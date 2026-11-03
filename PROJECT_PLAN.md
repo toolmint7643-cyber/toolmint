@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 103 / 100+
+Tools Completed: 104 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -162,7 +162,7 @@ Status: Premium homepage 2.0 completed and verified
 These are potential future tools for ToolMint. Build only tools that can be implemented honestly with real functionality, clear limitations and no fake claims.
 
 ### Upcoming PDF Tools
-- [ ] PDF to Word
+- [x] PDF to Word
 - [ ] PDF to Excel
 - [ ] PDF Protect / Password Protect
 - [ ] PDF Page Counter
@@ -267,7 +267,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 
 - [ ] PDF to Images
 
-- [ ] PDF to Word
+- [x] PDF to Word
 - [ ] PDF to Excel
 
 - [ ] PDF Booklet

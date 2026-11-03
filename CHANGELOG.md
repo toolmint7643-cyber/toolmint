@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### PDF Tools
+- Added a browser-side PDF to Word converter with editable text DOCX and visual page-image DOCX modes.
+- Added page-range selection, batch conversion, per-file results, progress/cancellation and ZIP download for batches.
+- Reports pages without selectable text without claiming OCR; documents best-effort layout fidelity and visual mode's non-editable page images.
+
 ### Homepage UI
 - Restored distinct, premium-feeling tool cards with category-specific visual accents across featured, popular, category, and directory sections.
 - Reworked the hero tool preview and added clearer spacing and hierarchy while preserving search, filters, routes, and ad placement.
