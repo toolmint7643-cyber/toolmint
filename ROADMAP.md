@@ -181,6 +181,12 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Structured data (Schema Markup Generator)
 - [x] On-Page SEO Checker
 - [x] Page Size Checker
+- [x] Build crawlable all-tools directory, add llms.txt, and align sitemap/canonical host (local changes; publish and verify)
+- [x] Improve tool-to-tool related links to distribute internal links across categories (local changes; verify after crawl)
+- [ ] Publish SEO audit fixes and rerun Site Audit with JavaScript rendering enabled
+- [ ] Improve remaining low-word-count pages with useful, tool-specific content
+- [ ] Review low text-to-HTML warnings without adding boilerplate
+- [ ] Resolve the confirmed broken URL after identifying its target and status
 ---
 
 # Phase 7 - Launch and Monetization

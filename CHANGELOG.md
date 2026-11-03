@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 ---
 
 ## Unreleased
+
+### Homepage UI
+- Restored distinct, premium-feeling tool cards with category-specific visual accents across featured, popular, category, and directory sections.
+- Reworked the hero tool preview and added clearer spacing and hierarchy while preserving search, filters, routes, and ad placement.
+- Made homepage search results visible as users type, added a working `/` focus shortcut, and removed the misleading browser-reserved `Ctrl+K` hint.
+
+### SEO and Crawlability
+- Added a server-rendered all-tools directory and linked it from site navigation so every catalog route has a crawlable internal link.
+- Added an `llms.txt` discovery file and included the all-tools directory in the sitemap.
+- Corrected the default canonical/site URL to ToolMint's current `toolmintco.com` domain.
+- Changed the Markdown Preview sample heading to avoid a second page-level H1 and used article semantics for the preview.
+- Balanced related-tool links around each tool so pages later in a category also receive contextual internal links; publish and re-crawl before marking the audit issue resolved.
+
+## Unreleased
 ### Fixed
 - Made the QR Generator action generate the displayed code and added clear empty-input/download feedback.
 - Updated Base64 encoding and decoding to handle UTF-8 text, including non-ASCII characters.

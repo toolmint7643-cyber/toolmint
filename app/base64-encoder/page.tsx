@@ -109,6 +109,28 @@ const clearAll = () => {
 
         </ToolCard>
 
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Encode and decode Base64 text</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Paste plain text and choose Encode to create its Base64 representation.
+              To reverse the process, paste a valid Base64 value and choose Decode.
+              The tool converts text through UTF-8, so common non-English characters
+              can be handled as text rather than being restricted to basic ASCII.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Base64 is not encryption</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Base64 changes how bytes are represented; it does not hide or protect
+              the content. Anyone can decode it. Do not use this encoder to secure
+              passwords, tokens or private data, and avoid pasting secrets into
+              tools unless you have confirmed the handling policy you need. Decoding
+              only succeeds when the input is valid Base64 that represents UTF-8 text.
+            </p>
+          </div>
+        </section>
+
       </main>
 
       <Footer />

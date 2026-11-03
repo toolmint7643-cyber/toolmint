@@ -30,32 +30,42 @@ function normalizePath(pathname: string) {
   return pathname;
 }
 
-function getRelatedTools(currentTool: Tool) {
-  const sameCategory = tools.filter(
-    (tool) =>
-      tool.href !== currentTool.href && tool.category === currentTool.category
-  );
+function getNeighborTools(items: Tool[], currentHref: string, limit: number) {
+  const currentIndex = items.findIndex((tool) => tool.href === currentHref);
+  if (currentIndex < 0 || items.length < 2) return [];
 
-  const sameWorkflow =
-    currentTool.category === "PDF"
-      ? tools.filter(
-          (tool) =>
-            tool.href !== currentTool.href &&
-            (tool.category === "PDF" || tool.category === "Image & PDF")
-        )
-      : sameCategory;
+  const neighbors: Tool[] = [];
+  const seen = new Set([currentHref]);
 
-  const fallbackTools = tools.filter((tool) => tool.href !== currentTool.href);
-  const combined = [...sameWorkflow, ...fallbackTools];
-  const uniqueTools = new Map<string, Tool>();
+  for (let distance = 1; distance < items.length && neighbors.length < limit; distance += 1) {
+    const previous = items[(currentIndex - distance + items.length) % items.length];
+    const next = items[(currentIndex + distance) % items.length];
 
-  combined.forEach((tool) => {
-    if (!uniqueTools.has(tool.href)) {
-      uniqueTools.set(tool.href, tool);
+    for (const tool of [previous, next]) {
+      if (!seen.has(tool.href) && neighbors.length < limit) {
+        seen.add(tool.href);
+        neighbors.push(tool);
+      }
     }
-  });
+  }
 
-  return Array.from(uniqueTools.values()).slice(0, 6);
+  return neighbors;
+}
+
+function getRelatedTools(currentTool: Tool) {
+  const workflowTools =
+    currentTool.category === "PDF"
+      ? tools.filter((tool) => tool.category === "PDF" || tool.category === "Image & PDF")
+      : currentTool.category === "Image" || currentTool.category === "Image & PDF"
+        ? tools.filter((tool) => tool.category === "Image" || tool.category === "Image & PDF")
+      : tools.filter((tool) => tool.category === currentTool.category);
+
+  const categoryNeighbors = getNeighborTools(workflowTools, currentTool.href, 6);
+  const usedHrefs = new Set([currentTool.href, ...categoryNeighbors.map((tool) => tool.href)]);
+  const globalNeighbors = getNeighborTools(tools, currentTool.href, tools.length)
+    .filter((tool) => !usedHrefs.has(tool.href));
+
+  return [...categoryNeighbors, ...globalNeighbors].slice(0, 6);
 }
 
 export default function RelatedToolsFooter() {
@@ -94,7 +104,7 @@ export default function RelatedToolsFooter() {
           </div>
 
           <Link
-            href="/#tools"
+            href="/all-tools"
             className="text-sm font-bold text-blue-300 transition hover:text-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500/60"
           >
             Browse all tools

@@ -81,6 +81,26 @@ export default function ContactPage() {
               ))}
             </ul>
           </div>
+
+          <section className="mt-10 border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-black text-white">Help us review your message</h2>
+            <div className="mt-4 space-y-4 leading-8 text-slate-300">
+              <p>
+                For a tool issue, include the page address, the steps you took,
+                the browser and device you used, and the exact message or result
+                you saw. For calculations, share sample inputs and the expected
+                result when possible. Please remove passwords, private records,
+                API keys and other sensitive information before sending examples.
+              </p>
+              <p>
+                ToolMint reviews requests to understand recurring problems and
+                prioritize useful improvements, but a request does not guarantee
+                a feature or a particular response time. Partnership messages
+                should include the organization, proposed placement or project,
+                and a way to reply. Use the email link above to contact the team.
+              </p>
+            </div>
+          </section>
         </section>
       </main>
 

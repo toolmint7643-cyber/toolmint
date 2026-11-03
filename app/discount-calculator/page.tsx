@@ -318,6 +318,21 @@ Final Price: ${formatCurrency(result.finalPrice)}`;
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 max-w-4xl border-t border-slate-800 pt-8">
+          <h2 className="text-2xl font-black text-white">How discounts are calculated</h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Enter the listed price and discount percentage to see the reduction
+            and price after discount. An extra discount is applied to that reduced
+            price, not added to the first percentage; for example, two successive
+            discounts of 20% and 10% do not equal a single 30% discount. If you
+            enter tax, the calculator applies it to the discounted price and shows
+            it separately in the breakdown. The result helps compare offers, but
+            actual bills can differ because of fees, rounding, product rules or
+            local tax treatment. Confirm the final amount with the seller before
+            paying.
+          </p>
+        </section>
       </main>
 
       <Footer />

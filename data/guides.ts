@@ -49,6 +49,10 @@ export const guides: Guide[] = [
         title: "Verify the final PDF",
         body: "Open the downloaded PDF and check page count, text quality, images, links and readability. For important files, run a PDF validator after compression.",
       },
+      {
+        title: "Keep an untouched source copy",
+        body: "Save the original before comparing compression modes, especially for signed, archival or client documents. A rebuilt or image-based PDF can change text selection, links, forms, accessibility structure or other interactive features. Choose the least destructive mode that meets the file-size requirement, then inspect representative pages at normal and enlarged zoom. If the result is larger or less readable, use the original rather than assuming the word compressed guarantees a better file.",
+      },
     ],
     checklist: [
       "Use preserve-quality mode first for text-heavy PDFs",
@@ -86,6 +90,10 @@ export const guides: Guide[] = [
         title: "Choose quality based on use",
         body: "Use higher quality for printing or professional sharing. Use balanced or smaller settings for web uploads, thumbnails and quick previews.",
       },
+      {
+        title: "Check dimensions and page orientation",
+        body: "PDF pages can have different dimensions or landscape orientation. Review each exported image instead of assuming every page has the same shape. A higher rendering resolution creates more pixels and can improve small text, but it also takes more memory and produces larger files. For a screen preview, a moderate setting is usually adequate; for print, test a page with the smallest text before exporting the entire document.",
+      },
     ],
     checklist: [
       "Pick the page range before converting",
@@ -122,6 +130,10 @@ export const guides: Guide[] = [
       {
         title: "Preview before downloading",
         body: "Compression settings can affect text, edges and small details. Always preview the output image and compare it with the original.",
+      },
+      {
+        title: "Balance file size with visible detail",
+        body: "Use the image for its real destination: a large print needs more pixels than a small website thumbnail. Compression quality and image dimensions work together, so reduce oversized dimensions before lowering quality aggressively. Compare fine text, faces, gradients and sharp edges at the intended display size. If an image contains transparency, verify that the chosen output format preserves it; some formats replace transparent areas with a solid background. Keep the original when the compressed copy is not clear enough.",
       },
     ],
     checklist: [

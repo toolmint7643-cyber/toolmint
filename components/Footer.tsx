@@ -9,7 +9,7 @@ const toolLinks = [
 ];
 
 const categoryLinks = [
-  { label: "All Tools", href: "/#tools" },
+  { label: "All Tools", href: "/all-tools" },
   { label: "Guides", href: "/guides" },
   { label: "Featured", href: "/#featured" },
   { label: "Quick Picks", href: "/#popular" },

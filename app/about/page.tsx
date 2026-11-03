@@ -63,6 +63,28 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
+
+          <section className="mt-10 border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-black text-white">What you can do here</h2>
+            <div className="mt-4 grid gap-5 text-slate-300 sm:grid-cols-2">
+              <p className="leading-8">
+                The directory brings together document utilities such as PDF
+                merging, page organization, conversion and inspection, alongside
+                image compression and format conversion. Developer tools cover
+                common formatting, encoding and validation tasks; text tools
+                help count, compare and transform written content.
+              </p>
+              <p className="leading-8">
+                ToolMint is an independent utility project, not a financial,
+                legal or security authority. Calculators provide estimates,
+                SEO checkers report what they can inspect, and file tools may
+                have format or browser limits. Review each tool&apos;s notes before
+                relying on an output, especially for important documents or
+                business decisions. Browse the complete directory to see what
+                is currently available.
+              </p>
+            </div>
+          </section>
         </section>
       </main>
 

@@ -7,6 +7,7 @@ import { tools } from "@/data/tools";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "/",
+    "/all-tools",
     ...tools.map((tool) => tool.href),
     "/privacy-policy",
     "/terms",

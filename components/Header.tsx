@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navItems = [
-  { label: "Tools", href: "/#tools" },
+  { label: "All tools", href: "/all-tools" },
   { label: "Featured", href: "/#featured" },
   { label: "Quick picks", href: "/#popular" },
   { label: "FAQ", href: "/#faq" },
@@ -27,7 +27,7 @@ export default function Header() {
         </nav>
 
         <Link
-          href="/#tools"
+          href="/all-tools"
           className="inline-flex items-center rounded-full border border-blue-400/40 bg-blue-600 px-4 py-2 text-sm font-bold text-white shadow-lg shadow-blue-950/20 transition hover:-translate-y-0.5 hover:bg-blue-500 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-blue-400/60"
         >
           Browse tools

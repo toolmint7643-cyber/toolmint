@@ -367,6 +367,21 @@ Interest Share: ${formatNumber(result.interestShare)}%`;
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 max-w-4xl border-t border-slate-800 pt-8">
+          <h2 className="text-2xl font-black text-white">How to read an EMI estimate</h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Enter the principal, annual interest rate and loan tenure. The
+            calculator converts the annual rate to a monthly rate and estimates
+            equal monthly payments using a standard reducing-balance formula. A
+            longer term can lower the monthly installment while increasing total
+            interest; changing the rate or principal affects both the EMI and the
+            total repayment. Compare the total payment as well as the monthly
+            amount when considering a loan. This estimate excludes lender-specific
+            fees, insurance, rate resets and other contract terms, so it is not a
+            loan offer or a substitute for the lender&apos;s repayment schedule.
+          </p>
+        </section>
       </main>
 
       <Footer />

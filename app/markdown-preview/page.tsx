@@ -8,7 +8,7 @@ import PageTitle from "@/components/PageTitle";
 import ToolCard from "@/components/ToolCard";
 import Button from "@/components/Button";
 
-const sampleMarkdown = `# ToolMint Markdown Preview
+const sampleMarkdown = `## ToolMint Markdown Preview
 
 Write **bold text**, *italic text*, inline \`code\`, links and lists.
 
@@ -328,7 +328,7 @@ Write your content here with a [useful link](https://example.com).`,
                   </Button>
                 </div>
 
-                <div
+                <article
                   className="markdown-preview min-h-[520px] max-w-full overflow-auto rounded-xl border border-slate-700 bg-slate-800 p-5 text-slate-200"
                   dangerouslySetInnerHTML={{
                     __html: html || "<p>Preview will appear here.</p>",

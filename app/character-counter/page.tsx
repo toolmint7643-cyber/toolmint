@@ -149,6 +149,23 @@ export default function CharacterCounterPage() {
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 max-w-4xl border-t border-slate-800 pt-8">
+          <h2 className="text-2xl font-black text-white">What the character counts mean</h2>
+          <p className="mt-4 leading-8 text-slate-300">
+            Use the total count when checking a field limit, and compare it with
+            the count without spaces when a form excludes whitespace. The summary
+            also separates letters, digits, punctuation and other symbols, while
+            the word and line totals give quick context for drafts, captions and
+            submissions. Counts update as you type, so you can shorten or revise
+            text and immediately see the change. This tool counts the text you
+            provide in your browser and does not judge whether it meets a specific
+            platform&apos;s counting rules. JavaScript string length is used for total
+            characters, so some emoji and supplementary Unicode symbols may count
+            as two code units. Check the destination application&apos;s own limit when
+            an exact accepted count matters.
+          </p>
+        </section>
       </main>
 
       <Footer />

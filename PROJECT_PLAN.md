@@ -442,6 +442,16 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] Google Search Console
 - [x] Google Analytics
 
+### SEO Audit Follow-up (November 2026)
+- [x] Add a server-rendered `/all-tools` directory and include it in the sitemap (implemented locally; deployment and crawl verification pending)
+- [x] Add `public/llms.txt` and use the current production domain for canonical defaults (implemented locally; deployment pending)
+- [x] Fix the Markdown Preview duplicate H1 and improve semantic markup (implemented locally; deployment and crawl verification pending)
+- [x] Balance contextual related-tool links across category pages (implemented locally; verify incoming-link counts after re-crawl)
+- [ ] Publish the pending SEO changes and rerun Site Audit with JavaScript rendering enabled
+- [ ] Review remaining low-word-count pages and add task-specific guidance where useful
+- [ ] Review low text-to-HTML warnings; do not add repetitive filler just to change the ratio
+- [ ] Identify and fix the exact broken URL after confirming its URL and HTTP status from Crawled Pages
+
 ---
 
 ## Launch Readiness

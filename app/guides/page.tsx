@@ -59,6 +59,21 @@ export default function GuidesPage() {
               </Link>
             ))}
           </div>
+
+          <section className="mt-12 max-w-4xl border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-black text-white">How to use these guides</h2>
+            <p className="mt-4 leading-8 text-slate-300">
+              Each guide explains a practical workflow, helps you choose settings
+              and points to a related ToolMint utility. Start with the task you
+              need to complete, read the limitations that apply to your file or
+              data, then open the linked tool and check the result before using
+              it elsewhere. Compression and conversion can change quality or
+              searchability, while developer and SEO checks may not replace
+              testing in the system where your content will be used. The guides
+              are educational references; always verify important outputs for
+              your own requirements.
+            </p>
+          </section>
         </section>
       </main>
 

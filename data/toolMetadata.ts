@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { tools } from "@/data/tools";
 
 const siteName = "ToolMint";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://toolmint.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.toolmintco.com";
 
 const categoryKeywords: Record<string, string[]> = {
   PDF: ["pdf tool", "online pdf tool", "free pdf tool"],

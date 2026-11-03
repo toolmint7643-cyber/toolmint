@@ -1,0 +1,21 @@
+# ToolMint
+
+> ToolMint is an online utility website with tools for PDF and image workflows, developers, SEO, text, calculations, and color tasks.
+
+## Main pages
+
+- [All tools](https://www.toolmintco.com/all-tools): Complete directory grouped by category.
+- [Guides](https://www.toolmintco.com/guides): Practical guides for selected file and developer workflows.
+- [About ToolMint](https://www.toolmintco.com/about): Product information and principles.
+- [Contact](https://www.toolmintco.com/contact): Support, feedback, and tool requests.
+- [Privacy Policy](https://www.toolmintco.com/privacy-policy): Privacy and data-use information.
+
+## Notes
+
+- Tool availability and behavior are described on each individual tool page.
+- Some file tools process data in the browser; consult the specific page for its privacy and compatibility details.
+- Results from calculators, SEO checks, and other utilities should be reviewed for the user's context.
+
+## Discovery
+
+- Sitemap: https://www.toolmintco.com/sitemap.xml
