@@ -296,6 +296,13 @@ export const tools = [
   category: "Calculator",
 },
 {
+  title: "Profit Margin Calculator",
+  description:
+    "Calculate profit margin, markup and target selling price for products or services. Optional India GST pricing uses your entered rate; no currency conversion.",
+  href: "/profit-margin-calculator",
+  category: "Calculator",
+},
+{
   title: "Simple Interest Calculator",
   description:
     "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",

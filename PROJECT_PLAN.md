@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 116 / 100+
+Tools Completed: 117 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -110,6 +110,7 @@ Status: Premium homepage 2.0 completed and verified
 - [x] Loan Calculator
 - [x] Salary Calculator
 - [x] Tax Calculator India
+- [x] Profit Margin Calculator
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
@@ -238,7 +239,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 ### Upcoming Calculator Tools
 - [x] Salary Calculator
 - [x] Tax Calculator India
-- [ ] Profit Margin Calculator
+- [x] Profit Margin Calculator
 - [ ] Break-even Calculator
 - [ ] Inflation Calculator
 - [ ] Time Duration Calculator
@@ -350,6 +351,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Loan Calculator
 - [x] Salary Calculator
 - [x] Tax Calculator India
+- [x] Profit Margin Calculator
 - [x] Discount Calculator
 - [x] Land Area Converter
 - [x] Currency Converter
