@@ -465,15 +465,15 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Google Analytics
 
 ### SEO Audit Follow-up (November 2026)
-- [x] Add a server-rendered `/all-tools` directory and include it in the sitemap (implemented locally; deployment and crawl verification pending)
-- [x] Add `public/llms.txt` and use the current production domain for canonical defaults (implemented locally; deployment pending)
-- [x] Fix the Markdown Preview duplicate H1 and improve semantic markup (implemented locally; deployment and crawl verification pending)
-- [x] Balance contextual related-tool links across category pages (implemented locally; verify incoming-link counts after re-crawl)
-- [x] Add task-specific content to selected low-word-count pages and add sitewide/contextual links to Contrast Checker (implemented locally; verify after re-crawl)
-- [x] Expand the Terms page and add page-specific guidance to the November 3 Semrush examples; add named semantic sections to two workspaces with no content sections (implemented locally; publish and verify)
+- [x] Add a server-rendered `/all-tools` directory and include it in the sitemap (deployed; crawl verification pending)
+- [x] Add `public/llms.txt` and use the current production domain for canonical defaults (deployed; verify after crawl)
+- [x] Fix the Markdown Preview duplicate H1 and improve semantic markup (deployed; crawl verification pending)
+- [x] Balance contextual related-tool links across category pages (deployed; verify incoming-link counts after re-crawl)
+- [x] Add task-specific content to selected low-word-count pages and add sitewide/contextual links to Contrast Checker (deployed; verify after re-crawl)
+- [x] Expand the Terms page and add page-specific guidance to the November 3 Semrush examples; add named semantic sections to two workspaces with no content sections (deployed; re-crawl verification pending)
 - [ ] Identify the exact URL for Semrush's low semantic HTML notice from issue details and confirm it after re-crawl
-- [ ] Publish the pending SEO changes and rerun Site Audit with JavaScript rendering enabled
-- [ ] Reassess remaining low-word-count warnings after publication; keep legal pages accurate rather than padding them
+- [ ] Rerun Site Audit with JavaScript rendering enabled
+- [ ] Reassess remaining low-word-count warnings after re-crawl; keep legal pages accurate rather than padding them
 - [ ] Reassess low text-to-HTML warnings after a fresh crawl; do not add repetitive filler just to change the ratio
 - [x] November 3, 2026 Semrush audit reported zero broken pages; monitor the next crawl
 
@@ -485,8 +485,8 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Terms page
 - [x] Contact page
 - [x] About page
-- [ ] Vercel deployment
-- [ ] Custom domain
+- [x] Vercel deployment
+- [x] Custom domain
 - [ ] AdSense approval preparation
 
 ---

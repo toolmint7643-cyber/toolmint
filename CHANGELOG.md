@@ -6,6 +6,10 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Launch Readiness
+- Marked the Vercel production deployment and custom domain as complete in the project plan and roadmap.
+- Kept AdSense approval and JavaScript-rendered SEO recrawl verification pending.
+
 ### Calculator Tools
 - Added a Salary Calculator with annual, monthly, semi-monthly, biweekly and weekly pay frequencies.
 - Added multiple currency display options, user-entered pay-period deductions, annual/monthly take-home estimates, examples, copy and reset actions.
