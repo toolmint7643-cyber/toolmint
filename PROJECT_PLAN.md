@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 115 / 100+
+Tools Completed: 116 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -109,6 +109,7 @@ Status: Premium homepage 2.0 completed and verified
 - [x] BMI Calculator
 - [x] Loan Calculator
 - [x] Salary Calculator
+- [x] Tax Calculator India
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
@@ -236,7 +237,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 
 ### Upcoming Calculator Tools
 - [x] Salary Calculator
-- [ ] Tax Calculator India
+- [x] Tax Calculator India
 - [ ] Profit Margin Calculator
 - [ ] Break-even Calculator
 - [ ] Inflation Calculator
@@ -348,6 +349,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] BMI Calculator
 - [x] Loan Calculator
 - [x] Salary Calculator
+- [x] Tax Calculator India
 - [x] Discount Calculator
 - [x] Land Area Converter
 - [x] Currency Converter
@@ -506,3 +508,9 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - Update ROADMAP.md if needed
 - Test tool on mobile and desktop
 - Commit changes to Git
+
+## Tax Rate Maintenance
+
+- India tax rates are versioned by Tax Year and checked against official government publications.
+- Re-verify the tax calculator after each Union Budget or relevant tax-law amendment; update `lib/indiaTax.ts`, its source-check date, calculation tests, and deploy.
+- The calculator does not fetch or auto-update tax rates live. Never publish new-year rates before checking authoritative sources.

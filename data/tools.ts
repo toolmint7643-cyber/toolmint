@@ -289,6 +289,13 @@ export const tools = [
   category: "Calculator",
 },
 {
+  title: "Tax Calculator India",
+  description:
+    "Estimate India income tax for Tax Year 2026-27 under the new or old regime. Compare salary standard deductions, resident rebates, surcharge, marginal relief and cess using published rates.",
+  href: "/tax-calculator-india",
+  category: "Calculator",
+},
+{
   title: "Simple Interest Calculator",
   description:
     "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",

@@ -71,6 +71,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Text Compare
 - [x] Loan Calculator
 - [x] Salary Calculator
+- [x] Tax Calculator India
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator

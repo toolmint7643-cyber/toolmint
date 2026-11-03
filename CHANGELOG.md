@@ -10,6 +10,10 @@ All notable changes to this project will be documented in this file.
 - Added a Salary Calculator with annual, monthly, semi-monthly, biweekly and weekly pay frequencies.
 - Added multiple currency display options, user-entered pay-period deductions, annual/monthly take-home estimates, examples, copy and reset actions.
 - Clearly states that income tax, local payroll rules, benefits and currency conversion are not calculated automatically.
+- Added the India Income Tax Calculator for Tax Year 2026-27 with new/old regime comparison, salary standard deductions, resident rebates, surcharge marginal relief and 4% cess.
+- Centralized versioned official tax rules and added calculation tests for slab boundaries, rebates, resident age thresholds and surcharge marginal relief.
+- Verified the Tax Year 2026-27 figures against official sources on 2026-11-03; rates are versioned and do not auto-refresh, so later Budget or law changes require review, tests and redeployment.
+- Clearly discloses that special-rate income, personal deduction eligibility, statutory caps and ITR filing are outside the estimate.
 
 ### PDF Tools
 - Added a browser-side PDF to Word converter with editable text DOCX and visual page-image DOCX modes.
