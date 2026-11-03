@@ -11,6 +11,9 @@ All notable changes to this project will be documented in this file.
 - Kept AdSense approval and JavaScript-rendered SEO recrawl verification pending.
 
 ### Calculator Tools
+- Added a global Inflation Calculator with an annual-rate projection and user-entered CPI index comparison mode.
+- Added future-equivalent price, cumulative change, annualized CPI rate, purchasing-power estimate, timeline visualization, examples, copy/reset and multiple display currencies.
+- Clearly states that rates and CPI values are user-provided; no live country data, official forecast or currency conversion is claimed.
 - Added a global Break-even Calculator for fixed costs, contribution per unit, break-even and target-profit units/revenue, expected operating profit and margin of safety.
 - Added multiple currency display formats without exchange conversion, examples, copy/reset actions, accessible validation and clear single-product assumptions.
 - Added a global Profit Margin Calculator for quantity, unit cost, selling price, extra expenses, gross/net profit, margin, markup and target-price estimates.

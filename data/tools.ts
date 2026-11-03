@@ -310,6 +310,13 @@ export const tools = [
   category: "Calculator",
 },
 {
+  title: "Inflation Calculator",
+  description:
+    "Estimate future prices and purchasing power with an annual rate you enter or compare user-provided CPI indexes. No live country rates are assumed or fetched.",
+  href: "/inflation-calculator",
+  category: "Calculator",
+},
+{
   title: "Simple Interest Calculator",
   description:
     "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",

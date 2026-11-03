@@ -74,6 +74,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Tax Calculator India
 - [x] Profit Margin Calculator
 - [x] Break-even Calculator
+- [x] Inflation Calculator
 - [x] Simple Interest Calculator
 - [x] Compound Interest Calculator
 - [x] SIP Calculator
