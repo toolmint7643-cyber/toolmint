@@ -1,5 +1,6 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { tools } from "@/data/tools";
@@ -21,6 +22,10 @@ const workflowLabels: Record<string, string> = {
   Color: "Related color tools",
   SEO: "Related SEO tools",
 };
+
+const subscribeToNothing = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
 
 function normalizePath(pathname: string) {
   if (pathname.length > 1 && pathname.endsWith("/")) {
@@ -69,7 +74,17 @@ function getRelatedTools(currentTool: Tool) {
 }
 
 export default function RelatedToolsFooter() {
+  const isMounted = useSyncExternalStore(
+    subscribeToNothing,
+    getClientSnapshot,
+    getServerSnapshot,
+  );
   const pathname = normalizePath(usePathname());
+
+  if (!isMounted) {
+    return null;
+  }
+
   const currentTool = tools.find((tool) => tool.href === pathname);
 
   if (!currentTool) {

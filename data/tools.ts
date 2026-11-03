@@ -303,6 +303,13 @@ export const tools = [
   category: "Calculator",
 },
 {
+  title: "Break-even Calculator",
+  description:
+    "Calculate break-even units and sales revenue from fixed costs, variable cost per unit and selling price. Estimate target-profit sales and margin of safety.",
+  href: "/break-even-calculator",
+  category: "Calculator",
+},
+{
   title: "Simple Interest Calculator",
   description:
     "Calculate simple interest online using principal amount, annual interest rate and time period in years, months or days.",

@@ -11,6 +11,8 @@ All notable changes to this project will be documented in this file.
 - Kept AdSense approval and JavaScript-rendered SEO recrawl verification pending.
 
 ### Calculator Tools
+- Added a global Break-even Calculator for fixed costs, contribution per unit, break-even and target-profit units/revenue, expected operating profit and margin of safety.
+- Added multiple currency display formats without exchange conversion, examples, copy/reset actions, accessible validation and clear single-product assumptions.
 - Added a global Profit Margin Calculator for quantity, unit cost, selling price, extra expenses, gross/net profit, margin, markup and target-price estimates.
 - Added broad currency display choices without exchange conversion, plus optional India GST-inclusive/exclusive pricing using a user-entered rate; the existing GST Calculator remains the dedicated GST breakdown tool.
 - Added a Salary Calculator with annual, monthly, semi-monthly, biweekly and weekly pay frequencies.
