@@ -25,7 +25,11 @@ function directChildText(element: Element, localName: string) {
 }
 
 function parseSitemapXml(xml: string): ParsedSitemap {
-  if (!xml.trim()) throw new Error("Add or fetch an XML sitemap first.");
+  const source = xml.trim();
+  if (!source) throw new Error("Add or fetch an XML sitemap first.");
+  if (/^https?:\/\//i.test(source)) {
+    throw new Error("You entered a sitemap URL, not XML. Switch to the Fetch sitemap URL tab, or open the URL and paste its raw XML here.");
+  }
   if (new TextEncoder().encode(xml).byteLength > MAX_XML_BYTES) {
     throw new Error("The XML exceeds the 1 MB processing limit.");
   }
@@ -34,8 +38,14 @@ function parseSitemapXml(xml: string): ParsedSitemap {
   }
 
   const document = new DOMParser().parseFromString(xml, "application/xml");
-  if (document.getElementsByTagName("parsererror").length > 0) {
-    throw new Error("This XML is malformed. Check the sitemap file and try again.");
+  const parserError = document.getElementsByTagName("parsererror")[0];
+  if (parserError) {
+    const detail = (parserError.textContent || "").replace(/\s+/g, " ").trim().slice(0, 220);
+    throw new Error(
+      detail
+        ? `The XML could not be parsed: ${detail}`
+        : "This XML is malformed. Check the sitemap file and try again."
+    );
   }
 
   const root = document.documentElement;
