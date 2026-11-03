@@ -10,6 +10,10 @@ All notable changes to this project will be documented in this file.
 - Added a browser-side PDF to Word converter with editable text DOCX and visual page-image DOCX modes.
 - Added page-range selection, batch conversion, per-file results, progress/cancellation and ZIP download for batches.
 - Reports pages without selectable text without claiming OCR; documents best-effort layout fidelity and visual mode's non-editable page images.
+- Added ten browser-side PDF utilities: PDF to Excel, PDF Protect, Page Counter, Grayscale Converter, Image Extractor, Signature Image, Sort Pages, Compress Images, Form Field Viewer and Booklet Maker.
+- Added real AES-128/AES-256 PDF encryption using QPDF WebAssembly; the required 2.2 MB QPDF WASM asset is served locally from `public/pdfstudio/qpdf.wasm`.
+- Added image-only QPDF optimization with measured before/after byte sizes, sequential raster grayscale conversion, CSV page/form reports, XLSX text export, and saddle-stitch booklet imposition.
+- Added clear per-tool limitations: Excel text layout is heuristic, grayscale pages are rasterized, image extraction is best-effort, signature placement is not a digital signature, and PDF permission flags are not DRM.
 
 ### Homepage UI
 - Restored distinct, premium-feeling tool cards with category-specific visual accents across featured, popular, category, and directory sections.

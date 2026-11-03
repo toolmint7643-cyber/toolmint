@@ -136,24 +136,48 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] PDF Flatten
 - [x] PDF Redaction Lite
 - [x] PDF to Word
+- [x] PDF to Excel
+- [x] PDF Protect / Password Protect
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Extract Images
+- [x] PDF Add Signature Image
+- [x] PDF Sort Pages by Size / Orientation
+- [x] PDF Compress Images Only
+- [x] PDF Form Field Viewer
+- [x] PDF Booklet Maker
 ---
 
 # Future PDF Tools
 
-- [x] PDF OCR
-- [x] PDF to JPG
-- [x] PDF to PNG
+- [x] PDF to Images (PDF to Image, PDF to JPG and PDF to PNG)
 - [x] PDF to Word
-- [ ] PDF to Excel
+- [x] PDF to Excel
 - [x] PDF Flatten
 - [x] PDF Header/Footer
 - [x] PDF Compare
 - [x] PDF Validator
-- [x] PDF Repair
+- [x] PDF Repair Lite
 - [x] PDF Security Info
-- [ ] PDF Protect / Password Protect
-- [x] PDF Header/Footer
+- [x] PDF Protect / Password Protect
 - [x] PDF Redaction Lite
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Extract Images
+- [x] PDF Add Signature Image
+- [x] PDF Sort Pages by Size / Orientation
+- [x] PDF Compress Images Only
+- [x] PDF Form Field Viewer
+- [x] PDF Booklet Maker
+- [x] PDF Protect / Password Protect
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Extract Images
+- [x] PDF Add Signature Image
+- [x] PDF Sort Pages by Size / Orientation
+- [x] PDF Compress Images Only
+- [x] PDF Form Field Viewer
+- [x] PDF Booklet Maker
 
 
 # Phase 6 - SEO and Growth

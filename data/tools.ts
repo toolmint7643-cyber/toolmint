@@ -714,4 +714,74 @@ export const tools = [
   href: "/pdf-redaction",
   category: "PDF",
 },
+{
+  title: "PDF to Excel Converter",
+  description:
+    "Export selectable PDF text to an XLSX workbook with a worksheet for each page. Table layout is reconstructed heuristically; scanned pages need OCR.",
+  href: "/pdf-to-excel",
+  category: "PDF",
+},
+{
+  title: "Password Protect PDF",
+  description:
+    "Encrypt a PDF with real AES-128 or AES-256 opening-password protection in your browser. Optional reader permissions are not DRM.",
+  href: "/pdf-protect",
+  category: "PDF",
+},
+{
+  title: "PDF Page Counter",
+  description:
+    "Count PDF pages and export each page's displayed dimensions, orientation, and rotation as a CSV report.",
+  href: "/pdf-page-counter",
+  category: "PDF",
+},
+{
+  title: "PDF Grayscale Converter",
+  description:
+    "Convert PDF pages to grayscale with adjustable DPI and JPEG quality. Pages are rasterized, so text and vector content are not preserved.",
+  href: "/pdf-grayscale",
+  category: "PDF",
+},
+{
+  title: "Extract Images from PDF",
+  description:
+    "Extract supported raster image objects from PDF pages as PNG files in a ZIP. Unsupported, masked, or inline objects may be skipped.",
+  href: "/pdf-extract-images",
+  category: "PDF",
+},
+{
+  title: "Add Signature Image to PDF",
+  description:
+    "Place a PNG or JPG signature image on selected PDF pages. This visible stamp is not a cryptographic digital signature.",
+  href: "/pdf-signature-image",
+  category: "PDF",
+},
+{
+  title: "Sort PDF Pages",
+  description:
+    "Reorder PDF pages by displayed page size or portrait and landscape orientation, then download a newly ordered PDF.",
+  href: "/pdf-sort-pages",
+  category: "PDF",
+},
+{
+  title: "Compress Images in PDF",
+  description:
+    "Use QPDF WebAssembly to optimize eligible embedded PDF images and measure output size. Unsupported images may remain unchanged.",
+  href: "/pdf-compress-images",
+  category: "PDF",
+},
+{
+  title: "PDF Form Field Viewer",
+  description:
+    "Inspect supported interactive PDF AcroForm field names, types, values, and flags and export the results as CSV. XFA is not supported.",
+  href: "/pdf-form-field-viewer",
+  category: "PDF",
+},
+{
+  title: "PDF Booklet Maker",
+  description:
+    "Impose PDF pages into a two-up saddle-stitch booklet layout, padding the final signature when needed. Review printer settings with a test copy.",
+  href: "/pdf-booklet",
+  category: "PDF",
+},
 ];

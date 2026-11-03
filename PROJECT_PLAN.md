@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 104 / 100+
+Tools Completed: 114 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -65,6 +65,17 @@ Status: Premium homepage 2.0 completed and verified
 - [x] PDF Flatten
 - [x] PDF Compare
 - [x] PDF Redaction Lite
+- [x] PDF to Word Converter
+- [x] PDF to Excel Converter
+- [x] PDF Password Protect
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Image Extractor
+- [x] PDF Signature Image
+- [x] PDF Sort Pages
+- [x] PDF Compress Images
+- [x] PDF Form Field Viewer
+- [x] PDF Booklet Maker
 
 ### Developer Tools
 - [x] JSON Formatter
@@ -163,15 +174,16 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 
 ### Upcoming PDF Tools
 - [x] PDF to Word
-- [ ] PDF to Excel
-- [ ] PDF Protect / Password Protect
-- [ ] PDF Page Counter
-- [ ] PDF Grayscale Converter
-- [ ] PDF Extract Images
-- [ ] PDF Add Signature Image
-- [ ] PDF Sort Pages by Size / Orientation
-- [ ] PDF Compress Images Only
-- [ ] PDF Form Field Viewer
+- [x] PDF to Excel
+- [x] PDF Protect / Password Protect
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Extract Images
+- [x] PDF Add Signature Image
+- [x] PDF Sort Pages by Size / Orientation
+- [x] PDF Compress Images Only
+- [x] PDF Form Field Viewer
+- [x] PDF Booklet
 
 ### Upcoming Image Tools
 - [ ] Image Cropper
@@ -264,18 +276,24 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 
 ### Future PDF Tools
 
-
-- [ ] PDF to Images
+- [x] PDF to Images (covered by PDF to Image Converter, PDF to JPG and PDF to PNG)
 
 - [x] PDF to Word
-- [ ] PDF to Excel
+- [x] PDF to Excel
 
-- [ ] PDF Booklet
+- [x] PDF Booklet
 
 
-- [ ] PDF Protect / Password Protect
+- [x] PDF Protect / Password Protect
+- [x] PDF Page Counter
+- [x] PDF Grayscale Converter
+- [x] PDF Extract Images
+- [x] PDF Add Signature Image
+- [x] PDF Sort Pages by Size / Orientation
+- [x] PDF Compress Images Only
+- [x] PDF Form Field Viewer
 
-Important note for PDF Protect / Password Protect: Requires verification of a real PDF encryption/password-protection implementation. Do not fake password protection with client-side metadata or unsupported pdf-lib functionality.
+PDF limitations are stated on each tool page. PDF to Excel reconstructs selectable text heuristically, image extraction skips unsupported objects, grayscale conversion rasterizes pages, signature placement is a visible stamp rather than a digital signature, and PDF protection uses reader-enforced permissions rather than DRM.
 
 ## Planned Developer Tools
 
