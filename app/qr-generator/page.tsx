@@ -100,6 +100,32 @@ export default function QRGeneratorPage() {
 )}
   </div>
 </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Create and download a QR code</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Enter the exact text or URL you want a phone camera or QR reader
+              to display, generate the preview, and download the PNG. A QR code
+              stores the value you provide; this tool does not create a dynamic
+              redirect, track scans or check whether a destination website will
+              remain online. If the code points to a web page, test it with a
+              second device before printing or sharing it widely.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Make printed codes easier to scan</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Keep strong contrast between the code and its background, leave
+              clear space around the edges, and avoid shrinking the image until
+              its modules blur. Print a test at the intended size and check it
+              under the lighting and camera conditions your audience will use.
+              A successful download only confirms that the image was generated;
+              scanning tests confirm that the final printed or displayed code
+              is readable.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

@@ -310,6 +310,32 @@ export default function CaseConverterPage() {
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Choose a case style for your text</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Uppercase and lowercase change letter casing, while title case
+              and sentence case capitalize text for common reading styles.
+              camelCase, PascalCase, snake_case and kebab-case are naming
+              conventions often used for variables, components, filenames and
+              URLs. Select a format to preview the converted output, then copy
+              it or use it as the next input for another conversion.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Review names and acronyms after conversion</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Automatic case conversion follows general word boundaries and
+              cannot know every person&apos;s name, product name, abbreviation or
+              domain-specific term. Check proper nouns and acronyms before
+              publishing. Code naming rules also depend on the language and
+              project, so confirm that the selected style matches the
+              destination. The input and output are handled in the current
+              browser page.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -447,6 +448,30 @@ AAA Large Text: ${getStatus(checks[3].passed)} (${checks[3].requirement})`;
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">How color contrast is evaluated</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              The checker compares a foreground text color with a background
+              color and calculates a contrast ratio. WCAG guidance generally
+              calls for at least 4.5:1 for normal text and 3:1 for large text
+              at AA level; AAA uses stricter thresholds. The result can help
+              compare interface color pairs before you apply them to buttons,
+              labels or body text.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">A contrast result is not a full accessibility audit</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              A passing color ratio does not check font clarity, focus states,
+              keyboard operation, meaning conveyed by color alone or every
+              state in a finished interface. Test the actual design at its
+              intended text size and in context. You can choose or inspect
+              colors with the <Link className="font-bold text-blue-300 hover:text-blue-200" href="/color-picker">Color Picker</Link> and create coordinated swatches with the <Link className="font-bold text-blue-300 hover:text-blue-200" href="/color-palette-generator">Color Palette Generator</Link>.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

@@ -64,6 +64,31 @@ export default function UUIDGeneratorPage() {
 
         </ToolCard>
 
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">What is a UUID v4?</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              A UUID is a 128-bit identifier commonly written as 32 hexadecimal
+              characters separated by hyphens. This page uses the browser Web
+              Crypto API&apos;s <code>crypto.randomUUID()</code> method to create a
+              version 4 UUID. It is useful for database records, test fixtures
+              and application objects when an identifier does not need to carry
+              business meaning or sort by creation time.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">UUIDs are identifiers, not secrets</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              UUID collisions are designed to be extremely unlikely, but a UUID
+              is not a password, access token or authorization check. Do not use
+              a generated identifier alone to protect private data. Copy the
+              value into the application that needs it and apply that system&apos;s
+              own validation and access controls. Generation happens locally in
+              the current browser page.
+            </p>
+          </div>
+        </section>
+
       </main>
 
       <Footer />

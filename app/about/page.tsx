@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -82,6 +83,36 @@ export default function AboutPage() {
                 relying on an output, especially for important documents or
                 business decisions. Browse the complete directory to see what
                 is currently available.
+              </p>
+            </div>
+          </section>
+
+          <section className="mt-10 border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-black text-white">How ToolMint works</h2>
+            <div className="mt-4 space-y-4 leading-8 text-slate-300">
+              <p>
+                ToolMint is organized around everyday tasks rather than a single
+                type of software. You can browse tools for PDF page management,
+                image conversion, writing, calculations, color accessibility and
+                common developer workflows from the <Link className="font-bold text-blue-300 hover:text-blue-200" href="/all-tools">complete tools directory</Link>.
+                Each page describes its inputs, output and relevant limitations
+                so you can decide whether it fits your task.
+              </p>
+              <p>
+                Many text, image and PDF operations run directly in your browser,
+                which avoids sending those files to ToolMint for processing.
+                Some features that inspect a public web page or retrieve live
+                information need a network request or an external data source.
+                Check the individual tool&apos;s privacy and limitation notes before
+                using it with confidential material or relying on a result for an
+                important decision.
+              </p>
+              <p>
+                ToolMint is an independent project and its tools are utilities,
+                not professional advice or a substitute for checking important
+                outputs. The collection changes as features are reviewed and
+                improved. For corrections, accessibility feedback or a useful
+                tool idea, visit the <Link className="font-bold text-blue-300 hover:text-blue-200" href="/contact">Contact page</Link>.
               </p>
             </div>
           </section>

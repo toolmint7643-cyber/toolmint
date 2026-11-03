@@ -114,6 +114,31 @@ export default function JsonFormatterPage() {
 
       </ToolCard>
 
+      <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+        <div>
+          <h2 className="text-2xl font-black text-white">When to format JSON</h2>
+          <p className="mt-3 leading-7 text-slate-300">
+            Formatting adds consistent indentation and line breaks so nested
+            objects and arrays are easier to inspect, review and debug. Paste a
+            JSON value, choose Format JSON, then copy the readable result into a
+            code editor, API client or configuration file. The formatter parses
+            and serializes the value in this browser; it does not validate an API
+            schema or confirm that a particular application accepts the data.
+          </p>
+        </div>
+        <div>
+          <h2 className="text-2xl font-black text-white">Common JSON syntax errors</h2>
+          <p className="mt-3 leading-7 text-slate-300">
+            JSON requires double quotes around property names and string values,
+            commas between entries, and no trailing comma after the final item.
+            Comments are not part of standard JSON. If formatting fails, check
+            the reported syntax, quotation marks, brackets and braces near the
+            location of the error. Formatting changes whitespace for readability;
+            keep a copy of the source when its original layout matters.
+          </p>
+        </div>
+      </section>
+
     </div>
 
   </main>

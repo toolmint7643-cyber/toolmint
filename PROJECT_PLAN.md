@@ -447,10 +447,11 @@ Important note for PDF Protect / Password Protect: Requires verification of a re
 - [x] Add `public/llms.txt` and use the current production domain for canonical defaults (implemented locally; deployment pending)
 - [x] Fix the Markdown Preview duplicate H1 and improve semantic markup (implemented locally; deployment and crawl verification pending)
 - [x] Balance contextual related-tool links across category pages (implemented locally; verify incoming-link counts after re-crawl)
+- [x] Add task-specific content to selected low-word-count pages and add sitewide/contextual links to Contrast Checker (implemented locally; verify after re-crawl)
 - [ ] Publish the pending SEO changes and rerun Site Audit with JavaScript rendering enabled
-- [ ] Review remaining low-word-count pages and add task-specific guidance where useful
-- [ ] Review low text-to-HTML warnings; do not add repetitive filler just to change the ratio
-- [ ] Identify and fix the exact broken URL after confirming its URL and HTTP status from Crawled Pages
+- [ ] Reassess remaining low-word-count warnings after publication; keep legal pages accurate rather than padding them
+- [ ] Reassess low text-to-HTML warnings after a fresh crawl; do not add repetitive filler just to change the ratio
+- [x] November 3, 2026 Semrush audit reported zero broken pages; monitor the next crawl
 
 ---
 

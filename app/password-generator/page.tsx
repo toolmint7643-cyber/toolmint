@@ -222,6 +222,31 @@ const getStrength = () => {
 
         </ToolCard>
 
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Generate a password for an account</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Choose a length and enable the character groups required by the
+              service, then generate and copy the result into a trusted password
+              manager. The generator uses the browser&apos;s Web Crypto random
+              values and includes at least one character from each enabled
+              group. It runs in the browser; ToolMint does not need to receive
+              the generated password to create it.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Understand the strength indicator</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              The on-page strength label is a simple guide based on the chosen
+              length and character groups. It is not a breach check, password
+              audit or formal entropy measurement, and it cannot account for a
+              website&apos;s password policy. Use a unique password for every
+              account, avoid sharing it in screenshots or messages, and store
+              it in a password manager rather than reusing a memorable phrase.
+            </p>
+          </div>
+        </section>
+
       </main>
 
       <Footer />

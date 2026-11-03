@@ -17,6 +17,10 @@ All notable changes to this project will be documented in this file.
 - Corrected the default canonical/site URL to ToolMint's current `toolmintco.com` domain.
 - Changed the Markdown Preview sample heading to avoid a second page-level H1 and used article semantics for the preview.
 - Balanced related-tool links around each tool so pages later in a category also receive contextual internal links; publish and re-crawl before marking the audit issue resolved.
+- Added task-specific help to the About, Contact, JSON Formatter, Password Generator, Percentage Calculator, QR Generator, UUID Generator, Word Counter, Case Converter, Barcode Generator and Contrast Checker pages.
+- Added a persistent Contrast Checker footer link and contextual links to related color tools.
+- Kept low text-to-HTML warnings under review rather than adding repetitive copy; the metric needs a fresh crawl to assess after publication.
+- Recorded zero broken pages in the November 3, 2026 Semrush crawl; continue monitoring on the next audit.
 
 ## Unreleased
 ### Fixed

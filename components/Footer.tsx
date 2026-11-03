@@ -6,6 +6,7 @@ const toolLinks = [
   { label: "Image Compressor", href: "/image-compressor" },
   { label: "JSON Formatter", href: "/json-formatter" },
   { label: "Word Counter", href: "/word-counter" },
+  { label: "Contrast Checker", href: "/contrast-checker" },
 ];
 
 const categoryLinks = [

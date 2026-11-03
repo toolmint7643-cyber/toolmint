@@ -101,6 +101,30 @@ export default function ContactPage() {
               </p>
             </div>
           </section>
+
+          <section className="mt-10 border-t border-slate-800 pt-8">
+            <h2 className="text-2xl font-black text-white">What makes a useful report?</h2>
+            <div className="mt-4 space-y-4 leading-8 text-slate-300">
+              <p>
+                For a broken page, send the exact ToolMint URL and describe what
+                happened after you opened it. For a file tool, include the file
+                type, approximate size and the step that failed, but do not attach
+                a private document unless you are comfortable sharing it by
+                email. A short screen capture or a redacted error message can
+                help explain a layout issue without exposing personal data.
+              </p>
+              <p>
+                Tool requests are easier to assess when they describe the task,
+                who it helps and the expected input and output. Feedback about
+                mobile layout, keyboard access, confusing labels or slow
+                processing is also welcome. We review messages as time allows;
+                an email does not guarantee a reply time, a requested feature or
+                a sponsored placement. Use the address above for all ToolMint
+                questions and include a reply address if you contact us from a
+                different account.
+              </p>
+            </div>
+          </section>
         </section>
       </main>
 

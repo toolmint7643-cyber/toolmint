@@ -328,6 +328,32 @@ ${result.detail}`;
 </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Choose the right percentage calculation</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Use X% of Y to calculate a portion, such as 18% of 1,000. Choose
+              X is % of Y to compare a part with a total. Increase / Decrease
+              compares a new value with an old value, using the old value as the
+              baseline. Add % and Subtract % apply a rate to an original value
+              and return the adjusted amount. The selected mode labels the
+              fields so the two inputs are used in the intended order.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Check the baseline and units</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Percentage change depends on the starting value: changing from
+              100 to 120 is a 20% increase, while changing from 120 to 100 is a
+              decrease measured against 120. A percentage calculator does not
+              decide which tax, discount or accounting rule applies to your
+              situation. Confirm whether a rate is being added to a base,
+              removed from a price or compared with an earlier value before
+              using the result in a quote or record.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

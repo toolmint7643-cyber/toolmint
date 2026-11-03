@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -153,6 +154,32 @@ export default function WordCounterPage() {
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">How this word counter counts</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Words are separated by whitespace, while characters include
+              spaces and line breaks. The summary also counts non-space
+              characters, sentences, paragraphs and lines. Sentence totals use
+              common punctuation marks, so abbreviations, decimals and unusual
+              writing styles can affect that estimate. If a publisher or form
+              uses its own counting rules, compare the final text in that
+              destination before submitting it.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Reading and speaking time are estimates</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Reading time is estimated at about 200 words per minute and
+              speaking time at about 130 words per minute. Real pace depends on
+              language, subject, familiarity and pauses, so use these figures
+              as a quick planning aid rather than a timed guarantee. You can
+              revise the text and watch the counts update in the browser. For a
+              separate character-focused view, use the <Link className="font-bold text-blue-300 hover:text-blue-200" href="/character-counter">Character Counter</Link>.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />

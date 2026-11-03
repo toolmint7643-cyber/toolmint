@@ -563,6 +563,33 @@ Display Value: ${displayValue ? "Yes" : "No"}`;
             </div>
           </div>
         </ToolCard>
+
+        <section className="mt-10 grid gap-6 border-t border-slate-800 pt-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-black text-white">Select a barcode format for its intended use</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              CODE128 can represent general text and identifiers. EAN-13 and
+              UPC are retail product formats with specific numeric requirements;
+              ITF-14 is commonly used on outer packaging, while MSI and
+              Pharmacode serve more specialized workflows. Pick the format
+              expected by your scanner or inventory system, because two
+              different barcode standards are not interchangeable just because
+              both can encode a value.
+            </p>
+          </div>
+          <div>
+            <h2 className="text-2xl font-black text-white">Test the printed barcode</h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Check the value and barcode type before downloading. Print a test
+              at the final label size, preserve clear space around the bars,
+              and scan it with the equipment that will be used in practice.
+              Image generation does not register a retail product code, certify
+              a label or guarantee that every scanner can read it. Follow the
+              requirements of your retailer, carrier or internal system when a
+              barcode is used operationally.
+            </p>
+          </div>
+        </section>
       </main>
 
       <Footer />
