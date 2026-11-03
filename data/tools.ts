@@ -485,6 +485,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Sitemap URL Extractor",
+  description:
+    "Extract and deduplicate page URLs from XML sitemaps or sitemap indexes. Paste, upload or fetch a public sitemap, review last-modified values, and export URLs to TXT or CSV.",
+  href: "/sitemap-url-extractor",
+  category: "SEO",
+},
+{
   title: "Open Graph Preview Generator",
   description:
     "Fetch, preview and generate Open Graph and Twitter Card meta tags for SEO-friendly social sharing.",

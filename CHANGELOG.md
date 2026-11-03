@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### SEO Tools
+- Added a Sitemap URL Extractor for pasted XML, local XML uploads, and public sitemap URL fetching.
+- Parses standard page sitemaps and sitemap indexes, displays unique URLs and last-modified values, and exports TXT/CSV.
+- Added bounded child-sitemap fetching (up to 20 per action), a 1 MB response limit, and protected public URL fetching that blocks private/local network targets.
+- Clarifies that sitemap URL extraction does not verify URL availability or search-engine indexing.
+
 ### Launch Readiness
 - Marked the Vercel production deployment and custom domain as complete in the project plan and roadmap.
 - Kept AdSense approval and JavaScript-rendered SEO recrawl verification pending.

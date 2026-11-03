@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 119 / 100+
+Tools Completed: 120 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -139,6 +139,7 @@ Status: Premium homepage 2.0 completed and verified
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
 - [x] Sitemap Generator
+- [x] Sitemap URL Extractor
 - [x] Open Graph Preview Generator
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
@@ -206,7 +207,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 - [ ] Title Tag Checker
 - [ ] Meta Tags Checker
 - [ ] Hreflang Tag Checker
-- [ ] Sitemap URL Extractor
+- [x] Sitemap URL Extractor
 - [ ] Robots.txt Tester
 - [ ] Open Graph Image Size Checker
 - [ ] Keyword Suggestion Lite
@@ -411,6 +412,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Open Graph Preview
 - [x] Robots.txt Generator
 - [x] Sitemap Generator
+- [x] Sitemap URL Extractor
 - [x] Keyword Density Checker
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator
@@ -448,6 +450,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 ## SEO and Growth
 
 - [x] Sitemap Generator
+- [x] Sitemap URL Extractor
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
 - [x] Open Graph Preview Generator
