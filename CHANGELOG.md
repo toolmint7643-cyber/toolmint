@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added an advanced Robots.txt Tester with protected public-file fetching, local pasted/uploaded text analysis, crawler-token URL checks, matching-rule line references, directive summaries and downloadable reports.
+- Uses an RFC-oriented robots.txt parser and clearly distinguishes unavailable HTTP responses; it does not claim to reproduce a search engine's live crawl or indexing decision.
 - Added a Sitemap URL Extractor for pasted XML, local XML uploads, and public sitemap URL fetching.
 - Parses standard page sitemaps and sitemap indexes, displays unique URLs and last-modified values, and exports TXT/CSV.
 - Added bounded child-sitemap fetching (up to 20 per action), a 1 MB response limit, and protected public URL fetching that blocks private/local network targets.

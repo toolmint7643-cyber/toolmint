@@ -199,6 +199,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Google Analytics
 - [x] SEO Meta Tag Generator
 - [x] Robots.txt Generator
+- [x] Robots.txt Tester
 - [x] Open Graph Preview Generator
 - [x] Google SERP Preview Generator
 - [x] Meta Description Generator

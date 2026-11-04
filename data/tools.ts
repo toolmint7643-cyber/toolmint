@@ -478,6 +478,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Robots.txt Tester",
+  description:
+    "Test whether a URL path matches Allow or Disallow rules for a crawler product token. Inspect matching lines, sitemap directives and file notes using fetched, pasted or uploaded robots.txt content.",
+  href: "/robots-txt-tester",
+  category: "SEO",
+},
+{
   title: "Sitemap Generator",
   description:
     "Generate SEO-friendly XML sitemaps online with page URLs, last modified date, change frequency and priority settings.",

@@ -20,6 +20,7 @@
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-qr-code": "^2.2.0",
+    "robots-parser": "^3.0.1",
     "tesseract.js": "^7.0.0",
     "yaml": "^2.9.0"
   },
