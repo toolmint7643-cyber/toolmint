@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added an Open Graph Image Size Checker with webpage og:image discovery, direct image URL checks, local batch uploads, dimension/aspect-ratio comparison, report export and optional dimension metadata tags.
+- Measures images in the browser and labels 1200 × 630 as a configurable common wide-share reference, not a universal platform requirement or display guarantee.
 - Added an advanced Robots.txt Tester with protected public-file fetching, local pasted/uploaded text analysis, crawler-token URL checks, matching-rule line references, directive summaries and downloadable reports.
 - Uses an RFC-oriented robots.txt parser and clearly distinguishes unavailable HTTP responses; it does not claim to reproduce a search engine's live crawl or indexing decision.
 - Added a Sitemap URL Extractor for pasted XML, local XML uploads, and public sitemap URL fetching.

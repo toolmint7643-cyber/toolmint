@@ -506,6 +506,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Open Graph Image Size Checker",
+  description:
+    "Find a webpage's og:image or inspect image URLs and local files. Check browser-reported image dimensions and aspect ratio against a configurable share-image reference, then copy optional Open Graph dimension tags.",
+  href: "/open-graph-image-size-checker",
+  category: "SEO",
+},
+{
   title: "Google SERP Preview Generator",
   description:
     "Preview approximate Google-style search snippets with SEO title, URL and meta description length checks for desktop and mobile.",
