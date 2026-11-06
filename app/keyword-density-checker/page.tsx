@@ -15,9 +15,9 @@ type KeywordItem = {
 
 const sampleText = `ToolMint is a free online tools website for developers, students, creators and website owners. ToolMint provides useful developer tools, SEO tools, text tools, image tools, PDF tools and calculator tools.
 
-A keyword density checker helps writers analyze content and understand how often a keyword appears inside a page. SEO writers can use keyword density to avoid keyword stuffing and keep content natural.
+A keyword density checker helps writers count how often a target phrase appears in a piece of content. You can use a keyword frequency report to review wording before publishing an article, product page or landing page.
 
-For best SEO results, write helpful content for users first. Use your main keyword naturally in the title, headings, introduction and important sections.`;
+Write useful, clear content for people first. Describe the page accurately, use relevant terms naturally, and avoid repeating a phrase just to influence search rankings.`;
 
 const stopWords = new Set([
   "a",
@@ -75,25 +75,10 @@ const stopWords = new Set([
   "most",
 ]);
 
-function cleanText(value: string) {
-  return value
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+const wordPattern = /[\p{L}\p{N}]+(?:[-'’][\p{L}\p{N}]+)*/gu;
 
-function getWords(value: string, ignoreStopWords: boolean) {
-  const words = cleanText(value)
-    .split(" ")
-    .map((word) => word.trim())
-    .filter(Boolean);
-
-  if (!ignoreStopWords) {
-    return words;
-  }
-
-  return words.filter((word) => !stopWords.has(word));
+function getWords(value: string) {
+  return value.toLocaleLowerCase().match(wordPattern) ?? [];
 }
 
 function countPhrase(words: string[], phraseWords: string[]) {
@@ -104,9 +89,11 @@ function countPhrase(words: string[], phraseWords: string[]) {
   let count = 0;
 
   for (let index = 0; index <= words.length - phraseWords.length; index += 1) {
-    const slice = words.slice(index, index + phraseWords.length);
+    const matches = phraseWords.every(
+      (word, phraseIndex) => words[index + phraseIndex] === word,
+    );
 
-    if (slice.join(" ") === phraseWords.join(" ")) {
+    if (matches) {
       count += 1;
     }
   }
@@ -114,17 +101,26 @@ function countPhrase(words: string[], phraseWords: string[]) {
   return count;
 }
 
-function getTopPhrases(words: string[], size: number, totalWords: number) {
+function getTopPhrases(
+  words: string[],
+  size: number,
+  totalWords: number,
+  ignoreStopWords: boolean,
+) {
   const phraseMap = new Map<string, number>();
 
   for (let index = 0; index <= words.length - size; index += 1) {
-    const phrase = words.slice(index, index + size).join(" ");
+    const phraseWords = words.slice(index, index + size);
 
-    if (!phrase.trim()) {
+    if (
+      ignoreStopWords &&
+      phraseWords.some((word) => stopWords.has(word))
+    ) {
       continue;
     }
 
-    phraseMap.set(phrase, (phraseMap.get(phrase) || 0) + 1);
+    const phrase = phraseWords.join(" ");
+    phraseMap.set(phrase, (phraseMap.get(phrase) ?? 0) + 1);
   }
 
   return Array.from(phraseMap.entries())
@@ -134,48 +130,12 @@ function getTopPhrases(words: string[], size: number, totalWords: number) {
       density: totalWords > 0 ? (count / totalWords) * 100 : 0,
     }))
     .filter((item) => item.count > 1)
-    .sort((first, second) => second.count - first.count)
+    .sort(
+      (first, second) =>
+        second.count - first.count ||
+        first.keyword.localeCompare(second.keyword),
+    )
     .slice(0, 10);
-}
-
-function getDensityStatus(density: number) {
-  if (density === 0) {
-    return {
-      label: "Not Found",
-      color: "text-slate-300",
-      bg: "border-slate-600 bg-slate-800",
-    };
-  }
-
-  if (density < 0.5) {
-    return {
-      label: "Low",
-      color: "text-yellow-300",
-      bg: "border-yellow-500/30 bg-yellow-500/10",
-    };
-  }
-
-  if (density <= 2.5) {
-    return {
-      label: "Good",
-      color: "text-emerald-300",
-      bg: "border-emerald-500/30 bg-emerald-500/10",
-    };
-  }
-
-  if (density <= 4) {
-    return {
-      label: "High",
-      color: "text-orange-300",
-      bg: "border-orange-500/30 bg-orange-500/10",
-    };
-  }
-
-  return {
-    label: "Stuffing Risk",
-    color: "text-red-300",
-    bg: "border-red-500/30 bg-red-500/10",
-  };
 }
 
 function formatPercent(value: number) {
@@ -188,57 +148,99 @@ export default function KeywordDensityCheckerPage() {
   const [ignoreStopWords, setIgnoreStopWords] = useState(true);
 
   const analysis = useMemo(() => {
-    const allWords = getWords(text, false);
-    const filteredWords = getWords(text, ignoreStopWords);
-    const targetWords = getWords(targetKeyword, false);
-
+    const allWords = getWords(text);
+    const targetWords = getWords(targetKeyword);
     const targetCount = countPhrase(allWords, targetWords);
     const targetDensity =
       allWords.length > 0 ? (targetCount / allWords.length) * 100 : 0;
 
     return {
-      allWords,
-      filteredWords,
       wordCount: allWords.length,
-      filteredWordCount: filteredWords.length,
-      characterCount: text.length,
+      characterCount: Array.from(text).length,
       targetCount,
       targetDensity,
-      oneWordKeywords: getTopPhrases(filteredWords, 1, allWords.length),
-      twoWordKeywords: getTopPhrases(filteredWords, 2, allWords.length),
-      threeWordKeywords: getTopPhrases(filteredWords, 3, allWords.length),
+      hasTarget: targetWords.length > 0,
+      oneWordKeywords: getTopPhrases(
+        allWords,
+        1,
+        allWords.length,
+        ignoreStopWords,
+      ),
+      twoWordKeywords: getTopPhrases(
+        allWords,
+        2,
+        allWords.length,
+        ignoreStopWords,
+      ),
+      threeWordKeywords: getTopPhrases(
+        allWords,
+        3,
+        allWords.length,
+        ignoreStopWords,
+      ),
     };
   }, [text, targetKeyword, ignoreStopWords]);
 
-  const targetStatus = getDensityStatus(analysis.targetDensity);
+  const targetStatus = !analysis.hasTarget
+    ? "Enter a target phrase to count its occurrences."
+    : analysis.targetCount === 0
+      ? "No exact phrase match found in the content."
+      : "Exact phrase occurrences counted.";
 
-  const report = `Keyword Density Report
+  const report = `Keyword Frequency Report
 
-Target keyword: ${targetKeyword || "Not set"}
+Target phrase: ${targetKeyword || "Not set"}
 Word count: ${analysis.wordCount}
 Character count: ${analysis.characterCount}
-Target keyword count: ${analysis.targetCount}
-Target keyword density: ${formatPercent(analysis.targetDensity)}
-Status: ${targetStatus.label}
+Target phrase occurrences: ${analysis.hasTarget ? analysis.targetCount : "Not calculated"}
+Target phrase frequency: ${analysis.hasTarget ? formatPercent(analysis.targetDensity) : "Not calculated"}
 
-Top single-word keywords:
-${analysis.oneWordKeywords
-  .map((item) => `${item.keyword}: ${item.count} (${formatPercent(item.density)})`)
-  .join("\n")}
+Frequency formula: exact phrase occurrences / total word count x 100.
+This is a frequency calculation, not a Google ranking score or recommended density.
+
+Top single words:
+${
+  analysis.oneWordKeywords.length
+    ? analysis.oneWordKeywords
+        .map(
+          (item) =>
+            `${item.keyword}: ${item.count} (${formatPercent(item.density)})`,
+        )
+        .join("\n")
+    : "No repeated words found."
+}
 
 Top 2-word phrases:
-${analysis.twoWordKeywords
-  .map((item) => `${item.keyword}: ${item.count} (${formatPercent(item.density)})`)
-  .join("\n")}
+${
+  analysis.twoWordKeywords.length
+    ? analysis.twoWordKeywords
+        .map(
+          (item) =>
+            `${item.keyword}: ${item.count} (${formatPercent(item.density)})`,
+        )
+        .join("\n")
+    : "No repeated phrases found."
+}
 
 Top 3-word phrases:
-${analysis.threeWordKeywords
-  .map((item) => `${item.keyword}: ${item.count} (${formatPercent(item.density)})`)
-  .join("\n")}`;
+${
+  analysis.threeWordKeywords.length
+    ? analysis.threeWordKeywords
+        .map(
+          (item) =>
+            `${item.keyword}: ${item.count} (${formatPercent(item.density)})`,
+        )
+        .join("\n")
+    : "No repeated phrases found."
+}`;
 
   const copyReport = async () => {
-    await navigator.clipboard.writeText(report);
-    alert("Keyword density report copied!");
+    try {
+      await navigator.clipboard.writeText(report);
+      window.alert("Keyword frequency report copied.");
+    } catch {
+      window.alert("Could not copy the report. Please check clipboard permissions.");
+    }
   };
 
   const loadSample = () => {
@@ -258,21 +260,27 @@ ${analysis.threeWordKeywords
       <h3 className="mb-4 text-xl font-bold text-white">{title}</h3>
 
       {items.length === 0 ? (
-        <p className="text-slate-400">No repeated keywords found yet.</p>
+        <p className="text-slate-400">No repeated phrases found yet.</p>
       ) : (
         <div className="space-y-3">
           {items.map((item) => (
             <div
               key={item.keyword}
-              className="grid grid-cols-[1fr_auto_auto] items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3"
+              className="grid grid-cols-[minmax(0,1fr)_auto_auto] items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-3"
             >
               <span className="min-w-0 break-words font-semibold text-slate-100">
                 {item.keyword}
               </span>
-              <span className="rounded-lg bg-blue-500/10 px-3 py-1 text-sm font-bold text-blue-300">
+              <span
+                className="rounded-lg bg-blue-500/10 px-3 py-1 text-sm font-bold text-blue-300"
+                title="Number of occurrences"
+              >
                 {item.count}
               </span>
-              <span className="rounded-lg bg-emerald-500/10 px-3 py-1 text-sm font-bold text-emerald-300">
+              <span
+                className="rounded-lg bg-slate-700 px-3 py-1 text-sm font-bold text-slate-200"
+                title="Occurrences divided by the document's total word count"
+              >
                 {formatPercent(item.density)}
               </span>
             </div>
@@ -289,7 +297,7 @@ ${analysis.threeWordKeywords
       <main className="mx-auto max-w-7xl px-4 py-10">
         <PageTitle
           title="📊 Keyword Density Checker"
-          description="Analyze keyword frequency, keyword density, repeated words and SEO phrase usage in your content."
+          description="Count exact keyword and phrase occurrences, review repeated terms, and calculate their share of the text."
         />
 
         <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
@@ -300,14 +308,14 @@ ${analysis.threeWordKeywords
                   ✍️ Content Input
                 </h2>
                 <p className="text-slate-300">
-                  Paste your article, landing page copy or SEO content to check
-                  keyword usage.
+                  Paste an article, product description or landing page copy.
+                  Your analysis updates as you type.
                 </p>
               </div>
 
               <label className="block">
                 <span className="mb-2 block font-semibold text-slate-200">
-                  Target Keyword
+                  Target Keyword or Phrase
                 </span>
                 <input
                   type="text"
@@ -330,14 +338,20 @@ ${analysis.threeWordKeywords
                 />
               </label>
 
-              <label className="flex items-center gap-3 rounded-xl border border-slate-700 bg-slate-800 p-4 font-semibold text-slate-200">
+              <label className="flex items-start gap-3 rounded-xl border border-slate-700 bg-slate-800 p-4 font-semibold text-slate-200">
                 <input
                   type="checkbox"
                   checked={ignoreStopWords}
                   onChange={(event) => setIgnoreStopWords(event.target.checked)}
-                  className="h-4 w-4"
+                  className="mt-1 h-4 w-4 shrink-0"
                 />
-                Ignore common stop words in top keywords
+                <span>
+                  Ignore common English stop words in phrase lists
+                  <span className="mt-1 block text-sm font-normal text-slate-400">
+                    This affects the repeated-word and phrase tables only. It
+                    does not change the target phrase count.
+                  </span>
+                </span>
               </label>
 
               <div className="grid gap-3 sm:grid-cols-3">
@@ -354,10 +368,11 @@ ${analysis.threeWordKeywords
             <div className="space-y-6">
               <div>
                 <h2 className="mb-2 text-2xl font-bold text-white">
-                  📈 SEO Summary
+                  📈 Frequency Summary
                 </h2>
                 <p className="text-slate-300">
-                  Check whether your target keyword usage looks natural.
+                  Counts describe this text only; they are not a search ranking
+                  prediction.
                 </p>
               </div>
 
@@ -370,74 +385,163 @@ ${analysis.threeWordKeywords
                 </div>
 
                 <div className="rounded-xl border border-purple-500/30 bg-purple-500/10 p-4">
-                  <p className="text-sm text-slate-300">Characters</p>
+                  <p className="text-sm text-slate-300">
+                    Characters, including spaces
+                  </p>
                   <p className="mt-1 text-3xl font-bold text-purple-300">
                     {analysis.characterCount}
                   </p>
                 </div>
 
-                <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4">
-                  <p className="text-sm text-slate-300">Keyword Count</p>
-                  <p className="mt-1 text-3xl font-bold text-emerald-300">
-                    {analysis.targetCount}
+                <div className="rounded-xl border border-slate-600 bg-slate-800 p-4">
+                  <p className="text-sm text-slate-300">Phrase Occurrences</p>
+                  <p className="mt-1 text-3xl font-bold text-slate-100">
+                    {analysis.hasTarget ? analysis.targetCount : "—"}
                   </p>
                 </div>
 
-                <div className={`rounded-xl border p-4 ${targetStatus.bg}`}>
-                  <p className="text-sm text-slate-300">Keyword Density</p>
-                  <p className={`mt-1 text-3xl font-bold ${targetStatus.color}`}>
-                    {formatPercent(analysis.targetDensity)}
+                <div className="rounded-xl border border-slate-600 bg-slate-800 p-4">
+                  <p className="text-sm text-slate-300">Phrase Frequency</p>
+                  <p className="mt-1 text-3xl font-bold text-slate-100">
+                    {analysis.hasTarget
+                      ? formatPercent(analysis.targetDensity)
+                      : "—"}
                   </p>
                 </div>
               </div>
 
-              <div className={`rounded-2xl border p-5 ${targetStatus.bg}`}>
-                <p className={`text-2xl font-bold ${targetStatus.color}`}>
-                  {targetStatus.label}
-                </p>
+              <div className="rounded-2xl border border-slate-700 bg-slate-900 p-5">
+                <p className="text-lg font-bold text-white">{targetStatus}</p>
                 <p className="mt-2 text-slate-300">
-                  A natural keyword density is usually around 0.5% to 2.5%.
-                  Focus on helpful content first, not repeating the keyword too
-                  many times.
+                  Frequency formula: exact phrase occurrences divided by total
+                  word count, multiplied by 100. No universal percentage is
+                  presented as an ideal or ranking target.
                 </p>
               </div>
 
               <div className="rounded-2xl border border-slate-700 bg-slate-900 p-5">
                 <h3 className="mb-3 text-xl font-bold text-white">
-                  🎯 Target Keyword
+                  🎯 Target Phrase
                 </h3>
                 <p className="break-words text-slate-200">
-                  {targetKeyword || "No target keyword entered"}
+                  {targetKeyword || "No target phrase entered"}
                 </p>
               </div>
             </div>
           </ToolCard>
         </div>
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-3">
-          {renderKeywordTable("🔤 Top Single Words", analysis.oneWordKeywords)}
-          {renderKeywordTable("🔗 Top 2-Word Phrases", analysis.twoWordKeywords)}
-          {renderKeywordTable("🧩 Top 3-Word Phrases", analysis.threeWordKeywords)}
-        </div>
+        <section
+          className="mt-8"
+          aria-labelledby="repeated-phrases-heading"
+        >
+          <h2
+            id="repeated-phrases-heading"
+            className="mb-5 text-2xl font-bold text-white"
+          >
+            Repeated Words and Phrases
+          </h2>
 
-        <div className="mt-8 grid gap-6 lg:grid-cols-3">
-          <ToolCard>
-            <h2 className="mb-3 text-xl font-bold text-white">
-              🔍 SEO Usage
+          <div className="grid gap-6 lg:grid-cols-3">
+            {renderKeywordTable(
+              "🔤 Top Single Words",
+              analysis.oneWordKeywords,
+            )}
+            {renderKeywordTable(
+              "🔗 Top 2-Word Phrases",
+              analysis.twoWordKeywords,
+            )}
+            {renderKeywordTable(
+              "🧩 Top 3-Word Phrases",
+              analysis.threeWordKeywords,
+            )}
+          </div>
+        </section>
+
+        <section className="mt-10 space-y-5" aria-labelledby="guide-heading">
+          <div>
+            <h2
+              id="guide-heading"
+              className="mb-2 text-2xl font-bold text-white"
+            >
+              Keyword Frequency Checker: How to Use It
             </h2>
-            <p className="text-slate-300">
-              Use keyword density analysis before publishing articles, product
-              pages and landing pages to keep content balanced.
+            <p className="max-w-4xl text-slate-300">
+              Review how often a phrase appears in your draft, find repeated
+              terms, and inspect the text before you publish. The result is a
+              count and a simple calculation, not a Google SEO score.
             </p>
-          </ToolCard>
+          </div>
 
+          <div className="grid gap-6 lg:grid-cols-2">
+            <ToolCard>
+              <h3 className="mb-3 text-xl font-bold text-white">
+                How the calculation works
+              </h3>
+              <p className="text-slate-300">
+                The checker converts text to lowercase, tokenizes letters and
+                numbers, and counts exact consecutive matches for your target
+                phrase. It calculates phrase frequency as occurrences divided
+                by total word count, multiplied by 100. Punctuation separates
+                tokens, so punctuation differences and sentence boundaries are
+                not treated as phrase boundaries.
+              </p>
+            </ToolCard>
+
+            <ToolCard>
+              <h3 className="mb-3 text-xl font-bold text-white">
+                Steps to analyze a draft
+              </h3>
+              <ol className="list-inside list-decimal space-y-2 text-slate-300">
+                <li>Enter a target word or phrase.</li>
+                <li>Paste the text you want to review.</li>
+                <li>Check its occurrence count and calculated frequency.</li>
+                <li>
+                  Review repeated one-, two- and three-word phrases for wording
+                  that may sound unnatural.
+                </li>
+                <li>Copy the report if you need to keep the results.</li>
+              </ol>
+            </ToolCard>
+
+            <ToolCard>
+              <h3 className="mb-3 text-xl font-bold text-white">
+                What the results do not tell you
+              </h3>
+              <p className="text-slate-300">
+                This tool does not fetch a live web page, measure search volume
+                or competition, check Google rankings, or predict indexing. It
+                analyzes only the text pasted into the editor. A frequency
+                percentage by itself cannot determine whether content is
+                useful or will rank.
+              </p>
+            </ToolCard>
+
+            <ToolCard>
+              <h3 className="mb-3 text-xl font-bold text-white">
+                Language and matching notes
+              </h3>
+              <p className="text-slate-300">
+                Tokenization supports Unicode letters and numbers. The optional
+                stop-word list contains common English words and only affects
+                the repeated-phrase tables. Languages that do not normally
+                separate words with spaces may not be segmented into linguistic
+                words accurately. Matching is case-insensitive and based on
+                consecutive tokens after punctuation is treated as a separator.
+              </p>
+            </ToolCard>
+          </div>
+        </section>
+
+        <section className="mt-8 grid gap-6 lg:grid-cols-2">
           <ToolCard>
             <h2 className="mb-3 text-xl font-bold text-white">
-              ✅ Best Practice
+              ✅ Review for Readers
             </h2>
             <p className="text-slate-300">
-              Use your main keyword naturally in the title, introduction,
-              headings and useful sections instead of repeating it everywhere.
+              Use the counts to spot repetition, then read the draft aloud.
+              Keep terms where they help explain the topic; revise wording that
+              feels forced or distracts from the reader’s task.
             </p>
           </ToolCard>
 
@@ -446,11 +550,13 @@ ${analysis.threeWordKeywords
               ⚠️ Important Note
             </h2>
             <p className="text-slate-300">
-              This tool checks content frequency only. It does not show Google
-              ranking, keyword volume or search difficulty.
+              There is no universal keyword-frequency percentage that
+              guarantees better search rankings. This checker provides text
+              analysis only; it does not replace audience research or a full
+              SEO review.
             </p>
           </ToolCard>
-        </div>
+        </section>
       </main>
 
       <Footer />
