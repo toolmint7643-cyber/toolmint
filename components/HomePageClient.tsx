@@ -447,17 +447,108 @@ export default function HomePageClient({
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <p className="text-sm font-bold uppercase text-blue-200">SEO-first utility platform</p>
-            <h2 className="mt-2 text-3xl font-black text-white sm:text-4xl">Free online tools built for real work.</h2>
-          </div>
-          <div className="grid gap-6 text-base leading-8 text-slate-300 md:grid-cols-2">
-            <p>ToolMint helps developers, students, marketers, creators and business users finish practical tasks quickly. The catalog includes PDF tools, image tools, developer utilities, text tools, calculators, color tools and SEO tools.</p>
-            <p>File-based tools are kept on their own pages so the homepage stays light. Many tools process files in the browser where practical, while URL-based SEO tools may fetch public page data to produce useful checks.</p>
-          </div>
-        </div>
-      </section>
+  <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+    <div>
+      <p className="text-sm font-bold uppercase text-blue-200">
+        ToolMint online tools
+      </p>
+      <h2 className="mt-2 text-3xl font-black text-white sm:text-4xl">
+        Practical tools for files, writing, development and everyday work.
+      </h2>
+    </div>
+
+    <p className="text-base leading-8 text-slate-300">
+      ToolMint brings common online tasks into one searchable directory.
+      Find a tool for a PDF or image workflow, text cleanup, developer data,
+      website checks, color work or a calculation. Each tool has its own page
+      with its controls and results, so you can choose the workflow that fits
+      your task without installing a separate desktop utility.
+    </p>
+  </div>
+
+  <div className="mt-9 grid gap-x-8 gap-y-7 border-t border-slate-800 pt-7 md:grid-cols-2 lg:grid-cols-3">
+    <article>
+      <h3 className="text-xl font-bold text-white">PDF and image workflows</h3>
+      <p className="mt-3 leading-7 text-slate-300">
+        Work with PDF pages and files, or prepare an image for sharing and
+        everyday use. ToolMint includes options for tasks such as merging,
+        splitting, organizing, rotating and watermarking PDFs, along with
+        image compression, resizing and format conversion. Compression results
+        can vary with the source file and the settings you choose.
+      </p>
+      <p className="mt-3 leading-7 text-slate-300">
+        Start with the{" "}
+        <Link href="/pdf-compressor" className="font-bold text-blue-300 hover:text-blue-200">
+          PDF Compressor
+        </Link>
+        ,{" "}
+        <Link href="/pdf-to-jpg" className="font-bold text-blue-300 hover:text-blue-200">
+          PDF to JPG Converter
+        </Link>
+        {" "}or{" "}
+        <Link href="/image-compressor" className="font-bold text-blue-300 hover:text-blue-200">
+          Image Compressor
+        </Link>
+        .
+      </p>
+    </article>
+
+    <article>
+      <h3 className="text-xl font-bold text-white">Developer and text utilities</h3>
+      <p className="mt-3 leading-7 text-slate-300">
+        Format or validate structured data, encode text for URLs, inspect a
+        decoded JWT payload, or generate hashes. For writing tasks, count
+        words and characters, change text case, sort lines or find and replace
+        text. Results and limitations are shown on each tool page.
+      </p>
+      <p className="mt-3 leading-7 text-slate-300">
+        Try the{" "}
+        <Link href="/json-formatter" className="font-bold text-blue-300 hover:text-blue-200">
+          JSON Formatter
+        </Link>
+        {" "}or{" "}
+        <Link href="/word-counter" className="font-bold text-blue-300 hover:text-blue-200">
+          Word Counter
+        </Link>
+        {" "}to get started.
+      </p>
+    </article>
+
+    <article>
+      <h3 className="text-xl font-bold text-white">SEO checks and calculations</h3>
+      <p className="mt-3 leading-7 text-slate-300">
+        Explore tools for tasks such as checking keyword frequency, preparing
+        a robots.txt file, extracting URLs from a sitemap and reviewing public
+        page information. Calculators cover common finance, date, health and
+        business questions. These tools provide task-specific checks or
+        estimates; they do not promise Google rankings or replace professional
+        advice where that is needed.
+      </p>
+      <p className="mt-3 leading-7 text-slate-300">
+        Browse the{" "}
+        <Link href="/keyword-density-checker" className="font-bold text-blue-300 hover:text-blue-200">
+          Keyword Density Checker
+        </Link>
+        {" "}and{" "}
+        <Link href="/robots-txt-generator" className="font-bold text-blue-300 hover:text-blue-200">
+          Robots.txt Generator
+        </Link>
+        .
+      </p>
+    </article>
+  </div>
+
+    <div className="mt-8 border-t border-slate-800 pt-6">
+    <h3 className="text-xl font-bold text-white">Privacy and processing</h3>
+    <p className="mt-3 max-w-5xl leading-7 text-slate-300">
+      Processing depends on the tool. Many file tools process files in your
+      browser where practical. Some website checks request publicly available
+      page data. Review each tool page for its processing details and
+      limitations, especially before using sensitive files. ToolMint does not
+      require an account to browse and use its tools.
+    </p>
+  </div>
+</section>
 
       <section className="mx-auto max-w-5xl px-5 py-12 sm:px-6 lg:px-8" id="faq">
         <SectionIntro eyebrow="FAQ" title="Questions users ask before starting." text="Short answers without inflated claims." />
