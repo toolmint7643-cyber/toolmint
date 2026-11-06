@@ -208,6 +208,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Hreflang Tag Checker
 - [x] Schema Validator Lite
 - [x] URL Slug SEO Checker
+- [x] Internal Link Counter
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker

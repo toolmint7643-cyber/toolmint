@@ -618,6 +618,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Internal Link Counter",
+  description:
+    "Estimate incoming internal links and distinct referring pages across a bounded sitemap URL sample, with fetch-status reporting and CSV export.",
+  href: "/internal-link-counter",
+  category: "SEO",
+},
+{
   title: "On-Page SEO Checker",
   description:
     "Audit title, meta description, headings, canonical URL, robots directives, image alt text, links and content length.",

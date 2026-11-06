@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added an Internal Link Counter that reads sitemap URLs, samples 10/20/50 same-host pages, counts incoming links and unique referring pages between sampled pages, and exports CSV/TXT reports.
+- Limits public HTML fetches to 300 KB and 6 seconds per page, uses the protected public-fetch helper, and reports failures/partial responses; it does not render JavaScript or claim full-site/orphan certainty from a sample.
 - Added URL Slug SEO Checker with local single/batch path analysis, segment-level format observations and TXT report export.
 - Uses transparent conventions for casing, separators, spaces, encoding and query strings; does not fetch URLs or claim rankings, indexing status or a universal slug-length target.
 - Added Schema Validator Lite for public-page, HTML-source and JSON-LD input.
