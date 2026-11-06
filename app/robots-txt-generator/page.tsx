@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageTitle from "@/components/PageTitle";
@@ -27,7 +27,7 @@ export default function RobotsTxtGeneratorPage() {
   const [userAgent, setUserAgent] = useState("*");
   const [allowPaths, setAllowPaths] = useState("/\n/tools");
   const [disallowPaths, setDisallowPaths] = useState("/admin\n/api/private");
-  const [sitemapUrl, setSitemapUrl] = useState("https://toolmint.com/sitemap.xml");
+  const [sitemapUrl, setSitemapUrl] = useState("https://www.toolmintco.com/sitemap.xml");
   const [crawlDelay, setCrawlDelay] = useState("");
   const [hostUrl, setHostUrl] = useState("");
 
@@ -360,6 +360,136 @@ export default function RobotsTxtGeneratorPage() {
               </div>
             </div>
           </div>
+                  <section
+          aria-labelledby="robots-guide-title"
+          className="space-y-8 border-t border-slate-700 pt-8"
+        >
+          <div>
+            <h2
+              id="robots-guide-title"
+              className="text-2xl font-bold text-white"
+            >
+              Robots.txt: crawler access rules, not website security
+            </h2>
+            <p className="mt-3 max-w-5xl leading-7 text-slate-300">
+              A robots.txt file is a public plain-text file, normally available
+              at the root of a website, such as
+              https://www.toolmintco.com/robots.txt. It gives cooperating web
+              crawlers instructions about which URL paths they may request.
+              Crawlers can interpret rules differently, and a bot that does not
+              follow robots.txt can ignore them.
+            </p>
+          </div>
+
+          <div className="grid gap-8 border-t border-slate-700 pt-6 md:grid-cols-2">
+            <article>
+              <h3 className="text-xl font-bold text-white">
+                How Allow and Disallow rules work
+              </h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                Use User-agent to name the crawler group, then add Allow or
+                Disallow paths for that group. For example, Disallow: /private/
+                asks a compliant crawler not to request URLs under that path.
+                Review every rule carefully: a broad path can block pages or
+                resources you meant to keep crawlable. The generated preview
+                shows the text the tool will copy or download; it does not
+                publish the file to your website automatically.
+              </p>
+            </article>
+
+            <article>
+              <h3 className="text-xl font-bold text-white">
+                Add a valid sitemap URL
+              </h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                A Sitemap line should contain the complete public URL of your
+                sitemap. For ToolMint, the current example is
+                https://www.toolmintco.com/sitemap.xml. Only use it if that URL
+                opens and returns the current sitemap for your site. A sitemap
+                can help crawlers discover URLs, but it does not guarantee that
+                every URL will be crawled or indexed.
+              </p>
+              <p className="mt-3 leading-7 text-slate-300">
+                To inspect sitemap URLs, use the{" "}
+                <Link
+                  href="/sitemap-url-extractor"
+                  className="font-bold text-blue-300 hover:text-blue-200"
+                >
+                  Sitemap URL Extractor
+                </Link>
+                .
+              </p>
+            </article>
+          </div>
+
+          <div className="grid gap-8 border-t border-slate-700 pt-6 md:grid-cols-2">
+            <article>
+              <h3 className="text-xl font-bold text-white">
+                Google-specific directive limits
+              </h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                Google documents support for User-agent, Allow, Disallow and
+                Sitemap. Google does not process the non-standard Crawl-delay
+                rule. Other crawlers may support additional extensions, but
+                their behavior varies; do not assume the Host or Crawl-delay
+                fields will affect Googlebot.
+              </p>
+            </article>
+
+            <article>
+              <h3 className="text-xl font-bold text-white">
+                Crawling is different from indexing
+              </h3>
+              <p className="mt-3 leading-7 text-slate-300">
+                Disallow is not a reliable way to remove a page from Google
+                Search: a URL may still be known from links even when its
+                contents cannot be crawled. To keep private content protected,
+                require authentication. For a page that should not appear in
+                search, use an appropriate noindex method and make sure the
+                crawler can access the page to read that directive. Never put
+                passwords, secrets or confidential paths in robots.txt; anyone
+                can view the file.
+              </p>
+            </article>
+          </div>
+
+          <div className="border-t border-slate-700 pt-6">
+            <h3 className="text-xl font-bold text-white">
+              Before publishing your robots.txt file
+            </h3>
+            <ol className="mt-3 list-decimal space-y-2 pl-6 leading-7 text-slate-300">
+              <li>Choose the crawler group the rules should apply to.</li>
+              <li>
+                Add only the paths you intentionally want that crawler to skip
+                or access.
+              </li>
+              <li>
+                Confirm the sitemap URL is correct, public and currently
+                reachable.
+              </li>
+              <li>
+                Review the generated preview, then copy it or download the
+                robots.txt file.
+              </li>
+              <li>
+                Publish it at your website root and open
+                https://www.toolmintco.com/robots.txt to confirm the live file
+                is the one you intended.
+              </li>
+            </ol>
+            <p className="mt-4 leading-7 text-slate-300">
+              Before changing live rules, check whether an important page or
+              resource could be blocked. You can also use ToolMint&apos;s{" "}
+              <Link
+                href="/robots-txt-tester"
+                className="font-bold text-blue-300 hover:text-blue-200"
+              >
+                Robots.txt Tester
+              </Link>{" "}
+              to review a published file.
+            </p>
+          </div>
+        </section>
         </ToolCard>
       </main>
 
