@@ -205,6 +205,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Google SERP Preview Generator
 - [x] Title Tag Checker
 - [x] Meta Tags Checker
+- [x] Hreflang Tag Checker
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker

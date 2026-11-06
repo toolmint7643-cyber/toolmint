@@ -534,6 +534,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Hreflang Tag Checker",
+  description:
+    "Inspect hreflang alternate links in public HTML or pasted source, review language-code format, missing and duplicate values, absolute URLs, self-reference and x-default without claiming reciprocal-link or target-status verification.",
+  href: "/hreflang-tag-checker",
+  category: "SEO",
+},
+{
   title: "Meta Description Generator",
   description:
     "Generate template-based SEO meta description ideas with keyword, audience, tone and character length guidance.",

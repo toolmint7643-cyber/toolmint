@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added a Hreflang Tag Checker with public-URL and pasted-HTML inspection for alternate language and regional links.
+- Reviews missing attributes, duplicate language values, documented code shape, absolute HTTP/HTTPS URLs, self-reference and x-default; does not fetch alternate pages or claim reciprocal-link verification.
 - Added a Meta Tags Checker with public-URL and pasted-HTML inspection for common metadata, canonical links, Open Graph, Twitter/X and hreflang.
 - Reports found, missing, empty and duplicate fields, source URL, HTTP status and bounded-fetch truncation without claiming a ranking score or JavaScript-rendered inspection.
 - Added a Title Tag Checker with public-URL fetch, pasted-HTML and manual-title modes.
