@@ -15,7 +15,7 @@ Primary focus:
 
 ## Current Progress
 
-Tools Completed: 125 / 100+
+Tools Completed: 126 / 100+
 Homepage Features Completed: 16 / 16
 Status: Premium homepage 2.0 completed and verified
 
@@ -147,6 +147,7 @@ Status: Premium homepage 2.0 completed and verified
 - [x] Title Tag Checker
 - [x] Meta Tags Checker
 - [x] Hreflang Tag Checker
+- [x] Schema Validator Lite
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker
@@ -218,7 +219,7 @@ These are potential future tools for ToolMint. Build only tools that can be impl
 - [ ] Keyword Suggestion Lite
 - [ ] URL Slug SEO Checker
 - [ ] Internal Link Counter
-- [ ] Schema Validator Lite
+- [x] Schema Validator Lite
 
 ### Upcoming Developer Tools
 - [ ] JSON to CSV
@@ -425,6 +426,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Title Tag Checker
 - [x] Meta Tags Checker
 - [x] Hreflang Tag Checker
+- [x] Schema Validator Lite
 - [x] Meta Description Generator
 - [x] Heading Tag Checker
 - [x] Alt Text Checker
@@ -470,6 +472,7 @@ PDF limitations are stated on each tool page. PDF to Excel reconstructs selectab
 - [x] Title Tag Checker
 - [x] Meta Tags Checker
 - [x] Hreflang Tag Checker
+- [x] Schema Validator Lite
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker

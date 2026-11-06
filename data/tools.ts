@@ -604,6 +604,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Schema Validator Lite",
+  description:
+    "Inspect JSON-LD syntax, context, typed nodes and repeated IDs from pasted JSON-LD, HTML source or a public webpage without claiming Google rich-result eligibility.",
+  href: "/schema-validator-lite",
+  category: "SEO",
+},
+{
   title: "On-Page SEO Checker",
   description:
     "Audit title, meta description, headings, canonical URL, robots directives, image alt text, links and content length.",
