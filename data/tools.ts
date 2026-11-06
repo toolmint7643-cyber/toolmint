@@ -520,6 +520,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Title Tag Checker",
+  description:
+    "Inspect title elements from a public webpage or pasted HTML, compare og:title and twitter:title, and count proposed title text without fixed length grades.",
+  href: "/title-tag-checker",
+  category: "SEO",
+},
+{
   title: "Meta Description Generator",
   description:
     "Generate template-based SEO meta description ideas with keyword, audience, tone and character length guidance.",

@@ -7,6 +7,9 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added a Title Tag Checker with public-URL fetch, pasted-HTML and manual-title modes.
+- Reports title element count/content, character count, meta description, og:title, twitter:title, response status and bounded-fetch truncation when present.
+- Uses the protected public-fetch helper; URL mode inspects received HTML without executing target-site JavaScript, and reports no universal ideal title-length grade.
 - Added an Open Graph Image Size Checker with webpage og:image discovery, direct image URL checks, local batch uploads, dimension/aspect-ratio comparison, report export and optional dimension metadata tags.
 - Measures images in the browser and labels 1200 × 630 as a configurable common wide-share reference, not a universal platform requirement or display guarantee.
 - Added an advanced Robots.txt Tester with protected public-file fetching, local pasted/uploaded text analysis, crawler-token URL checks, matching-rule line references, directive summaries and downloadable reports.
