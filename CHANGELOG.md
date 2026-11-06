@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added URL Slug SEO Checker with local single/batch path analysis, segment-level format observations and TXT report export.
+- Uses transparent conventions for casing, separators, spaces, encoding and query strings; does not fetch URLs or claim rankings, indexing status or a universal slug-length target.
 - Added Schema Validator Lite for public-page, HTML-source and JSON-LD input.
 - Checks JSON parsing, context, typed nodes and repeated @id values; it does not claim full Schema.org vocabulary or Google rich-result validation.
 - Added a Hreflang Tag Checker with public-URL and pasted-HTML inspection for alternate language and regional links.

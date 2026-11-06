@@ -611,6 +611,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "URL Slug SEO Checker",
+  description:
+    "Review URL paths and slug segments for casing, separators, spaces, percent encoding, query parameters and readability conventions without a fabricated ranking score.",
+  href: "/url-slug-seo-checker",
+  category: "SEO",
+},
+{
   title: "On-Page SEO Checker",
   description:
     "Audit title, meta description, headings, canonical URL, robots directives, image alt text, links and content length.",
