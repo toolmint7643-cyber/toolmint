@@ -548,6 +548,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Keyword Suggestion Lite",
+  description:
+    "Generate intent-based keyword phrase ideas from seed topics and custom modifiers. Pattern-generated ideas only; no live search volume, difficulty or ranking data.",
+  href: "/keyword-suggestion-lite",
+  category: "SEO",
+},
+{
   title: "Keyword Density Checker",
   description:
     "Check keyword density, target keyword count, top repeated words and SEO phrase frequency in your content.",

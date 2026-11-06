@@ -209,6 +209,7 @@ Build one of the best free online developer and productivity tool websites with 
 - [x] Schema Validator Lite
 - [x] URL Slug SEO Checker
 - [x] Internal Link Counter
+- [x] Keyword Suggestion Lite
 - [x] Meta Description Generator
 - [x] Keyword Density Checker
 - [x] Heading Tag Checker

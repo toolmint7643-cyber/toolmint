@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added Keyword Suggestion Lite with seed topics, intent-based phrase patterns, custom modifiers, deduplication, filters, clipboard copy and CSV export.
+- Runs locally in the browser and explicitly identifies ideas as unvalidated patterns; it does not fetch autocomplete, volume, difficulty, trend, CPC or ranking data.
 - Added an Internal Link Counter that reads sitemap URLs, samples 10/20/50 same-host pages, counts incoming links and unique referring pages between sampled pages, and exports CSV/TXT reports.
 - Limits public HTML fetches to 300 KB and 6 seconds per page, uses the protected public-fetch helper, and reports failures/partial responses; it does not render JavaScript or claim full-site/orphan certainty from a sample.
 - Added URL Slug SEO Checker with local single/batch path analysis, segment-level format observations and TXT report export.
