@@ -527,6 +527,13 @@ export const tools = [
   category: "SEO",
 },
 {
+  title: "Meta Tags Checker",
+  description:
+    "Inspect common page metadata, canonical and hreflang links, Open Graph and Twitter/X tags from public HTML or pasted source; identify missing, empty and repeated fields without a fabricated SEO score.",
+  href: "/meta-tags-checker",
+  category: "SEO",
+},
+{
   title: "Meta Description Generator",
   description:
     "Generate template-based SEO meta description ideas with keyword, audience, tone and character length guidance.",

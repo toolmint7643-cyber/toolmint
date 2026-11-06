@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 ### SEO Tools
+- Added a Meta Tags Checker with public-URL and pasted-HTML inspection for common metadata, canonical links, Open Graph, Twitter/X and hreflang.
+- Reports found, missing, empty and duplicate fields, source URL, HTTP status and bounded-fetch truncation without claiming a ranking score or JavaScript-rendered inspection.
 - Added a Title Tag Checker with public-URL fetch, pasted-HTML and manual-title modes.
 - Reports title element count/content, character count, meta description, og:title, twitter:title, response status and bounded-fetch truncation when present.
 - Uses the protected public-fetch helper; URL mode inspects received HTML without executing target-site JavaScript, and reports no universal ideal title-length grade.
